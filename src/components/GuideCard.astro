@@ -1,0 +1,27 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  label?: string;
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    credit: string;
+  };
+}
+
+const { href, title, description, label, image } = Astro.props;
+---
+
+<a href={href} class="surface group flex h-full flex-col overflow-hidden transition hover:border-wheat/35">
+  <img src={image.src} alt={image.alt} width={image.width} height={image.height} class="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy" />
+  <span class="flex flex-1 flex-col p-5">
+    {label && <span class="text-xs font-black uppercase text-wheat">{label}</span>}
+    <span class="mt-2 text-xl font-black text-bone group-hover:text-wheat">{title}</span>
+    <span class="mt-3 flex-1 text-sm leading-relaxed text-fog">{description}</span>
+    <span class="mt-5 text-sm font-bold text-wheat">Open guide</span>
+  </span>
+</a>

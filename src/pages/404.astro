@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE } from '../data/site';
+---
+
+<Layout title={'Page not found | ' + SITE.name} description={'The requested ' + SITE.gameName + ' guide page was not found.'}>
+  <section class="mx-auto max-w-2xl py-16 text-center">
+    <p class="section-kicker">404</p>
+    <h1 class="mt-3 text-4xl font-black text-bone">Guide page not found</h1>
+    <p class="mt-4 text-fog">The route may have moved while the guide was being updated.</p>
+    <a class="btn-primary mt-7" href="/">Return to {SITE.gameName} guide</a>
+  </section>
+</Layout>

@@ -1,0 +1,99 @@
+---
+import FaqBlock from '../components/FaqBlock.astro';
+import GuideCard from '../components/GuideCard.astro';
+import SourcePanel from '../components/SourcePanel.astro';
+import Layout from '../layouts/Layout.astro';
+import { ASSETS } from '../data/assets';
+import { CORE_SOURCES } from '../data/sources';
+import { FAQS, OFFICIAL_FACTS, REQUIRED_GUIDES, SITE } from '../data/site';
+
+const title = 'Moonlighter 2 Guide - Items, Prices, Shop & Dungeons';
+const description =
+  'Source-tracked Moonlighter 2: The Endless Vault guide for items, prices, shop strategy, dungeons, weapons, beginners, and Early Access updates.';
+---
+
+<Layout title={title} description={description} pageType="home" fullWidth image={ASSETS.hero.src}>
+  <section class="relative isolate overflow-hidden border-b border-white/10">
+    <div class="absolute inset-0">
+      <img src={ASSETS.hero.src} alt={ASSETS.hero.alt} width={ASSETS.hero.width} height={ASSETS.hero.height} class="h-full w-full object-cover object-center" loading="eager" decoding="sync" fetchpriority="high" />
+      <div class="absolute inset-0 bg-ink/65"></div>
+      <div class="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-ink to-transparent"></div>
+    </div>
+    <div class="container relative flex min-h-[78vh] flex-col justify-center py-20">
+      <div class="max-w-3xl">
+        <p class="section-kicker">Source-tracked fan guide</p>
+        <h1 class="mt-5 text-4xl font-black leading-tight text-bone md:text-6xl">Moonlighter 2 Guide</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-bone">
+          A practical guide to the shop-and-dungeon loop in Moonlighter 2: The Endless Vault, with item and price data kept separate from unverified launch claims.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/beginner-guide/" class="btn-primary">Beginner guide</a>
+          <a href="/prices/" class="btn-secondary">Open price tracker</a>
+          <a href={SITE.steamUrl} target="_blank" rel="nofollow noopener noreferrer" class="btn-secondary">Steam page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-band">
+    <div class="container">
+      <p class="section-kicker">Current verified state</p>
+      <h2 class="section-title">A merchant guide built around real evidence</h2>
+      <p class="mt-4 max-w-3xl text-fog">
+        The current Steam listing describes an Early Access action RPG with roguelike elements: explore dungeons, collect relics, sell loot, set your own prices, and invest in the village of Tresna. The official page does not publish a complete item database or a 1.0 date, so those fields remain visibly open for hands-on updates.
+      </p>
+      <dl class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div class="surface p-5"><dt class="text-xs font-black uppercase text-accent">Steam state</dt><dd class="mt-2 text-xl font-black text-bone">Early Access</dd><dd class="mt-1 text-sm text-fog">Released Nov 19, 2025.</dd></div>
+        <div class="surface p-5"><dt class="text-xs font-black uppercase text-accent">Developer</dt><dd class="mt-2 text-xl font-black text-bone">Digital Sun</dd><dd class="mt-1 text-sm text-fog">Published by 11 bit studios.</dd></div>
+        <div class="surface p-5"><dt class="text-xs font-black uppercase text-accent">Core tool</dt><dd class="mt-2 text-xl font-black text-bone">Items + prices</dd><dd class="mt-1 text-sm text-fog">Numbers added after testing.</dd></div>
+        <div class="surface p-5"><dt class="text-xs font-black uppercase text-accent">Platform</dt><dd class="mt-2 text-xl font-black text-bone">Windows</dd><dd class="mt-1 text-sm text-fog">Single-player and controller support listed.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section-band">
+    <div class="container">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div><p class="section-kicker">SEO guide map</p><h2 class="section-title">Start with the systems players search for</h2></div>
+        <a href="/guides/" class="text-sm font-bold text-accent hover:text-bone">Open guide hub</a>
+      </div>
+      <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        {REQUIRED_GUIDES.map((guide) => <GuideCard href={guide.href} title={guide.title} description={guide.description} label={guide.priority} image={ASSETS[guide.image]} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-band">
+    <div class="container grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+      <div>
+        <p class="section-kicker">Steam-backed facts</p>
+        <h2 class="section-title">What the current store page confirms</h2>
+        <div class="mt-6 space-y-4">
+          {OFFICIAL_FACTS.map((fact) => (
+            <div class="border-l-2 border-accent/45 pl-4">
+              <h3 class="font-black text-bone">{fact.label}</h3>
+              <p class="mt-1 text-sm leading-relaxed text-fog">{fact.value}</p>
+              <a href={fact.source.url} target="_blank" rel="nofollow noopener noreferrer" class="mt-1 inline-block text-xs font-bold uppercase text-accent">Source: {fact.source.label}</a>
+            </div>
+          ))}
+        </div>
+      </div>
+      <figure>
+        <img src={ASSETS.shot2.src} alt={ASSETS.shot2.alt} width={ASSETS.shot2.width} height={ASSETS.shot2.height} class="rounded-md border border-white/10" loading="lazy" />
+        <figcaption class="mt-3 text-xs text-fog">{ASSETS.shot2.credit}.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section-band">
+    <div class="container">
+      <div class="grid gap-6 md:grid-cols-3">
+        {[ASSETS.shot3, ASSETS.shot4, ASSETS.shot5].map((asset) => (
+          <figure><img src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} class="rounded-md border border-white/10" loading="lazy" /><figcaption class="mt-2 text-xs text-fog">{asset.credit}.</figcaption></figure>
+        ))}
+      </div>
+      <SourcePanel sources={CORE_SOURCES} />
+      <FaqBlock items={FAQS} />
+    </div>
+  </section>
+</Layout>
