@@ -21,7 +21,7 @@ export interface PageData {
 export const SITE = {
   name: 'Moonlighter 2 Guide',
   shortName: 'M2',
-  url: 'https://moonlighter2guide.com',
+  url: 'https://moonlighter2guide.org',
   tagline: 'Source-tracked fan guide',
   description:
     'Independent Moonlighter 2: The Endless Vault guide with source-tracked shop, item, price, dungeon, weapon, and beginner pages.',
@@ -35,7 +35,7 @@ export const SITE = {
   releaseStatus: 'Steam currently lists the game as released Early Access; no 1.0 date is published on the store page.',
   steamUrl: SOURCES.steam.url,
   steamNewsUrl: SOURCES.steamNews.url,
-  contactEmail: 'hello@moonlighter2guide.com',
+  contactEmail: 'hello@moonlighter2guide.org',
   lastVerified: '2026-08-07',
   heroImage: 'moonlighter-2-shot-1.jpg',
   themeColor: '#d99a50',
@@ -257,7 +257,7 @@ export const PAGE_DATA: Record<string, PageData> = {
     status: 'Verified',
     intro: 'Send a correction when a source changes, a gameplay table needs a version note, or an image credit needs adjustment.',
     sections: [
-      { heading: 'What to include', paragraphs: ['Please include the page URL, the exact claim, the source or in-game version that supports the correction, and a screenshot when reporting a gameplay value.'], bullets: ['Email: hello@moonlighter2guide.com', 'Source corrections are reviewed against first-party pages first.', 'Unverified community leads stay labeled until reproduced.'] },
+      { heading: 'What to include', paragraphs: ['Please include the page URL, the exact claim, the source or in-game version that supports the correction, and a screenshot when reporting a gameplay value.'], bullets: ['Email: hello@moonlighter2guide.org', 'Source corrections are reviewed against first-party pages first.', 'Unverified community leads stay labeled until reproduced.'] },
     ],
   },
   'privacy-policy': {
@@ -268,7 +268,7 @@ export const PAGE_DATA: Record<string, PageData> = {
     status: 'Verified',
     intro: 'This static guide does not require an account and does not ask visitors to submit personal gameplay data.',
     sections: [
-      { heading: 'Basic policy', paragraphs: ['The site may later use privacy-respecting analytics or advertising after deployment. Any such service will be disclosed here before it is enabled. External Steam links are governed by their own policies.'], note: { label: 'Contact', text: 'For privacy questions, email hello@moonlighter2guide.com.' } },
+      { heading: 'Basic policy', paragraphs: ['The site may later use privacy-respecting analytics or advertising after deployment. Any such service will be disclosed here before it is enabled. External Steam links are governed by their own policies.'], note: { label: 'Contact', text: 'For privacy questions, email hello@moonlighter2guide.org.' } },
     ],
   },
 };

@@ -2,7 +2,7 @@
 
 An independent, source-tracked fan guide for **Moonlighter 2: The Endless Vault**.
 
-Live site: <https://moonlighter2guide.com>
+Live site: <https://moonlighter2guide.org>
 
 The site focuses on beginner routes, items, prices, shop strategy, dungeons, weapons, and release updates. Current platform facts and screenshots are checked against the official Steam store and news pages. Gameplay values remain marked for hands-on verification until they are tested in a playable build.
 

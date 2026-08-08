@@ -71,7 +71,7 @@ for (const [page, image] of Object.entries(articleImages)) {
   const output = join(root, 'dist', page.replace(/^\/|\/$/g, ''), 'index.html');
   if (!existsSync(output)) continue;
   const html = readFileSync(output, 'utf8');
-  const expectedUrl = `https://moonlighter2guide.com/images/${image}`;
+  const expectedUrl = `https://moonlighter2guide.org/images/${image}`;
   assert(html.includes(`property="og:image" content="${expectedUrl}"`), `${page} is missing its page-specific Open Graph image.`);
 }
 

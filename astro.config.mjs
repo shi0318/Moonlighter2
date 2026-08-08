@@ -6,7 +6,7 @@ import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-const SITE = 'https://moonlighter2guide.com';
+const SITE = 'https://moonlighter2guide.org';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 // 构建时刻，作为无 git 记录时的兜底（等同于旧行为，绝不比原来差）
