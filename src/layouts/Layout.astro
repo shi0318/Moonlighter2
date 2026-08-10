@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import AmbientParticles from '../components/AmbientParticles.astro';
+import { pageLastmod } from '../data/page-lastmod.mjs';
 import { SITE } from '../data/site';
 
 interface Crumb {
@@ -31,6 +32,7 @@ const {
 } = Astro.props;
 
 const path = Astro.url.pathname;
+const dateModified = pageLastmod(path);
 const canonicalUrl = canonical ?? new URL(path, SITE.url).href;
 const imageUrl = new URL(image, SITE.url).href;
 
@@ -84,7 +86,7 @@ if (pageType === 'home') {
     publisher: { '@id': `${SITE.url}/#organization` },
     author: { '@id': `${SITE.url}/#organization` },
     about: videoGame,
-    dateModified: SITE.lastVerified,
+    ...(dateModified ? { dateModified } : {}),
   });
 }
 
