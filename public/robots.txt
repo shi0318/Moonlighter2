@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://graveseasonsguide.com/sitemap-index.xml
+Sitemap: https://moonlighter2guide.org/sitemap-index.xml
