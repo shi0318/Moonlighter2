@@ -92,6 +92,7 @@ export const REQUIRED_GUIDES = [
   { href: '/walkthrough/', title: 'Walkthrough', description: 'A release-aware route framework that avoids claiming unplayed story outcomes.', priority: 'P1', image: 'shot2' },
   { href: '/weapons/', title: 'Weapons & Upgrades', description: 'Officially confirmed weapon, armor, gadget, and village upgrade categories.', priority: 'P2', image: 'shot3' },
   { href: '/release-date/', title: 'Release Date', description: 'Current Steam Early Access status and a tracker for any future 1.0 announcement.', priority: 'P2', image: 'header' },
+  { href: '/co-op-status/', title: 'Multiplayer Status', description: 'Steam-confirmed single-player status and the current answer on co-op or online multiplayer.', priority: 'Status', image: 'shot5' },
 ] as const;
 
 export const FAQS = [
@@ -236,6 +237,20 @@ export const PAGE_DATA: Record<string, PageData> = {
     sections: [
       { heading: 'Current Steam listing', paragraphs: ['Steam currently shows November 19, 2025 as the release date, with the game available as an Early Access Windows title. The page is not marked coming soon.'], bullets: ['App ID: 2350790', 'Developer: Digital Sun', 'Publisher: 11 bit studios', 'Platform shown: Windows', 'Current store state: Early Access'] },
       { heading: 'What about a September 2, 2026 1.0 date?', paragraphs: ['A September 2, 2026 date is not present in the current Steam store data checked for this site. It may be a planning estimate or a source that has not been published on Steam yet, so this guide does not present it as confirmed. The Steam news hub is the place to re-check for a first-party roadmap or 1.0 announcement.'], note: { label: 'Source discipline', text: 'This page will change only after a first-party page publishes a more exact 1.0 date.' } },
+    ],
+  },
+  'co-op-status': {
+    slug: 'co-op-status',
+    title: 'Is Moonlighter 2 Multiplayer? Co-op Status',
+    description: 'Is Moonlighter 2 multiplayer? Steam currently lists Moonlighter 2 as single-player with controller support and no official co-op mode.',
+    kicker: 'Multiplayer status',
+    status: 'Verified',
+    intro: 'Moonlighter 2: The Endless Vault is currently listed as a single-player Early Access game on Steam. The store page does not list co-op, online multiplayer, or PvP, so this guide treats the current experience as solo while leaving room for a future first-party update.',
+    sections: [
+      { heading: 'Short answer: no co-op is confirmed', paragraphs: ['Steam lists Single-player for Moonlighter 2 and does not list Multi-player, Online Co-op, or PvP categories in the current store data checked on August 12, 2026. The game’s merchant-and-dungeon loop is therefore documented as a solo loop: one player explores, returns with relics, runs the shop, and invests in Tresna.'] },
+      { heading: 'What you can do in the current build', paragraphs: ['The official description connects dungeon exploration, relic collection, shop pricing, customer reactions, village investment, and equipment upgrades. Those systems are designed around the player’s double life as adventurer and merchant, not a published shared-farm or party system.'], bullets: ['Explore dungeons and collect relics alone.', 'Set shop prices and read customers yourself.', 'Invest in the village and unlock equipment categories.', 'Use full controller support and Steam Cloud as listed platform features.'] },
+      { heading: 'Could multiplayer be added later?', paragraphs: ['No official roadmap item in the tracked Steam news hub promises co-op or multiplayer. Moonlighter 2 is already in Early Access, so its feature set can change, but a future feature should be treated as confirmed only when Digital Sun, 11 bit studios, or the Steam listing says so.'] },
+      { heading: 'What is still unknown', paragraphs: ['The current Steam page does not answer whether a future update could add co-op, whether a 1.0 release will change the player count, or whether any shared progression is planned. This page will update those fields only from a first-party announcement.'], note: { label: 'Current answer', text: 'Moonlighter 2 is listed as single-player. No official co-op or multiplayer mode is confirmed as of August 12, 2026.' } },
     ],
   },
   about: {

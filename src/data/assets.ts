@@ -72,6 +72,7 @@ export const PAGE_ASSETS: Record<string, AssetKey> = {
   walkthrough: 'shot3',
   weapons: 'shot4',
   'release-date': 'header',
+  'co-op-status': 'shot5',
   faq: 'shot5',
   about: 'header',
   contact: 'shot2',
