@@ -58,7 +58,7 @@ const description =
         <a href="/guides/" class="text-sm font-bold text-accent hover:text-bone">Open guide hub</a>
       </div>
       <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-        {REQUIRED_GUIDES.map((guide) => <GuideCard href={guide.href} title={guide.title} description={guide.description} label={guide.priority} image={ASSETS[guide.image]} />)}
+        {REQUIRED_GUIDES.slice(0, 9).map((guide) => <GuideCard href={guide.href} title={guide.title} description={guide.description} label={guide.priority} image={ASSETS[guide.image]} />)}
       </div>
     </div>
   </section>

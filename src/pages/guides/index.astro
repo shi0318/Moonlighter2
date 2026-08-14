@@ -1,0 +1,21 @@
+---
+import GuideCard from '../../components/GuideCard.astro';
+import Pagination from '../../components/Pagination.astro';
+import Layout from '../../layouts/Layout.astro';
+import { ASSETS } from '../../data/assets';
+import { REQUIRED_GUIDES, SITE } from '../../data/site';
+
+// The manual queue is maintained newest-first until individual page dates are added.
+const orderedGuides = [...REQUIRED_GUIDES];
+const PAGE_SIZE = 9;
+const currentPage = 1;
+const totalPages = Math.ceil(orderedGuides.length / PAGE_SIZE);
+const visibleGuides = orderedGuides.slice(0, PAGE_SIZE);
+const title = 'Moonlighter 2 Guide Hub — Latest Guides';
+const description = 'Browse Moonlighter 2 guides for items, prices, shops, dungeons, weapons, beginners, and release updates, newest maintained entries first.';
+---
+<Layout title={title} description={description} pageType="collection">
+  <header class="mb-10"><p class="section-kicker">Guide directory</p><h1 class="section-title">Moonlighter 2 guides</h1><p class="mt-4 max-w-3xl text-lg leading-relaxed text-fog">The complete {SITE.gameName} guide directory, with the newest maintained guide entries first.</p></header>
+  <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">{visibleGuides.map((guide) => <GuideCard href={guide.href} title={guide.title} description={guide.description} label={guide.priority} image={ASSETS[guide.image]} />)}</div>
+  <Pagination currentPage={currentPage} totalPages={totalPages} basePath="/guides/" />
+</Layout>
