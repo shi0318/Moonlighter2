@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import SourcePanel from './SourcePanel.astro';
 import { getPageAsset } from '../data/assets';
 import { CORE_SOURCES } from '../data/sources';
+import type { SourceRef } from '../data/sources';
 import { SITE, type PageData } from '../data/site';
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 
 const { page } = Astro.props;
 const pageAsset = getPageAsset(page.slug);
+const sourceList: readonly SourceRef[] = page.sources ?? CORE_SOURCES;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: page.title, url: '/' + page.slug + '/' },
@@ -75,6 +77,6 @@ const statusClass = page.status === 'Verified'
       )}
     </div>
 
-    <SourcePanel sources={CORE_SOURCES} />
+    <SourcePanel sources={sourceList} />
   </article>
 </Layout>

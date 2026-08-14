@@ -1,4 +1,5 @@
 import { SOURCES } from './sources';
+import type { SourceRef } from './sources';
 
 export interface PageSection {
   heading: string;
@@ -16,6 +17,7 @@ export interface PageData {
   intro: string;
   sections: PageSection[];
   table?: { heading: string; headers: string[]; rows: string[][] };
+  sources?: readonly SourceRef[];
 }
 
 export const SITE = {
@@ -32,11 +34,11 @@ export const SITE = {
   appId: '2350790',
   releaseWindow: 'Early Access since November 19, 2025',
   steamReleaseText: 'Nov 19, 2025',
-  releaseStatus: 'Steam currently lists the game as released Early Access; no 1.0 date is published on the store page.',
+  releaseStatus: 'Steam lists Early Access since November 19, 2025; an official Steam announcement now gives September 2, 2026 for the 1.0 launch.',
   steamUrl: SOURCES.steam.url,
   steamNewsUrl: SOURCES.steamNews.url,
   contactEmail: 'hello@moonlighter2guide.org',
-  lastVerified: '2026-08-07',
+  lastVerified: '2026-08-14',
   heroImage: 'moonlighter-2-shot-1.jpg',
   themeColor: '#d99a50',
   genres: ['Action', 'Adventure', 'RPG', 'Early Access'],
@@ -54,6 +56,12 @@ export const NAV = [
 ] as const;
 
 export const LATEST_GUIDES = [
+  {
+    href: '/version-1-release-date/',
+    title: 'Version 1.0 Release Date',
+    description: 'The official September 2, 2026 launch announcement and the new systems arriving with 1.0.',
+    priority: 'New',
+  },
   {
     href: '/items/',
     title: 'Items tracker',
@@ -84,6 +92,7 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/version-1-release-date/', title: 'Version 1.0 Release Date', description: 'September 2, 2026 launch date and the official list of new 1.0 systems.', priority: 'New', image: 'shot5' },
   { href: '/beginner-guide/', title: 'Beginner Guide', description: 'A fact-first first-session route built from the published dungeon, shop, and town loop.', priority: 'P0', image: 'shot2' },
   { href: '/items/', title: 'Items & Relics', description: 'Track what is officially described, what is observed, and what still needs a hands-on entry.', priority: 'P0', image: 'shot3' },
   { href: '/prices/', title: 'Item Prices', description: 'The core tool page for observed sale prices and customer responses after testing.', priority: 'P0', image: 'shot4' },
@@ -98,7 +107,7 @@ export const REQUIRED_GUIDES = [
 export const FAQS = [
   {
     question: 'When did Moonlighter 2: The Endless Vault enter Early Access?',
-    answer: 'The current Steam store page lists November 19, 2025 as the release date and identifies the game as Early Access. This guide does not replace that with an unverified 1.0 date.',
+    answer: 'The game entered Early Access on November 19, 2025. Digital Sun and 11 bit studios announced September 2, 2026 for the 1.0 launch in an official Steam announcement dated August 5, 2026.',
   },
   {
     question: 'Is Moonlighter 2 currently on Steam?',
@@ -230,14 +239,30 @@ export const PAGE_DATA: Record<string, PageData> = {
   'release-date': {
     slug: 'release-date',
     title: 'Moonlighter 2 Release Date and Early Access Status',
-    description: 'The current Moonlighter 2 release date, Early Access status, and a source tracker for any future 1.0 announcement.',
+    description: 'The Moonlighter 2 Early Access status and official September 2, 2026 version 1.0 release date.',
     kicker: 'Release tracking',
     status: 'Verified',
-    intro: 'The current Steam listing records Moonlighter 2: The Endless Vault as released on November 19, 2025 and identifies it as Early Access. This page keeps that platform fact separate from any unconfirmed 1.0 date.',
+    intro: 'Moonlighter 2: The Endless Vault entered Early Access on November 19, 2025. An official Steam announcement published August 5, 2026 now gives September 2, 2026 as the version 1.0 launch date.',
     sections: [
       { heading: 'Current Steam listing', paragraphs: ['Steam currently shows November 19, 2025 as the release date, with the game available as an Early Access Windows title. The page is not marked coming soon.'], bullets: ['App ID: 2350790', 'Developer: Digital Sun', 'Publisher: 11 bit studios', 'Platform shown: Windows', 'Current store state: Early Access'] },
-      { heading: 'What about a September 2, 2026 1.0 date?', paragraphs: ['A September 2, 2026 date is not present in the current Steam store data checked for this site. It may be a planning estimate or a source that has not been published on Steam yet, so this guide does not present it as confirmed. The Steam news hub is the place to re-check for a first-party roadmap or 1.0 announcement.'], note: { label: 'Source discipline', text: 'This page will change only after a first-party page publishes a more exact 1.0 date.' } },
+      { heading: 'The official version 1.0 date', paragraphs: ['Digital Sun and 11 bit studios announced that Moonlighter 2: The Endless Vault launches on September 2, 2026. The announcement is first-party Steam news, so this date replaces the earlier “not announced” status.'], bullets: ['Version 1.0 launch: September 2, 2026', 'Announcement date: August 5, 2026', 'The Early Access history remains November 19, 2025'] },
     ],
+    sources: [SOURCES.steamLaunchNews, SOURCES.steam],
+  },
+  'version-1-release-date': {
+    slug: 'version-1-release-date',
+    title: 'Moonlighter 2 Version 1.0 Release Date and New Content',
+    description: 'Official Moonlighter 2 version 1.0 release date: September 2, 2026, plus the Endless Vault, weapons, shop, and Hardcore additions.',
+    kicker: 'Version 1.0 news',
+    status: 'Verified',
+    intro: 'Moonlighter 2: The Endless Vault launches version 1.0 on September 2, 2026, according to the official Steam announcement published August 5, 2026. Here is what that announcement actually lists.',
+    sections: [
+      { heading: 'When is Moonlighter 2 version 1.0?', paragraphs: ['The official launch date is September 2, 2026. The game has been in Steam Early Access since November 19, 2025, so 1.0 is a transition from the Early Access build rather than the original release date.'] },
+      { heading: 'What is listed for the 1.0 launch?', paragraphs: ['The announcement names new content and progression systems rather than publishing a full patch-by-patch changelog. The confirmed list includes:'], bullets: ['Four Endless Weapon Aspects: Endless Short Sword, Endless Great Sword, Endless Spear, and Endless Gauntlets.', 'A Machine Gun gadget and Endless Armour.', 'Shop Level 5 and a new Bloblet slot.', 'Endless Vault VII.', 'Hardcore Difficulty and the Bomb Path perk.', 'New Codex entries, vendors, and cosmetics.'] },
+      { heading: 'What to do with this information now', paragraphs: ['Use the 1.0 date for planning, but do not treat the announcement as an item database. Exact weapon stats, Machine Gun damage, Hardcore rules, Vault VII routes, and shop prices still need a release-build check. The existing [weapons guide](/weapons/) and [dungeon guide](/dungeon-guide/) should be updated when those values can be reproduced.'] },
+      { heading: 'Early Access versus 1.0', paragraphs: ['The Steam store still records the Early Access history and may change its wording as launch approaches. Check the live listing on September 2 for the version state, patch number, install size, and any changed platform requirements.'] },
+    ],
+    sources: [SOURCES.steamLaunchNews, SOURCES.steam],
   },
   'co-op-status': {
     slug: 'co-op-status',
