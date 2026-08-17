@@ -15,7 +15,7 @@ export const SOURCES = {
     url: 'https://store.steampowered.com/app/2350790/Moonlighter_2_The_Endless_Vault/',
     publisher: 'Valve / Steam',
     status: 'platform',
-    lastChecked: '2026-08-07',
+    lastChecked: '2026-08-17',
     note: 'App id 2350790, Early Access status, developer, publisher, release field, Windows platform, categories, screenshots, and published game description.',
   },
   steamNews: {

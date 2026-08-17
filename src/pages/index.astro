@@ -40,7 +40,7 @@ const description =
       <p class="section-kicker">Current verified state</p>
       <h2 class="section-title">A merchant guide built around real evidence</h2>
       <p class="mt-4 max-w-3xl text-fog">
-        The current Steam listing describes an Early Access action RPG with roguelike elements: explore dungeons, collect relics, sell loot, set your own prices, and invest in the village of Tresna. The official page does not publish a complete item database or a 1.0 date, so those fields remain visibly open for hands-on updates.
+        The current Steam listing describes an Early Access action RPG with roguelike elements: explore dungeons, collect relics, sell loot, set your own prices, and invest in the village of Tresna. The official listing does not publish a complete item database, while the first-party announcement gives September 2, 2026 for version 1.0, so those boundaries remain visible here.
       </p>
       <dl class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div class="surface p-5"><dt class="text-xs font-black uppercase text-accent">Steam state</dt><dd class="mt-2 text-xl font-black text-bone">Early Access</dd><dd class="mt-1 text-sm text-fog">Released Nov 19, 2025.</dd></div>
@@ -58,7 +58,7 @@ const description =
         <a href="/guides/" class="text-sm font-bold text-accent hover:text-bone">Open guide hub</a>
       </div>
       <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-        {REQUIRED_GUIDES.slice(0, 9).map((guide) => <GuideCard href={guide.href} title={guide.title} description={guide.description} label={guide.priority} image={ASSETS[guide.image]} />)}
+        {REQUIRED_GUIDES.slice(0, 10).map((guide) => <GuideCard href={guide.href} title={guide.title} description={guide.description} label={guide.priority} image={ASSETS[guide.image]} />)}
       </div>
     </div>
   </section>

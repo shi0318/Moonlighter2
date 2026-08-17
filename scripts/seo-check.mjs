@@ -9,7 +9,7 @@ const sourceUrls = [
 const requiredPages = [
   '/', '/guides/', '/beginner-guide/', '/items/', '/prices/', '/shop-guide/',
   '/dungeon-guide/', '/walkthrough/', '/weapons/', '/faq/', '/release-date/',
-  '/about/', '/contact/', '/privacy-policy/',
+  '/moonlighter-2-switch-2/', '/about/', '/contact/', '/privacy-policy/',
 ];
 const requiredImages = [
   'public/images/moonlighter-2-header.jpg',
@@ -48,6 +48,7 @@ if (existsSync(distIndex)) {
   assert(!html.includes('2026-09-02'), 'Unverified 1.0 date is presented in homepage output.');
 
   const homeCardImages = {
+    '/moonlighter-2-switch-2/': '/images/moonlighter-2-header.jpg',
     '/beginner-guide/': '/images/moonlighter-2-shot-2.jpg',
     '/items/': '/images/moonlighter-2-shot-3.jpg',
     '/prices/': '/images/moonlighter-2-shot-4.jpg',
@@ -62,6 +63,7 @@ if (existsSync(distIndex)) {
 }
 
 const articleImages = {
+  '/moonlighter-2-switch-2/': 'moonlighter-2-header.jpg',
   '/items/': 'moonlighter-2-shot-3.jpg',
   '/prices/': 'moonlighter-2-shot-4.jpg',
   '/shop-guide/': 'moonlighter-2-shot-5.jpg',

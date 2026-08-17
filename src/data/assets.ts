@@ -64,6 +64,8 @@ export type AssetKey = keyof typeof ASSETS;
 
 export const PAGE_ASSETS: Record<string, AssetKey> = {
   guides: 'hero',
+  'moonlighter-2-switch-2': 'header',
+  'gameplay-preview': 'hero',
   'beginner-guide': 'shot2',
   items: 'shot3',
   prices: 'shot4',
