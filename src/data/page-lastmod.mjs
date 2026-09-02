@@ -1,5 +1,7 @@
 // Add a path only after that page has had a material, verifiable update.
 const PAGE_LASTMOD = {
+  '/bosses/': '2026-09-02',
+  '/save-transfer-progress-guide/': '2026-08-31',
   '/moonlighter-2-switch-2/': '2026-08-17',
   '/gameplay-preview/': '2026-08-17',
   '/co-op-status/': '2026-08-12',

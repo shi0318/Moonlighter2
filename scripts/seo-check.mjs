@@ -9,7 +9,7 @@ const sourceUrls = [
 const requiredPages = [
   '/', '/guides/', '/beginner-guide/', '/items/', '/prices/', '/shop-guide/',
   '/dungeon-guide/', '/walkthrough/', '/weapons/', '/faq/', '/release-date/',
-  '/moonlighter-2-switch-2/', '/about/', '/contact/', '/privacy-policy/',
+  '/moonlighter-2-switch-2/', '/save-transfer-progress-guide/', '/about/', '/contact/', '/privacy-policy/',
 ];
 const requiredImages = [
   'public/images/moonlighter-2-header.jpg',
@@ -48,6 +48,7 @@ if (existsSync(distIndex)) {
   assert(!html.includes('2026-09-02'), 'Unverified 1.0 date is presented in homepage output.');
 
   const homeCardImages = {
+    '/save-transfer-progress-guide/': '/images/moonlighter-2-shot-5.jpg',
     '/moonlighter-2-switch-2/': '/images/moonlighter-2-header.jpg',
     '/beginner-guide/': '/images/moonlighter-2-shot-2.jpg',
     '/items/': '/images/moonlighter-2-shot-3.jpg',
@@ -64,6 +65,7 @@ if (existsSync(distIndex)) {
 
 const articleImages = {
   '/moonlighter-2-switch-2/': 'moonlighter-2-header.jpg',
+  '/save-transfer-progress-guide/': 'moonlighter-2-shot-5.jpg',
   '/items/': 'moonlighter-2-shot-3.jpg',
   '/prices/': 'moonlighter-2-shot-4.jpg',
   '/shop-guide/': 'moonlighter-2-shot-5.jpg',
@@ -75,6 +77,32 @@ for (const [page, image] of Object.entries(articleImages)) {
   const html = readFileSync(output, 'utf8');
   const expectedUrl = `https://moonlighter2guide.org/images/${image}`;
   assert(html.includes(`property="og:image" content="${expectedUrl}"`), `${page} is missing its page-specific Open Graph image.`);
+}
+
+const saveTransferPath = join(root, 'dist', 'save-transfer-progress-guide', 'index.html');
+if (existsSync(saveTransferPath)) {
+  const saveTransferText = readFileSync(saveTransferPath, 'utf8');
+  const articleMarkup = saveTransferText.match(/<article[\s\S]*?<\/article>/i)?.[0] ?? '';
+  assert(saveTransferText.includes('Moonlighter 2: The Endless Vault Save Transfer and Progress Guide'), 'Save-transfer page title or H1 is missing the complete game name.');
+  assert(saveTransferText.includes('name="description" content="Moonlighter 2: The Endless Vault save transfer guide'), 'Save-transfer page description is missing the complete game name.');
+  assert(articleMarkup.includes('/images/moonlighter-2-shot-5.jpg'), 'Save-transfer page is missing its shot5 image.');
+  assert(!articleMarkup.includes('Fact sources') && !articleMarkup.includes('Sources and verification'), 'Save-transfer page must not render a source panel.');
+  assert(!articleMarkup.includes('store.steampowered.com') && !articleMarkup.includes('steamcommunity.com'), 'Save-transfer article body must not display source links.');
+}
+
+const guidesPath = join(root, 'dist', 'guides', 'index.html');
+if (existsSync(guidesPath)) {
+  const guidesText = readFileSync(guidesPath, 'utf8');
+  assert(guidesText.includes('href="/save-transfer-progress-guide/"'), 'Guide directory must list the save-transfer page.');
+}
+
+const homeHeader = existsSync(distIndex) ? readFileSync(distIndex, 'utf8').match(/<header[\s\S]*?<\/header>/i)?.[0] ?? '' : '';
+assert(!homeHeader.includes('href="/save-transfer-progress-guide/"'), 'Save-transfer page must stay out of primary navigation.');
+
+const sitemapPath = join(root, 'dist', 'sitemap-0.xml');
+if (existsSync(sitemapPath)) {
+  const sitemap = readFileSync(sitemapPath, 'utf8');
+  assert(sitemap.includes('<loc>https://moonlighter2guide.org/save-transfer-progress-guide/</loc><lastmod>2026-08-31T00:00:00.000Z</lastmod>'), 'Sitemap must include the save-transfer page with the 2026-08-31 lastmod.');
 }
 
 const sourceFiles = ['src/data/site.ts', 'src/data/sources.ts', 'src/pages/index.astro', 'src/components/Footer.astro'].map((file) => join(root, file));
