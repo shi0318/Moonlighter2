@@ -5,6 +5,7 @@ output/
 src/_grave-pages/
 public/_grave-images/
 docs/superpowers/
+.rankup/
 .wrangler/
 .DS_Store
 .env

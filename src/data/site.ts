@@ -58,6 +58,13 @@ export const NAV = [
 
 export const LATEST_GUIDES = [
   {
+    href: '/save-transfer-progress-guide/',
+    title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide',
+    description:
+      'Moonlighter 2: The Endless Vault save-transfer guide for Early Access progress, Steam Cloud, and the September 2, 2026 1.0 transition.',
+    priority: 'New',
+  },
+  {
     href: '/moonlighter-2-switch-2/',
     title: 'Moonlighter 2 Switch 2: Is It Coming to Nintendo Switch 2?',
     description: 'What the official Steam listing confirms about platforms, the Switch 2 question, and the September 2, 2026 1.0 launch.',
@@ -105,6 +112,8 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'Every boss Steam names, ordered by how many owners have actually beaten them, plus the Ultimate Challenge and Endless Vault completion rates.', priority: 'New', image: 'hero' },
+  { href: '/save-transfer-progress-guide/', title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide', description: 'What is confirmed about Moonlighter 2: The Endless Vault Early Access progress, Steam Cloud, and the 1.0 save-transfer rule still awaiting a formal update.', priority: 'New', image: 'shot5' },
   { href: '/moonlighter-2-switch-2/', title: 'Moonlighter 2 Switch 2: Is It Coming to Nintendo Switch 2?', description: 'Current official platform evidence, the Switch 2 answer, and what to watch for in a first-party announcement.', priority: 'New', image: 'header' },
   { href: '/gameplay-preview/', title: 'Moonlighter 2: The Endless Vault Gameplay Preview', description: 'The official dungeon-to-shop gameplay loop, Early Access status, pricing system, and 1.0 evidence boundary.', priority: 'New', image: 'hero' },
   { href: '/version-1-release-date/', title: 'Version 1.0 Release Date', description: 'September 2, 2026 launch date and the official list of new 1.0 systems.', priority: 'New', image: 'shot5' },
@@ -356,6 +365,28 @@ export const PAGE_DATA: Record<string, PageData> = {
       { heading: 'What is still unknown', paragraphs: ['The current Steam page does not answer whether a future update could add co-op, whether a 1.0 release will change the player count, or whether any shared progression is planned. This page will update those fields only from a first-party announcement.'], note: { label: 'Current answer', text: 'Moonlighter 2 is listed as single-player. No official co-op or multiplayer mode is confirmed as of August 12, 2026.' } },
     ],
   },
+  'save-transfer-progress-guide': {
+    slug: 'save-transfer-progress-guide',
+    title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide',
+    description: 'Moonlighter 2: The Endless Vault save transfer guide for Early Access progress, Steam Cloud, and the unconfirmed 1.0 wipe or migration rule.',
+    kicker: 'Save transfer and progress',
+    status: 'Launch-day update',
+    intro: 'Moonlighter 2: The Endless Vault entered Early Access on November 19, 2025, and the official 1.0 date is September 2, 2026. Steam lists Steam Cloud, but current official information does not confirm whether a complete Early Access save will transfer to 1.0 or whether a wipe will be required.',
+    sections: [
+      { heading: 'Short answer: the 1.0 save rule is not confirmed', paragraphs: ['Moonlighter 2: The Endless Vault has an Early Access start date of November 19, 2025 and an official version 1.0 date of September 2, 2026. The current official announcement does not confirm a complete save-transfer policy for that transition.'], note: { label: 'Current answer', text: 'Do not assume that Early Access progress will definitely be preserved, and do not assume that it will definitely be wiped. The formal rule is still unconfirmed.' } },
+      { heading: 'What Steam Cloud confirms', paragraphs: ['The Steam store listing includes Steam Cloud. That confirms the feature is listed for the current Steam offering, but it does not publish a save-slot count, a conflict-resolution rule, or a guarantee that every future Early Access transition preserves every field.'], bullets: ['Steam Cloud is listed.', 'Cross-platform save support is not confirmed by that label.', 'An Early Access-to-1.0 migration rule is not confirmed by that label.', 'The listing does not define how save conflicts or progress variants would be handled.'] },
+      { heading: 'What the 1.0 date does not answer', paragraphs: ['September 2, 2026 is the announced 1.0 date, not a save-management instruction. The date alone does not say whether an existing save will be carried forward, reset, or require a developer-provided migration process. Wait for a formal developer announcement or version note before treating any of those outcomes as fact.'] },
+      { heading: 'Low-risk preparation before the 1.0 transition', paragraphs: ['The safest preparation is reversible and does not depend on an invented file path or migration command. Keep an offline backup of important save data before a major update, and keep that backup separate from any copy created after the update.'], bullets: ['Record the current game version and the progress you want to check after the update.', 'Keep an offline backup before the September 2, 2026 transition.', 'Do not overwrite the pre-update backup until the official rule and the post-update result are clear.', 'Treat Steam Cloud as a listed feature, not as proof of cross-version preservation.', 'Save any official 1.0 announcement or version note that explains the transition.'] },
+      { heading: 'How to read the Steam Cloud status safely', paragraphs: ['For this question, the useful confirmed fact is simply that Steam Cloud appears in the Steam feature listing. Use that listing to confirm the feature remains advertised, but do not turn it into a claim about cross-platform saves, a guaranteed restore, or an Early Access wipe decision. Those are separate questions that need explicit wording from the developer or the 1.0 release notes.'] },
+      { heading: 'What to watch for next', paragraphs: ['A reliable update should come from Digital Sun or 11 bit studios in a developer announcement, patch note, or version 1.0 release note. Look for direct wording about save migration, wipe behavior, compatibility with existing progress, and any required player action. Until those terms are published, this page should remain a preparation guide rather than a promise.'] },
+    ],
+    relatedPages: [
+      { href: '/steam-features-guide/', title: 'Moonlighter 2 Steam Features Guide', description: 'Current Steam Cloud, controller, and single-player listing details.' },
+      { href: '/version-1-release-date/', title: 'Moonlighter 2 Version 1.0 Release Date', description: 'The confirmed September 2, 2026 launch date and announced 1.0 scope.' },
+      { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'Early Access history and the current 1.0 date.' },
+    ],
+    sources: [],
+  },
   about: {
     slug: 'about',
     title: 'About Moonlighter 2 Guide',
@@ -388,5 +419,127 @@ export const PAGE_DATA: Record<string, PageData> = {
     sections: [
       { heading: 'Basic policy', paragraphs: ['The site may later use privacy-respecting analytics or advertising after deployment. Any such service will be disclosed here before it is enabled. External Steam links are governed by their own policies.'], note: { label: 'Contact', text: 'For privacy questions, email hello@moonlighter2guide.org.' } },
     ],
+  },
+  bosses: {
+    slug: 'bosses',
+    title: 'Moonlighter 2 Bosses: Every Confirmed Boss and the Order Players Beat Them',
+    description:
+      'Moonlighter 2 bosses: the Curator, Senda, Tyke and Monte are the four bosses Steam confirms by name, ordered by how many players have actually beaten each one.',
+    kicker: 'Bosses · measured completion data',
+    status: 'Verified',
+    intro:
+      'Four Moonlighter 2 bosses are confirmed by name in the Steam achievement list, each with a stated requirement to defeat them: the Curator, Senda, Tyke and Monte. Because Steam also publishes what percentage of all owners has each achievement, the four names come with a reliable difficulty order attached. This page uses those rates rather than a guessed progression, and it marks clearly where an achievement exists but its requirement is hidden.',
+    sections: [
+      {
+        heading: 'The four confirmed bosses, hardest last',
+        paragraphs: [
+          'Every one of these four achievements says "Defeat" followed by a name, so there is no inference involved in calling them bosses. The percentage is the share of all owners who have done it, which makes the ordering a measurement of how far into the game each fight sits rather than an opinion about difficulty.',
+          'The spread is narrower than it looks. Between the Curator at 43.6% and Monte at 21.2% you lose about half the player base, but the steps between adjacent bosses are 5 to 12 points each. There is no single wall where everyone stops.',
+        ],
+        bullets: [
+          'The Curator — 43.6% of owners have defeated it. The first boss most players clear.',
+          'Senda — 38.7%. A 4.9 point step down from the Curator, so most players who beat one beat the other.',
+          'Tyke — 26.1%. The largest gap on the list opens up before this one.',
+          'Monte — 21.2%. The rarest confirmed boss kill, and roughly one owner in five.',
+        ],
+      },
+      {
+        heading: 'One hidden achievement sits inside the boss order',
+        paragraphs: [
+          'An achievement called The Fallen King sits at 29.4%, which places it between Senda (38.7%) and Tyke (26.1%). Its description is hidden on Steam, so what it requires is not published and this page does not claim it is a boss kill. What can be said is that whatever it needs, it happens at the same point in a run as the gap between the second and third confirmed bosses.',
+          'Seven other achievements also have hidden descriptions, and they are spread right across the run: 70.3%, 64.2%, 57.8%, 53.3%, 18.7%, and two at 0.1%. Treat every one of them as a progress marker with an unpublished requirement, not as a fight.',
+        ],
+      },
+      {
+        heading: 'Beating a boss with the broom is not the flex you think',
+        paragraphs: [
+          'One achievement states its requirement openly and is genuinely surprising: defeating a boss with the broom, at 23.3% of owners. That sits above Monte (21.2%) and just below Tyke (26.1%) — meaning more people have won a boss fight with the joke weapon than have beaten the fourth confirmed boss at all.',
+          'It is a real signal about how the combat is tuned. If a broom clears a boss for almost a quarter of the player base, the fights are readable pattern tests rather than damage checks. Gear matters less than knowing the moveset, which is worth remembering before you spend a run farming for a better weapon.',
+        ],
+      },
+      {
+        heading: 'The four Ultimate Challenges are the real endgame',
+        paragraphs: [
+          'Past the named bosses there are four achievements for completing an Ultimate Challenge in a specific area, and their rates put them well below any boss kill. These are the completion targets for players who have already finished the main run.',
+          'The rates also give the four challenge names without any guesswork, since each achievement states the one it belongs to.',
+        ],
+        bullets: [
+          'Ultimate Gallery Challenge — 10.4% of owners.',
+          'Ultimate Kalina Challenge — 7.7%.',
+          'Ultimate Aeolia Challenge — 7.6%.',
+          'Ultimate Interdimensional Challenge — 3.8%, the rarest of the four.',
+        ],
+        note: {
+          label: 'Area entry rates for context',
+          text: 'Entering the Gallery for the first time is at 68.7% and entering Aeolia for the first time is at 49.9%. So about two in three players see the Gallery, and roughly one in seven of those goes on to clear its Ultimate Challenge.',
+        },
+      },
+      {
+        heading: 'The Endless Vault ladder is steeper than any boss',
+        paragraphs: [
+          'Seven achievements track the Endless Vault challenges in order, and this is where the completion curve genuinely collapses. The first challenge is more common than any boss kill; the seventh sits at the floor of the entire achievement list.',
+          'The step from the fourth challenge (39.3%) to the fifth (13.7%) is the single largest drop anywhere in Moonlighter 2 achievement data — a fall of 25.6 points. If you are looking for the game\'s actual difficulty wall, it is there, not in a boss room.',
+        ],
+        bullets: [
+          '1st challenge — 75.8% of owners.',
+          '2nd challenge — 58.7%.',
+          '3rd challenge — 46.7%.',
+          '4th challenge — 39.3%.',
+          '5th challenge — 13.7%.',
+          '6th challenge — 5.4%.',
+          '7th challenge — 0.1%.',
+        ],
+      },
+      {
+        heading: 'How long a boss run takes',
+        paragraphs: [
+          'Across a sample of 473 Steam reviews, the median reviewer had 15.5 hours logged when they posted, and those same accounts now sit at a median of 21.5 hours, with the top 10% past 49 hours and the longest single account at 116 hours. Only 6.6% reviewed inside the two-hour refund window, which is low, and it matches the store rating: 2,660 of 3,127 reviews are positive, or 85.1% — Very Positive.',
+          'Read against the boss rates, that puts the Curator somewhere in the first several hours and Monte deep into a 20-hour-plus run. The distribution is weighted late, so the shop and dungeon loop is holding people well past the point where the confirmed bosses are done.',
+        ],
+        bullets: [
+          'Under 2 hours: 6.6% of reviewers.',
+          '2-5 hours: 15.4%.',
+          '5-10 hours: 13.5%.',
+          '10-20 hours: 23.7%.',
+          '20-40 hours: 26.6%.',
+          'Over 40 hours: 14.2%.',
+        ],
+      },
+      {
+        heading: 'What this page does not claim',
+        paragraphs: [
+          'The achievement list gives names, requirements where they are published, and completion rates. It gives nothing else, so none of the following appears above.',
+        ],
+        bullets: [
+          'No movesets, attack patterns, phase counts, or health values for any boss.',
+          'No arena locations or how to reach a given boss.',
+          'No drop tables or rewards.',
+          'No recommended weapon, gear level, or build for any fight.',
+          'No claim that these four are every boss in the game — they are every boss Steam names.',
+          'No requirement for any hidden achievement, including The Fallen King.',
+        ],
+        note: {
+          label: 'When these figures were read',
+          text: 'Unlock percentages and review data were read on September 2, 2026, the day version 1.0 released. The rates span the whole Early Access period from November 19, 2025 onward rather than 1.0 alone, and they will keep moving as the 1.0 audience plays through.',
+        },
+      },
+    ],
+    table: {
+      heading: 'Confirmed boss kills by global unlock rate',
+      headers: ['Boss', 'Achievement', 'Owners who have beaten it', 'Position'],
+      rows: [
+        ['The Curator', 'Forced Shutdown', '43.6%', 'First of the four'],
+        ['Senda', 'Wind Slumber', '38.7%', 'Second'],
+        ['Tyke', 'Dismissal Letter', '26.1%', 'Third'],
+        ['Monte', 'Sweet Petrichor', '21.2%', 'Fourth and rarest'],
+        ['Any boss, using the broom', 'Humble Hero', '23.3%', 'Not a progression step'],
+      ],
+    },
+    relatedPages: [
+      { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Route planning around relic collection, risk, and backpack space before a boss attempt.' },
+      { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The confirmed weapon, armor, gadget, and village upgrade categories.' },
+      { href: '/walkthrough/', title: 'Walkthrough', description: 'The release-aware route framework for working through the game in order.' },
+    ],
+    sources: [],
   },
 };
