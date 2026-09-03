@@ -33,16 +33,16 @@ export const SITE = {
   developer: 'Digital Sun',
   publisher: '11 bit studios',
   appId: '2350790',
-  releaseWindow: 'Early Access since November 19, 2025',
-  steamReleaseText: 'Nov 19, 2025',
-  releaseStatus: 'Steam lists Early Access since November 19, 2025; an official Steam announcement now gives September 2, 2026 for the 1.0 launch.',
+  releaseWindow: 'Version 1.0 released September 2, 2026',
+  steamReleaseText: 'Sep 2, 2026',
+  releaseStatus: 'Moonlighter 2: The Endless Vault left Early Access on September 2, 2026. The Steam release field now reads Sep 2, 2026 and the Early Access tag is gone; Early Access began November 19, 2025.',
   steamUrl: SOURCES.steam.url,
   steamNewsUrl: SOURCES.steamNews.url,
   contactEmail: 'hello@moonlighter2guide.org',
-  lastVerified: '2026-08-17',
+  lastVerified: '2026-09-03',
   heroImage: 'moonlighter-2-shot-1.jpg',
   themeColor: '#d99a50',
-  genres: ['Action', 'Adventure', 'RPG', 'Early Access'],
+  genres: ['Action', 'Adventure', 'RPG'],
   platforms: ['Windows'],
 } as const;
 
@@ -58,10 +58,17 @@ export const NAV = [
 
 export const LATEST_GUIDES = [
   {
+    href: '/version-1-0-update/',
+    title: 'Moonlighter 2 Version 1.0 Update: Everything in the Launch Build',
+    description:
+      'The Infinite Endless Vault reset rule, Hardcore Mode, the four Endless Weapon Aspects, the Bomb Path, Shop Level 5, and the November 13 physical editions.',
+    priority: 'New',
+  },
+  {
     href: '/save-transfer-progress-guide/',
     title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide',
     description:
-      'Moonlighter 2: The Endless Vault save-transfer guide for Early Access progress, Steam Cloud, and the September 2, 2026 1.0 transition.',
+      'What happened at the September 2, 2026 version 1.0 transition, what Steam Cloud covers, and why no official save rule was ever published.',
     priority: 'New',
   },
   {
@@ -103,7 +110,8 @@ export const LATEST_GUIDES = [
 ] as const;
 
 export const OFFICIAL_FACTS = [
-  { label: 'Steam state', value: 'Released into Early Access on November 19, 2025; the current Steam page is not marked coming soon.', source: SOURCES.steam },
+  { label: 'Steam state', value: 'Version 1.0 released September 2, 2026. The Steam release field reads Sep 2, 2026, the Early Access tag is gone, and the listed genres are Action, Adventure and RPG. Early Access ran from November 19, 2025.', source: SOURCES.steam },
+  { label: 'Version 1.0 scope', value: 'The launch announcement confirms the main story now concludes, plus the Infinite Endless Vault postgame, four Endless Weapon Aspects, Shop Level 5, the Bomb Path perk path, Hardcore Mode, new vendors, cosmetics and Codex pages.', source: SOURCES.steamVersionOneNews },
   { label: 'Developer / publisher', value: 'Digital Sun / 11 bit studios.', source: SOURCES.steam },
   { label: 'Core loop', value: 'Explore dungeons, gather relics, sell them in your shop, and reinvest in the village.', source: SOURCES.steam },
   { label: 'Pricing system', value: 'The Steam description says the player sets their own price and reads customers to find the right deal.', source: SOURCES.steam },
@@ -112,18 +120,19 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/version-1-0-update/', title: 'Version 1.0 Update: Everything in the Launch Build', description: 'The Infinite Endless Vault reset rule, Hardcore Mode, the four Endless Weapon Aspects, the Bomb Path, Shop Level 5, and the November 13 physical editions.', priority: 'New', image: 'shot4' },
   { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'Every boss Steam names, ordered by how many owners have actually beaten them, plus the Ultimate Challenge and Endless Vault completion rates.', priority: 'New', image: 'hero' },
-  { href: '/save-transfer-progress-guide/', title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide', description: 'What is confirmed about Moonlighter 2: The Endless Vault Early Access progress, Steam Cloud, and the 1.0 save-transfer rule still awaiting a formal update.', priority: 'New', image: 'shot5' },
+  { href: '/save-transfer-progress-guide/', title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide', description: 'What happened at the 1.0 transition, what Steam Cloud actually covers, and why no official wipe or migration rule was ever published.', priority: 'New', image: 'shot5' },
   { href: '/moonlighter-2-switch-2/', title: 'Moonlighter 2 Switch 2: Is It Coming to Nintendo Switch 2?', description: 'Current official platform evidence, the Switch 2 answer, and what to watch for in a first-party announcement.', priority: 'New', image: 'header' },
-  { href: '/gameplay-preview/', title: 'Moonlighter 2: The Endless Vault Gameplay Preview', description: 'The official dungeon-to-shop gameplay loop, Early Access status, pricing system, and 1.0 evidence boundary.', priority: 'New', image: 'hero' },
-  { href: '/version-1-release-date/', title: 'Version 1.0 Release Date', description: 'September 2, 2026 launch date and the official list of new 1.0 systems.', priority: 'New', image: 'shot5' },
+  { href: '/gameplay-preview/', title: 'Moonlighter 2: The Endless Vault Gameplay Preview', description: 'The official dungeon-to-shop gameplay loop, what version 1.0 added at both ends of it, and where the evidence stops.', priority: 'New', image: 'hero' },
+  { href: '/release-date/', title: 'Release Date', description: 'The Early Access date, the September 2, 2026 version 1.0 date, and what the Steam listing shows now.', priority: 'P2', image: 'header' },
   { href: '/steam-features-guide/', title: 'Steam Features Guide', description: 'Controller support, Steam Cloud, single-player status, and what the current store listing actually confirms.', priority: 'New', image: 'shot4' },
   { href: '/beginner-guide/', title: 'Beginner Guide', description: 'A fact-first first-session route built from the published dungeon, shop, and town loop.', priority: 'P0', image: 'shot2' },
   { href: '/items/', title: 'Items & Relics', description: 'Track what is officially described, what is observed, and what still needs a hands-on entry.', priority: 'P0', image: 'shot3' },
   { href: '/prices/', title: 'Item Prices', description: 'The core tool page for observed sale prices and customer responses after testing.', priority: 'P0', image: 'shot4' },
   { href: '/shop-guide/', title: 'Shop Guide', description: 'Use the confirmed pricing, customer-reading, decoration, and perk systems as the page spine.', priority: 'P1', image: 'shot5' },
   { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Plan routes around relic collection, risk, backpack space, and the published deeper-is-better reward loop.', priority: 'P1', image: 'hero' },
-  { href: '/release-date/', title: 'Release Date', description: 'Current Steam Early Access status and a tracker for any future 1.0 announcement.', priority: 'P2', image: 'header' },
+  { href: '/version-1-release-date/', title: 'Version 1.0 Release Date', description: 'September 2, 2026, and how the August announcement compares with what the launch-day post confirmed.', priority: 'New', image: 'shot5' },
   { href: '/walkthrough/', title: 'Walkthrough', description: 'A release-aware route framework that avoids claiming unplayed story outcomes.', priority: 'P1', image: 'shot2' },
   { href: '/weapons/', title: 'Weapons & Upgrades', description: 'Officially confirmed weapon, armor, gadget, and village upgrade categories.', priority: 'P2', image: 'shot3' },
   { href: '/co-op-status/', title: 'Multiplayer Status', description: 'Steam-confirmed single-player status and the current answer on co-op or online multiplayer.', priority: 'Status', image: 'shot5' },
@@ -131,20 +140,32 @@ export const REQUIRED_GUIDES = [
 
 export const FAQS = [
   {
+    question: 'Is Moonlighter 2 out of Early Access?',
+    answer: 'Yes. Version 1.0 released on September 2, 2026. The Steam release field now reads Sep 2, 2026, the Early Access tag has been removed, and the listed genres are Action, Adventure and RPG. Early Access ran from November 19, 2025.',
+  },
+  {
+    question: 'What is the Infinite Endless Vault in Moonlighter 2?',
+    answer: 'It is the version 1.0 postgame, unlocked after completing the main story. It is an endless series of increasingly difficult thresholds, and the launch announcement states that each one must be completed in a single run, so failing to reach the required amount of gold resets your progress for that threshold. Rewards include equipment, shop upgrades, decorations and cosmetics. No gold values or threshold counts have been published.',
+  },
+  {
+    question: 'What happens if you die in Moonlighter 2 Hardcore Mode?',
+    answer: 'The launch-day announcement says dying means losing your progress and starting the journey again from the very beginning. The earlier August 5, 2026 announcement described the same mode differently, saying you lose all your relics upon defeat. The two wordings have never been reconciled officially, so the safer assumption is the harsher one until the in-game description says otherwise.',
+  },
+  {
     question: 'Is Moonlighter 2 coming to Nintendo Switch 2?',
-    answer: 'No Nintendo Switch 2 version has been officially confirmed in the sources tracked here. The current Steam listing identifies Moonlighter 2 as a Windows Early Access game, and the official 1.0 announcement gives September 2, 2026 without naming a Nintendo platform.',
+    answer: 'No Nintendo Switch 2 version has been officially confirmed in the sources tracked here. The version 1.0 launch announcement says console versions are available without naming a single console, and the Steam listing shows Windows as the only platform.',
   },
   {
     question: 'Is Moonlighter 2 on Nintendo Switch?',
-    answer: 'The current official sources tracked here do not list a Nintendo Switch or Nintendo Switch 2 version. The Steam page currently lists Windows as the platform and should be checked again if Digital Sun or 11 bit studios publishes a platform announcement.',
+    answer: 'The official sources tracked here do not name a Nintendo Switch or Nintendo Switch 2 version. Steam lists Windows as the platform. The launch announcement asserts that console versions exist but does not identify them, so this should be rechecked whenever Digital Sun or 11 bit studios publishes a platform list.',
   },
   {
     question: 'When did Moonlighter 2: The Endless Vault enter Early Access?',
-    answer: 'The game entered Early Access on November 19, 2025. Digital Sun and 11 bit studios announced September 2, 2026 for the 1.0 launch in an official Steam announcement dated August 5, 2026.',
+    answer: 'The game entered Early Access on November 19, 2025 and left it on September 2, 2026. Digital Sun and 11 bit studios first announced that 1.0 date in an official Steam announcement dated August 5, 2026.',
   },
   {
-    question: 'Is Moonlighter 2 currently on Steam?',
-    answer: 'Yes. Steam lists Moonlighter 2: The Endless Vault as a Windows game released into Early Access. The listing also includes single-player, controller support, Steam Cloud, and Family Sharing categories.',
+    question: 'Is Moonlighter 2 on Steam?',
+    answer: 'Yes. Steam lists Moonlighter 2: The Endless Vault as a released Windows game. The listing also includes Single-player, full controller support, Steam Achievements, Steam Cloud, and Family Sharing categories.',
   },
   {
     question: 'What is the main gameplay loop in Moonlighter 2?',
@@ -156,7 +177,7 @@ export const FAQS = [
   },
   {
     question: 'Is Moonlighter 2 single-player?',
-    answer: 'Steam currently lists Single-player as a category. It also lists full controller support and gamepad recommended.',
+    answer: 'Steam lists Single-player as a category. It also lists full controller support and gamepad recommended, and does not list Multi-player, Online Co-op or PvP.',
   },
 ] ;
 
@@ -164,24 +185,24 @@ export const PAGE_DATA: Record<string, PageData> = {
   'moonlighter-2-switch-2': {
     slug: 'moonlighter-2-switch-2',
     title: 'Moonlighter 2 Switch 2: Is It Coming to Nintendo Switch 2?',
-    description: 'Is Moonlighter 2 coming to Nintendo Switch 2? Check the official platform evidence, the current Steam listing, and the September 2, 2026 version 1.0 date.',
+    description: 'Is Moonlighter 2 coming to Nintendo Switch 2? The official platform evidence, the Steam listing, and what the version 1.0 launch post says about consoles.',
     kicker: 'Platform status',
     status: 'Verified',
-    intro: 'The short answer is that Moonlighter 2: The Endless Vault is not officially confirmed for Nintendo Switch 2. The current official Steam listing identifies the game as a Windows Early Access title, while the first-party 1.0 announcement gives September 2, 2026 without naming a Nintendo platform.',
+    intro: 'The short answer is that Moonlighter 2: The Endless Vault is not officially confirmed for Nintendo Switch 2. Steam lists Windows as the only platform. The version 1.0 launch announcement does say console versions are available — but it does not name a single console, which is not the same as confirming a Nintendo release.',
     sections: [
-      { heading: 'Is Moonlighter 2 coming to Switch 2?', paragraphs: ['No Nintendo Switch 2 version has been announced in the official sources tracked for this guide as of August 17, 2026. That is a status answer, not a claim that a Nintendo version can never happen. If Digital Sun or 11 bit studios announces one, this page should be updated with the original announcement and the supported platform details.'] },
-      { heading: 'What the official Steam page confirms', paragraphs: ['The live Moonlighter 2 Steam listing identifies the current product as a Windows Early Access game. It lists Single-player, Full controller support, Gamepad recommended, Steam Cloud, and Family Sharing. It does not list Nintendo Switch, Nintendo Switch 2, console availability, cross-platform saves, or a Nintendo eShop link.'], bullets: ['Current platform shown: Windows PC.', 'Current state: Early Access.', 'Original Early Access release: November 19, 2025.', 'Steam currently says the game is leaving Early Access on September 2, 2026.', 'The listing does not show a Switch or Switch 2 platform.'] },
-      { heading: 'What the September 2, 2026 1.0 announcement says', paragraphs: ['Digital Sun and 11 bit studios announced September 2, 2026 for Moonlighter 2 version 1.0 in a first-party Steam announcement. The announcement lists new Endless Weapon Aspects, the Machine Gun gadget, Endless Armour, Shop Level 5, Endless Vault VII, Hardcore Difficulty, new vendors, Codex entries, and cosmetics. It does not announce a Nintendo platform.'] },
-      { heading: 'Why people are searching for Moonlighter 2 Switch 2', paragraphs: ['The query is useful because it reflects a platform question from players who may prefer Nintendo hardware. The search interest itself is not proof of a port. Until an official source names Switch 2, the safe answer is “not confirmed,” and the page should not imply that a Nintendo release date exists.'] },
-      { heading: 'Moonlighter 2 Switch versus Switch 2', paragraphs: ['The current evidence does not confirm either a Nintendo Switch version or a Nintendo Switch 2 version. These are separate platform questions, so a future announcement should state the exact hardware, release timing, edition, performance details, and whether saves or purchases carry across platforms.'] },
-      { heading: 'How to verify a future Switch 2 announcement', paragraphs: ['A reliable update should come from Digital Sun, 11 bit studios, an official Nintendo product page, an official Nintendo eShop listing, or an updated official store listing that names the platform. A retailer listing, forum post, search suggestion, or an image without a first-party source is not enough to change the answer on this page.'], note: { label: 'Current answer', text: 'Moonlighter 2 is not officially confirmed for Nintendo Switch 2 as of August 17, 2026. The official PC/Steam status and the September 2, 2026 1.0 date are confirmed separately.' } },
+      { heading: 'Is Moonlighter 2 coming to Switch 2?', paragraphs: ['No Nintendo Switch 2 version has been named in the official sources tracked for this guide as of September 3, 2026. That is a status answer, not a claim that a Nintendo version can never happen. If Digital Sun or 11 bit studios names one, this page should be updated with the original announcement and the supported platform details.'] },
+      { heading: 'What the official Steam page confirms', paragraphs: ['The live Moonlighter 2 Steam listing identifies the product as a released Windows game. It lists Single-player, Full controller support, Gamepad recommended, Steam Achievements, Steam Cloud, and Family Sharing. It does not list Nintendo Switch, Nintendo Switch 2, console availability, cross-platform saves, or a Nintendo eShop link.'], bullets: ['Platform shown: Windows PC.', 'Store state: released, out of Early Access.', 'Original Early Access release: November 19, 2025.', 'Version 1.0 release: September 2, 2026.', 'The listing does not show a Switch or Switch 2 platform.'] },
+      { heading: 'What the launch announcement says about consoles', paragraphs: ['The September 2, 2026 launch post states that Moonlighter 2: The Endless Vault is “officially out of Early Access on PC, and console versions are available now”. That is the single strongest console claim in any first-party source tracked here, and it still names no platform, no storefront, no edition and no release note.', 'So the honest reading is narrow: the developer says console versions exist, and no official source tracked here identifies which consoles. A Switch 2 release is neither confirmed nor excluded by that sentence, and this page will not turn an unnamed console into a named one.'] },
+      { heading: 'Why people are searching for Moonlighter 2 Switch 2', paragraphs: ['The query reflects a platform question from players who prefer Nintendo hardware, and the original Moonlighter shipped on Switch, which makes the expectation reasonable. The search interest itself is not proof of a port. Until an official source names Switch 2, the safe answer is “not confirmed,” and the page should not imply that a Nintendo release date exists.'] },
+      { heading: 'Moonlighter 2 Switch versus Switch 2', paragraphs: ['The current evidence does not name either a Nintendo Switch version or a Nintendo Switch 2 version. These are separate platform questions, so a future announcement should state the exact hardware, release timing, edition, performance details, and whether saves or purchases carry across platforms.'] },
+      { heading: 'How to verify a future Switch 2 announcement', paragraphs: ['A reliable update should come from Digital Sun, 11 bit studios, an official Nintendo product page, an official Nintendo eShop listing, or an updated official store listing that names the platform. A retailer listing, forum post, search suggestion, or an image without a first-party source is not enough to change the answer on this page.'], note: { label: 'Current answer', text: 'Moonlighter 2 is not officially confirmed for Nintendo Switch 2 as of September 3, 2026. Unnamed console versions are claimed by the developer as of the September 2, 2026 launch; Windows is the only platform the Steam listing shows.' } },
     ],
     relatedPages: [
-      { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'Early Access history and the official September 2, 2026 version 1.0 date.' },
-      { href: '/version-1-release-date/', title: 'Version 1.0 New Content', description: 'The first-party list of systems and content announced for the 1.0 launch.' },
+      { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'The Early Access date, the September 2, 2026 version 1.0 date, and what Steam shows now.' },
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Everything the launch-day announcement describes about the released build.' },
       { href: '/steam-features-guide/', title: 'Steam Features Guide', description: 'Windows availability, controller support, Steam Cloud, and current single-player status.' },
     ],
-    sources: [SOURCES.steam, SOURCES.steamLaunchNews, SOURCES.steamNews],
+    sources: [SOURCES.steam, SOURCES.steamVersionOneNews, SOURCES.steamNews],
   },
   guides: {
     slug: 'guides',
@@ -191,7 +212,7 @@ export const PAGE_DATA: Record<string, PageData> = {
     status: 'Verified',
     intro: 'This hub organizes the parts of Moonlighter 2 that the current Steam listing actually describes: a dungeon run, a backpack full of loot, a shop where you set prices, and a village that benefits when you reinvest.',
     sections: [
-      { heading: 'What this guide can verify now', paragraphs: ['Moonlighter 2: The Endless Vault is an action RPG with roguelike elements in Early Access. Steam names Digital Sun as developer and 11 bit studios as publisher, and describes a stranded group rebuilding a life in Tresna.'], bullets: ['Dungeon exploration and relic collection', 'Player-set shop prices and customer reactions', 'Weapons, armor, shop decorations, perks, and town investment', 'The Endless Vault as a challenge tied to town upgrades'] },
+      { heading: 'What this guide can verify now', paragraphs: ['Moonlighter 2: The Endless Vault is a released action RPG with roguelike elements, out of Early Access since September 2, 2026. Steam names Digital Sun as developer and 11 bit studios as publisher, and describes a stranded group rebuilding a life in Tresna.'], bullets: ['Dungeon exploration and relic collection', 'Player-set shop prices and customer reactions', 'Weapons, armor, shop decorations, perks, and town investment', 'The Endless Vault as a challenge tied to town upgrades', 'The version 1.0 postgame, Hardcore Mode, and the four Endless Weapon Aspects'] },
       { heading: 'How to use the site', paragraphs: ['Use Items and Prices when you need a data table. Use Shop and Dungeon Guide when you need a repeatable loop. Use Walkthrough for a cautious route framework. Every page separates Steam facts from values that need an in-game test.'], note: { label: 'Data rule', text: 'A missing number is intentionally shown as unverified. It is more useful to keep a clean field ready for a hands-on entry than to publish a guessed value.' } },
     ],
   },
@@ -244,7 +265,14 @@ export const PAGE_DATA: Record<string, PageData> = {
     sections: [
       { heading: 'Price with customer feedback in mind', paragraphs: ['The Steam description explicitly says the player sets their own price and reads customers to score the perfect deal. That supports a test-driven price log, but not a single price formula until the released build can be measured.'], bullets: ['Record the displayed reaction instead of translating it into an assumed percentage.', 'Keep special-event rows separate because Steam says events can build sales momentum.', 'Compare results after shop decoration and perk changes rather than mixing all conditions together.'] },
       { heading: 'Shop and village progression', paragraphs: ['Steam says shop decorations and perks can improve sales momentum, while village investment unlocks better weapons, armor, and upgrades. The practical guide order is therefore run, sell, reinvest, then test the next run under the new condition.'], note: { label: 'Verified boundary', text: 'The categories are official. Exact decoration effects, perk names, unlock costs, and the best upgrade order still require hands-on data.' } },
+      { heading: 'Shop Level 5 is the version 1.0 ceiling', paragraphs: ['Version 1.0 raised the shop ceiling by one level. The launch announcement names exactly two things Shop Level 5 adds: an additional Bloblet slot, and a new cosmetic placement slot for one more decoration.', 'It does not publish the unlock requirement, the unlock cost, or the total Bloblet count at that level, so treat the level as confirmed and the numbers around it as untested.'] },
     ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Shop Level 5 in context with the rest of the launch build.' },
+      { href: '/prices/', title: 'Item Prices', description: 'The tool page for observed sale prices and customer responses.' },
+      { href: '/items/', title: 'Items & Relics', description: 'What is officially described, what is observed, and what still needs testing.' },
+    ],
+    sources: [SOURCES.steam, SOURCES.steamVersionOneNews],
   },
   'dungeon-guide': {
     slug: 'dungeon-guide',
@@ -255,19 +283,26 @@ export const PAGE_DATA: Record<string, PageData> = {
     intro: 'Steam describes dangerous dungeons and vibrant dimensions full of loot and enemies. It also says deeper exploration brings greater rewards, which makes route planning and extraction decisions central to the guide.',
     sections: [
       { heading: 'Plan the run around extraction', paragraphs: ['The published game description advises players to plot a clever route, arrange loot carefully, and remember that deeper runs bring greater rewards. This gives us a confirmed decision pattern: what to carry, how far to push, and when to return matter as much as clearing enemies.'], bullets: ['Start with a route that leaves room for the loot you expect to collect.', 'Separate confirmed game text from future room-by-room navigation notes.', 'Record the depth, loot category, and outcome for every repeatable run.'] },
-      { heading: 'Endless Vault context', paragraphs: ['The Endless Vault is described as an ancient artifact whose trials test merchants and raise the stakes for rewards and town upgrades. Its exact rooms, encounters, and boss behavior are not published in the current Steam description.'], note: { label: 'Not yet verified', text: 'There are no invented map names, boss patterns, or “best route” claims on this pre-release guide.' } },
+      { heading: 'Endless Vault context', paragraphs: ['The Endless Vault is described as an ancient artifact whose trials test merchants and raise the stakes for rewards and town upgrades. Its exact rooms, encounters, and boss behavior are not published in the Steam description.'], note: { label: 'Not yet verified', text: 'There are no invented map names, boss patterns, or “best route” claims here.' } },
+      { heading: 'The Infinite Endless Vault changes how you plan a run', paragraphs: ['Version 1.0 added a postgame that unlocks after the main story, and it is the one place where the extraction decision has a published rule. The launch announcement describes an endless series of increasingly difficult thresholds and states that each one must be completed in a single run — failing to reach the required amount of gold resets your progress for that threshold.', 'That makes gold, not depth, the scoring metric there, and it removes the option of banking partial progress across trips. No gold target, threshold count or scaling rule has been published, so the only honest planning advice is to treat every threshold attempt as a single closed run.'] },
     ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'The Infinite Endless Vault rule in context with the rest of the launch build.' },
+      { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'Endless Vault challenge completion rates alongside the named boss kills.' },
+      { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The four Endless Weapon Aspects and the confirmed equipment categories.' },
+    ],
+    sources: [SOURCES.steam, SOURCES.steamVersionOneNews],
   },
   walkthrough: {
     slug: 'walkthrough',
     title: 'Moonlighter 2 Walkthrough',
-    description: 'A spoiler-aware Moonlighter 2 walkthrough framework for the Early Access build, with story and route findings reserved for hands-on verification.',
+    description: 'A spoiler-aware Moonlighter 2 walkthrough framework for the version 1.0 build, with story and route findings reserved for hands-on verification.',
     kicker: 'Walkthrough',
     status: 'Launch-day update',
-    intro: 'This walkthrough hub is intentionally a framework until the game version and route data are recorded. Steam confirms the starting premise and progression loop, but it does not publish a full quest order or story ending.',
+    intro: 'This walkthrough hub is intentionally a framework until the game version and route data are recorded. Steam confirms the starting premise and progression loop, and the version 1.0 announcement confirms the main story now has an ending — but neither publishes a quest order or the ending itself.',
     sections: [
-      { heading: 'Published premise', paragraphs: ['The player starts without money alongside other townsfolk, stranded in Tresna. The stated goal is to rebuild the shop into the village’s economic center while exploring dungeons, collecting relics, and reinvesting in the community.'], bullets: ['Starting situation: stranded in the distant village of Tresna.', 'Progression loop: dungeon loot to shop sales to town and equipment upgrades.', 'Long-term challenge: the Endless Vault tests merchants through escalating trials.'] },
-      { heading: 'What will be added from a playable build', paragraphs: ['Launch updates will add named objectives, route order, unlock conditions, and spoiler labels only when they can be reproduced. Each walkthrough step should keep a version note because Early Access data can change.'], note: { label: 'Launch-day update', text: 'Story outcomes, boss strategies, and exact objective order are intentionally not claimed from marketing text alone.' } },
+      { heading: 'Published premise', paragraphs: ['The player starts without money alongside other townsfolk, stranded in Tresna. The stated goal is to rebuild the shop into the village’s economic center while exploring dungeons, collecting relics, and reinvesting in the community.'], bullets: ['Starting situation: stranded in the distant village of Tresna.', 'Progression loop: dungeon loot to shop sales to town and equipment upgrades.', 'Long-term challenge: the Endless Vault tests merchants through escalating trials.', 'Version 1.0 conclusion: new quests, cutscenes and discoveries bring Will’s journey to an end, followed by the Infinite Endless Vault postgame.'] },
+      { heading: 'What will be added from a playable build', paragraphs: ['Route order, named objectives, unlock conditions and spoiler labels are added only when they can be reproduced. Each walkthrough step keeps a version note, since balance and layout can still change across post-launch patches.'], note: { label: 'Launch-day update', text: 'Story outcomes, boss strategies, and exact objective order are intentionally not claimed from announcement text alone.' } },
     ],
   },
   weapons: {
@@ -276,11 +311,19 @@ export const PAGE_DATA: Record<string, PageData> = {
     description: 'A source-tracked Moonlighter 2 weapons and upgrades guide based on official equipment categories and village progression.',
     kicker: 'Equipment',
     status: 'Verified',
-    intro: 'Steam confirms that weapons, armor, gadgets, shop decorations, and upgrades are part of Moonlighter 2 progression. It does not publish the complete arsenal or enough stats to support a best-build ranking yet.',
+    intro: 'Steam confirms that weapons, armor, gadgets, shop decorations, and upgrades are part of Moonlighter 2 progression. Version 1.0 also named four specific weapon aspects and described what each special attack does — the first equipment detail with real mechanics attached rather than a category label.',
     sections: [
       { heading: 'What is confirmed', paragraphs: ['The Steam page names weapons and armor as unlockable categories and ties equipment improvements to a village that grows through investment. It also mentions gadgets and shop decorations as additional unlockable categories.'], bullets: ['Weapons and armor: confirmed categories.', 'Gadgets: confirmed category, exact list unverified.', 'Village establishments: investment can lead to better equipment and upgrades.', 'Best build and tier list: not supportable before hands-on comparisons.'] },
-      { heading: 'Build data policy', paragraphs: ['A useful equipment page should report the exact version, upgrade cost, stat line, and test condition. This guide will prefer a small reproducible comparison over a large unsourced tier list.'], note: { label: 'Not yet verified', text: 'No weapon names, damage values, upgrade costs, or optimal build are invented here.' } },
+      { heading: 'The four Endless Weapon Aspects from version 1.0', paragraphs: ['These are the only weapons the official sources describe by name and behaviour. Each one changes the special attack on a weapon class rather than adding a new class, and none comes with a damage number.'], bullets: ['Endless Short Sword — the special becomes a swift piercing strike landing multiple hits, with the number of strikes increasing based on your combo.', 'Endless Great Sword — a Golden Guild craft. The special enters a defensive stance that blocks attacks, increases Sharpness, then counterattacks.', 'Endless Spear — the special consumes all stored spearheads, turning basic attacks into empowered special attacks for a limited time, with bonus damage scaling on spearheads consumed.', 'Endless Gauntlets — attacks become significantly more powerful while Berserk is active.'] },
+      { heading: 'Equipment the August announcement named but 1.0 did not repeat', paragraphs: ['Two items appeared in the August 5, 2026 pre-launch post and are absent from the launch-day announcement. They are listed here separately rather than mixed in with the confirmed set.'], bullets: ['A craftable Machine Gun gadget.', 'The Endless Armour set — described as forged by the Golden Guild, with increased base critical hit chance and additional critical damage for every Spark perk equipped.'] },
+      { heading: 'Build data policy', paragraphs: ['A useful equipment page should report the exact version, upgrade cost, stat line, and test condition. This guide will prefer a small reproducible comparison over a large unsourced tier list.'], note: { label: 'Not yet verified', text: 'Beyond the officially named aspects above, no weapon names, damage values, Sharpness figures, upgrade costs, or optimal build are invented here.' } },
     ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Every system in the launch build, including the four Endless Weapon Aspects in context.' },
+      { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'The four bosses Steam names, ordered by how many owners have beaten each one.' },
+      { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Route planning around relic collection, risk, and backpack space.' },
+    ],
+    sources: [SOURCES.steam, SOURCES.steamVersionOneNews, SOURCES.steamLaunchNews],
   },
   faq: {
     slug: 'faq',
@@ -293,45 +336,51 @@ export const PAGE_DATA: Record<string, PageData> = {
   },
   'release-date': {
     slug: 'release-date',
-    title: 'Moonlighter 2 Release Date and Early Access Status',
-    description: 'The Moonlighter 2 Early Access status and official September 2, 2026 version 1.0 release date.',
+    title: 'Moonlighter 2 Release Date: Version 1.0 and Early Access History',
+    description: 'The Moonlighter 2 release date: version 1.0 arrived September 2, 2026, after an Early Access run that started November 19, 2025.',
     kicker: 'Release tracking',
     status: 'Verified',
-    intro: 'Moonlighter 2: The Endless Vault entered Early Access on November 19, 2025. An official Steam announcement published August 5, 2026 now gives September 2, 2026 as the version 1.0 launch date.',
+    intro: 'Moonlighter 2: The Endless Vault has two dates worth knowing. It entered Early Access on November 19, 2025, and version 1.0 released on September 2, 2026. The Steam listing now shows the second one.',
     sections: [
-      { heading: 'Current Steam listing', paragraphs: ['Steam currently shows November 19, 2025 as the release date, with the game available as an Early Access Windows title. The page is not marked coming soon.'], bullets: ['App ID: 2350790', 'Developer: Digital Sun', 'Publisher: 11 bit studios', 'Platform shown: Windows', 'Current store state: Early Access'] },
-      { heading: 'The official version 1.0 date', paragraphs: ['Digital Sun and 11 bit studios announced that Moonlighter 2: The Endless Vault launches on September 2, 2026. The announcement is first-party Steam news, so this date replaces the earlier “not announced” status.'], bullets: ['Version 1.0 launch: September 2, 2026', 'Announcement date: August 5, 2026', 'The Early Access history remains November 19, 2025'] },
+      { heading: 'Current Steam listing', paragraphs: ['Steam shows Sep 2, 2026 in the release field and no longer carries the Early Access tag. The listed genres are Action, Adventure and RPG, and the platform is Windows.'], bullets: ['App ID: 2350790', 'Developer: Digital Sun', 'Publisher: 11 bit studios', 'Platform shown: Windows', 'Steam release field: Sep 2, 2026', 'Current store state: released, out of Early Access'] },
+      { heading: 'How the two dates fit together', paragraphs: ['November 19, 2025 is when the game became buyable and playable in Early Access. September 2, 2026 is when it left Early Access as version 1.0. Both are real release dates for different things, which is why search results disagree about them.'], bullets: ['Early Access start: November 19, 2025', 'Version 1.0 launch: September 2, 2026', 'Date first announced: August 5, 2026, in a first-party Steam post', 'Physical editions: 13 November 2026, with Silver Lining Interactive'] },
+      { heading: 'Console versions', paragraphs: ['The launch-day announcement says console versions are available now, in the same sentence that confirms the PC version left Early Access. It does not name a single console, and the Steam listing still shows Windows only. So consoles are officially claimed to exist without an official platform list attached.'] },
     ],
-    sources: [SOURCES.steamLaunchNews, SOURCES.steam],
+    sources: [SOURCES.steamVersionOneNews, SOURCES.steamLaunchNews, SOURCES.steam],
   },
   'version-1-release-date': {
     slug: 'version-1-release-date',
     title: 'Moonlighter 2 Version 1.0 Release Date and New Content',
-    description: 'Official Moonlighter 2 version 1.0 release date: September 2, 2026, plus the Endless Vault, weapons, shop, and Hardcore additions.',
+    description: 'Moonlighter 2 version 1.0 released on September 2, 2026, adding the Endless Weapon Aspects, Shop Level 5, the Bomb Path and Hardcore Mode.',
     kicker: 'Version 1.0 news',
     status: 'Verified',
-    intro: 'Moonlighter 2: The Endless Vault launches version 1.0 on September 2, 2026, according to the official Steam announcement published August 5, 2026. Here is what that announcement actually lists.',
+    intro: 'Moonlighter 2: The Endless Vault released version 1.0 on September 2, 2026, the date Digital Sun and 11 bit studios announced on August 5, 2026. This page tracks what each announcement promised and what the launch-day post confirmed shipped.',
     sections: [
-      { heading: 'When is Moonlighter 2 version 1.0?', paragraphs: ['The official launch date is September 2, 2026. The game has been in Steam Early Access since November 19, 2025, so 1.0 is a transition from the Early Access build rather than the original release date.'] },
-      { heading: 'What is listed for the 1.0 launch?', paragraphs: ['The announcement names new content and progression systems rather than publishing a full patch-by-patch changelog. The confirmed list includes:'], bullets: ['Four Endless Weapon Aspects: Endless Short Sword, Endless Great Sword, Endless Spear, and Endless Gauntlets.', 'A Machine Gun gadget and Endless Armour.', 'Shop Level 5 and a new Bloblet slot.', 'Endless Vault VII.', 'Hardcore Difficulty and the Bomb Path perk.', 'New Codex entries, vendors, and cosmetics.'] },
-      { heading: 'What to do with this information now', paragraphs: ['Use the 1.0 date for planning, but do not treat the announcement as an item database. Exact weapon stats, Machine Gun damage, Hardcore rules, Vault VII routes, and shop prices still need a release-build check. The existing [weapons guide](/weapons/) and [dungeon guide](/dungeon-guide/) should be updated when those values can be reproduced.'] },
-      { heading: 'Early Access versus 1.0', paragraphs: ['The Steam store still records the Early Access history and may change its wording as launch approaches. Check the live listing on September 2 for the version state, patch number, install size, and any changed platform requirements.'] },
+      { heading: 'When was Moonlighter 2 version 1.0?', paragraphs: ['September 2, 2026. The game had been in Steam Early Access since November 19, 2025, so 1.0 was a transition out of Early Access rather than a first release. The Steam listing now reads Sep 2, 2026 with no Early Access tag.'] },
+      { heading: 'What the launch-day post confirmed', paragraphs: ['The September 2 announcement is the first-party record of what actually shipped. It describes the conclusion of the main story and names the new systems below.'], bullets: ['The Infinite Endless Vault postgame, unlocked after the main story.', 'Four Endless Weapon Aspects: Endless Short Sword, Endless Great Sword, Endless Spear and Endless Gauntlets.', 'Shop Level 5, with one more Bloblet slot and one more cosmetic placement slot.', 'The Bomb Path, a new perk path.', 'Hardcore Mode.', 'New vendors, Endless Vault cosmetics, and Codex pages covering enemies, characters, perks and furniture.'] },
+      { heading: 'What only the August announcement listed', paragraphs: ['The August 5 post named several things the launch-day post does not mention again. They are kept separate here because they have no launch-day confirmation, which is not the same as being cut.'], bullets: ['A craftable Machine Gun gadget.', 'The Endless Armour set.', 'Endless Vault VII, described then as a brand-new threshold.', 'Vendors named as K33P3R Level 5 and Spark.'] },
+      { heading: 'What to do with this information now', paragraphs: ['Use these lists as an index of what exists, not as an item database. Exact weapon damage, Machine Gun values, Hardcore rules, threshold gold targets and shop prices are not in either announcement and need a reproducible in-game check. The full breakdown of the launch build, including the one rule the postgame does publish, is on the version 1.0 update page.'] },
     ],
-    sources: [SOURCES.steamLaunchNews, SOURCES.steam],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Every system in the launch build, including the Infinite Endless Vault reset rule.' },
+      { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'The Early Access date, the 1.0 date, and what Steam shows now.' },
+      { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The confirmed weapon, armor, gadget and village upgrade categories.' },
+    ],
+    sources: [SOURCES.steamVersionOneNews, SOURCES.steamLaunchNews, SOURCES.steam],
   },
   'gameplay-preview': {
     slug: 'gameplay-preview',
     title: 'Moonlighter 2: The Endless Vault Gameplay Preview',
-    description: 'A source-backed Moonlighter 2: The Endless Vault gameplay preview covering dungeons, relics, shop pricing, village upgrades, and the September 2, 2026 1.0 launch.',
+    description: 'A source-backed Moonlighter 2: The Endless Vault gameplay preview covering dungeons, relics, shop pricing, village upgrades, and what version 1.0 added on September 2, 2026.',
     kicker: 'Gameplay preview',
     status: 'Verified',
-    intro: 'Moonlighter 2: The Endless Vault connects an action-RPG dungeon run to a player-run shop and village. This preview uses the current Steam listing and the official 1.0 announcement while leaving exact prices, routes, and combat values for a reproducible build check.',
+    intro: 'Moonlighter 2: The Endless Vault connects an action-RPG dungeon run to a player-run shop and village. This preview uses the Steam listing and the official version 1.0 announcements while leaving exact prices, routes, and combat values for a reproducible build check.',
     sections: [
-      { heading: 'The gameplay loop in one sentence', paragraphs: ['Steam describes a loop of exploring dangerous dungeons, gathering relics and loot, returning to the shop, setting prices, reading customers, and reinvesting in the village. That is the most reliable answer to “what is Moonlighter 2 gameplay?” before the 1.0 build: the adventure and merchant roles are designed to feed each other.'], bullets: ['Dungeon run: explore, fight, and collect relics.', 'Shop step: arrange loot, set a price, and read customer reactions.', 'Progression step: reinvest in the village, weapons, armor, upgrades, and shop systems.', 'Challenge step: push farther into the Endless Vault for greater risk and reward.'] },
+      { heading: 'The gameplay loop in one sentence', paragraphs: ['Steam describes a loop of exploring dangerous dungeons, gathering relics and loot, returning to the shop, setting prices, reading customers, and reinvesting in the village. That is the most reliable answer to “what is Moonlighter 2 gameplay?”: the adventure and merchant roles are designed to feed each other.'], bullets: ['Dungeon run: explore, fight, and collect relics.', 'Shop step: arrange loot, set a price, and read customer reactions.', 'Progression step: reinvest in the village, weapons, armor, upgrades, and shop systems.', 'Challenge step: push farther into the Endless Vault for greater risk and reward.'] },
       { heading: 'Why pricing is part of the gameplay', paragraphs: ['The official store description says the player sets their own price and reads customers to find the right deal. Steam does not publish a universal item-price chart, so a useful guide should record the item name, acquisition source, displayed reaction, shop state, event context, and game version rather than inventing a formula.'], note: { label: 'Not yet verified', text: 'No exact Moonlighter 2 price, customer multiplier, best shop decoration, or universal profit route is claimed here without a measured in-game entry.' } },
-      { heading: 'What the 1.0 announcement adds', paragraphs: ['Digital Sun and 11 bit studios announced September 2, 2026 for version 1.0. The official list names four Endless Weapon Aspects, a Machine Gun gadget, Endless Armour, Shop Level 5, a new Bloblet slot, Endless Vault VII, Hardcore Difficulty, the Bomb Path perk, new Codex entries, vendors, and cosmetics. Those names are confirmed launch targets; their final damage, prices, unlock conditions, and Hardcore rules still need retail verification.'] },
+      { heading: 'What version 1.0 added to that loop', paragraphs: ['Version 1.0 released on September 2, 2026 and extended the loop at both ends. The main story now concludes, and past that ending the Infinite Endless Vault turns the challenge step into a gold-target ladder: each threshold has to be cleared in a single run, and falling short of the required gold resets progress on that threshold. The launch post also names four Endless Weapon Aspects, Shop Level 5, the Bomb Path perk path, Hardcore Mode, and new vendors, cosmetics and Codex pages. Those names are confirmed; their damage, prices, unlock conditions and gold targets are not published anywhere.'] },
       { heading: 'A clean first-session test', paragraphs: ['On a real build, keep the first comparison controlled: note the dungeon depth, relic category, backpack state, return decision, sale price, customer reaction, and village option unlocked afterward. Then repeat one variable at a time. That produces a useful gameplay guide without mixing Early Access observations, community claims, and 1.0 marketing copy.'] },
-      { heading: 'What this preview does not claim', paragraphs: ['The current official sources do not provide a complete item database, exact dungeon map, boss route, weapon tier list, price formula, or 1.0 save-transfer rule. Those are good launch search intents, but they need a versioned hands-on entry after September 2 rather than a guess based on the store description.'] },
+      { heading: 'What this preview does not claim', paragraphs: ['The official sources do not provide a complete item database, exact dungeon map, boss route, weapon tier list, price formula, or save-transfer rule. Those are good search intents, but they need a versioned hands-on entry on the 1.0 build rather than a guess based on the store description.'] },
     ],
     sources: [SOURCES.steamLaunchNews, SOURCES.steam],
   },
@@ -341,13 +390,13 @@ export const PAGE_DATA: Record<string, PageData> = {
     description: 'Moonlighter 2 Steam features explained: controller support, Steam Cloud, Family Sharing, Windows availability, and the current single-player status.',
     kicker: 'Steam features',
     status: 'Verified',
-    intro: 'If you are checking whether Moonlighter 2 supports a controller, Steam Cloud, or multiplayer before the September 2, 2026 1.0 launch, this page separates the store categories from features that have not been announced.',
+    intro: 'If you are checking whether Moonlighter 2 supports a controller, Steam Cloud, or multiplayer on the version 1.0 build, this page separates the store categories from features that have never been announced.',
     sections: [
-      { heading: 'What Steam currently confirms', paragraphs: ['The official Steam listing identifies Moonlighter 2: The Endless Vault as a Windows Early Access game. Its listed features include Single-player, Full controller support, Gamepad recommended, Steam Cloud, and Family Sharing.'], bullets: ['Platform listed: Windows PC.', 'Player mode listed: Single-player.', 'Input: Full controller support and Gamepad recommended.', 'Account features: Steam Cloud and Family Sharing.'] },
-      { heading: 'Does Moonlighter 2 have co-op?', paragraphs: ['Not according to the current Steam categories. Steam does not list Multi-player, Online Co-op, or PvP for the current build. The shop-and-dungeon loop should therefore be planned as a solo experience unless Digital Sun or 11 bit studios publishes a first-party change.'] },
-      { heading: 'What Steam Cloud tells you — and what it does not', paragraphs: ['Steam Cloud means the listing supports cloud synchronization, but the store page does not publish a save-slot count, conflict-resolution rule, or guarantee that every future Early Access transition preserves every field. Keep an offline backup before a major update and treat the live 1.0 announcement as the authority for transition details.'], note: { label: 'Not confirmed', text: 'Cloud availability does not prove cross-platform saves, co-op saves, or a specific Early Access-to-1.0 migration rule.' } },
-      { heading: 'Controller preparation before 1.0', paragraphs: ['The Gamepad recommended label is useful for players deciding how to play, but it is not a button map. Exact bindings, remapping options, vibration behavior, and accessibility settings are not fully described by the store categories. Those details should be checked in the build rather than guessed from the action-RPG genre.'] },
-      { heading: 'The 1.0 date is separate from the Early Access date', paragraphs: ['Moonlighter 2 entered Steam Early Access on November 19, 2025. Digital Sun and 11 bit studios announced September 2, 2026 for version 1.0. The feature categories above describe the current Steam listing and should be rechecked on the 1.0 launch day.'] },
+      { heading: 'What Steam currently confirms', paragraphs: ['The official Steam listing identifies Moonlighter 2: The Endless Vault as a released Windows game, out of Early Access since September 2, 2026. Its listed features include Single-player, Full controller support, Gamepad recommended, Steam Cloud, and Family Sharing.'], bullets: ['Platform listed: Windows PC.', 'Player mode listed: Single-player.', 'Input: Full controller support and Gamepad recommended.', 'Account features: Steam Cloud and Family Sharing.'] },
+      { heading: 'Does Moonlighter 2 have co-op?', paragraphs: ['Not according to the current Steam categories. Steam does not list Multi-player, Online Co-op, or PvP for the released build. The shop-and-dungeon loop should therefore be planned as a solo experience unless Digital Sun or 11 bit studios publishes a first-party change.'] },
+      { heading: 'What Steam Cloud tells you — and what it does not', paragraphs: ['Steam Cloud means the listing supports cloud synchronization, but the store page does not publish a save-slot count, conflict-resolution rule, or guarantee that any given update preserves every field. Keep an offline backup before a major update and treat first-party version notes as the authority on transition details.'], note: { label: 'Not confirmed', text: 'Cloud availability does not prove cross-platform saves, co-op saves, or any specific save-migration rule.' } },
+      { heading: 'Controller details the store page does not cover', paragraphs: ['The Gamepad recommended label is useful for players deciding how to play, but it is not a button map. Exact bindings, remapping options, vibration behavior, and accessibility settings are not described by the store categories. Those details should be checked in the build rather than guessed from the action-RPG genre.'] },
+      { heading: 'The 1.0 date is separate from the Early Access date', paragraphs: ['Moonlighter 2 entered Steam Early Access on November 19, 2025 and released version 1.0 on September 2, 2026. The feature categories above describe the current Steam listing and should be rechecked whenever a major update ships, since store categories are edited rather than versioned.'] },
     ],
     sources: [SOURCES.steam, SOURCES.steamLaunchNews],
   },
@@ -357,33 +406,33 @@ export const PAGE_DATA: Record<string, PageData> = {
     description: 'Is Moonlighter 2 multiplayer? Steam currently lists Moonlighter 2 as single-player with controller support and no official co-op mode.',
     kicker: 'Multiplayer status',
     status: 'Verified',
-    intro: 'Moonlighter 2: The Endless Vault is currently listed as a single-player Early Access game on Steam. The store page does not list co-op, online multiplayer, or PvP, so this guide treats the current experience as solo while leaving room for a future first-party update.',
+    intro: 'Moonlighter 2: The Endless Vault is listed as a single-player game on Steam, and version 1.0 did not change that. The store page does not list co-op, online multiplayer, or PvP, so this guide treats the game as solo while leaving room for a future first-party update.',
     sections: [
-      { heading: 'Short answer: no co-op is confirmed', paragraphs: ['Steam lists Single-player for Moonlighter 2 and does not list Multi-player, Online Co-op, or PvP categories in the current store data checked on August 12, 2026. The game’s merchant-and-dungeon loop is therefore documented as a solo loop: one player explores, returns with relics, runs the shop, and invests in Tresna.'] },
+      { heading: 'Short answer: no co-op is confirmed', paragraphs: ['Steam lists Single-player for Moonlighter 2 and does not list Multi-player, Online Co-op, or PvP categories in the store data checked on September 3, 2026, the day after version 1.0 released. The game’s merchant-and-dungeon loop is therefore documented as a solo loop: one player explores, returns with relics, runs the shop, and invests in Tresna.'] },
       { heading: 'What you can do in the current build', paragraphs: ['The official description connects dungeon exploration, relic collection, shop pricing, customer reactions, village investment, and equipment upgrades. Those systems are designed around the player’s double life as adventurer and merchant, not a published shared-farm or party system.'], bullets: ['Explore dungeons and collect relics alone.', 'Set shop prices and read customers yourself.', 'Invest in the village and unlock equipment categories.', 'Use full controller support and Steam Cloud as listed platform features.'] },
-      { heading: 'Could multiplayer be added later?', paragraphs: ['No official roadmap item in the tracked Steam news hub promises co-op or multiplayer. Moonlighter 2 is already in Early Access, so its feature set can change, but a future feature should be treated as confirmed only when Digital Sun, 11 bit studios, or the Steam listing says so.'] },
-      { heading: 'What is still unknown', paragraphs: ['The current Steam page does not answer whether a future update could add co-op, whether a 1.0 release will change the player count, or whether any shared progression is planned. This page will update those fields only from a first-party announcement.'], note: { label: 'Current answer', text: 'Moonlighter 2 is listed as single-player. No official co-op or multiplayer mode is confirmed as of August 12, 2026.' } },
+      { heading: 'Could multiplayer be added later?', paragraphs: ['Nothing in the tracked Steam news hub promises co-op or multiplayer, and the version 1.0 launch announcement does not mention either. The game is out of Early Access now, which makes a new player-count feature less likely than it was during development, but not impossible. Treat it as confirmed only when Digital Sun, 11 bit studios, or the Steam listing says so.'] },
+      { heading: 'What is still unknown', paragraphs: ['The Steam page does not answer whether a future update could add co-op or whether any shared progression is planned. This page will update those fields only from a first-party announcement.'], note: { label: 'Current answer', text: 'Moonlighter 2 is listed as single-player. No official co-op or multiplayer mode is confirmed as of September 3, 2026, one day after the version 1.0 launch.' } },
     ],
   },
   'save-transfer-progress-guide': {
     slug: 'save-transfer-progress-guide',
     title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide',
-    description: 'Moonlighter 2: The Endless Vault save transfer guide for Early Access progress, Steam Cloud, and the unconfirmed 1.0 wipe or migration rule.',
+    description: 'Moonlighter 2: The Endless Vault save transfer guide: what happened at the 1.0 transition, what Steam Cloud covers, and why no official wipe or migration rule was ever published.',
     kicker: 'Save transfer and progress',
     status: 'Launch-day update',
-    intro: 'Moonlighter 2: The Endless Vault entered Early Access on November 19, 2025, and the official 1.0 date is September 2, 2026. Steam lists Steam Cloud, but current official information does not confirm whether a complete Early Access save will transfer to 1.0 or whether a wipe will be required.',
+    intro: 'Moonlighter 2: The Endless Vault ran in Early Access from November 19, 2025 and released version 1.0 on September 2, 2026. Steam lists Steam Cloud, but the launch-day announcement does not mention saves at any point, so there is still no first-party statement about whether an Early Access file carries into 1.0.',
     sections: [
-      { heading: 'Short answer: the 1.0 save rule is not confirmed', paragraphs: ['Moonlighter 2: The Endless Vault has an Early Access start date of November 19, 2025 and an official version 1.0 date of September 2, 2026. The current official announcement does not confirm a complete save-transfer policy for that transition.'], note: { label: 'Current answer', text: 'Do not assume that Early Access progress will definitely be preserved, and do not assume that it will definitely be wiped. The formal rule is still unconfirmed.' } },
-      { heading: 'What Steam Cloud confirms', paragraphs: ['The Steam store listing includes Steam Cloud. That confirms the feature is listed for the current Steam offering, but it does not publish a save-slot count, a conflict-resolution rule, or a guarantee that every future Early Access transition preserves every field.'], bullets: ['Steam Cloud is listed.', 'Cross-platform save support is not confirmed by that label.', 'An Early Access-to-1.0 migration rule is not confirmed by that label.', 'The listing does not define how save conflicts or progress variants would be handled.'] },
-      { heading: 'What the 1.0 date does not answer', paragraphs: ['September 2, 2026 is the announced 1.0 date, not a save-management instruction. The date alone does not say whether an existing save will be carried forward, reset, or require a developer-provided migration process. Wait for a formal developer announcement or version note before treating any of those outcomes as fact.'] },
-      { heading: 'Low-risk preparation before the 1.0 transition', paragraphs: ['The safest preparation is reversible and does not depend on an invented file path or migration command. Keep an offline backup of important save data before a major update, and keep that backup separate from any copy created after the update.'], bullets: ['Record the current game version and the progress you want to check after the update.', 'Keep an offline backup before the September 2, 2026 transition.', 'Do not overwrite the pre-update backup until the official rule and the post-update result are clear.', 'Treat Steam Cloud as a listed feature, not as proof of cross-version preservation.', 'Save any official 1.0 announcement or version note that explains the transition.'] },
-      { heading: 'How to read the Steam Cloud status safely', paragraphs: ['For this question, the useful confirmed fact is simply that Steam Cloud appears in the Steam feature listing. Use that listing to confirm the feature remains advertised, but do not turn it into a claim about cross-platform saves, a guaranteed restore, or an Early Access wipe decision. Those are separate questions that need explicit wording from the developer or the 1.0 release notes.'] },
-      { heading: 'What to watch for next', paragraphs: ['A reliable update should come from Digital Sun or 11 bit studios in a developer announcement, patch note, or version 1.0 release note. Look for direct wording about save migration, wipe behavior, compatibility with existing progress, and any required player action. Until those terms are published, this page should remain a preparation guide rather than a promise.'] },
+      { heading: 'Short answer: no official save rule was ever published', paragraphs: ['The version 1.0 transition has already happened. Digital Sun and 11 bit studios published a long launch-day announcement describing the story conclusion, the postgame, new weapons, a new perk path, a new shop level and a Hardcore mode — and not one line about save files, migration, or a wipe.', 'That silence is the whole answer to this question. There is no official rule to quote, in either direction.'], note: { label: 'Current answer', text: 'No first-party source says Early Access progress is preserved, and none says it is wiped. If your own file loaded normally after updating, that is a personal observation about your save, not a published policy.' } },
+      { heading: 'What Steam Cloud confirms', paragraphs: ['The Steam listing includes Steam Cloud. That confirms the feature is offered, but it does not publish a save-slot count, a conflict-resolution rule, or a guarantee that any particular update preserves every field.'], bullets: ['Steam Cloud is listed.', 'Cross-platform save support is not confirmed by that label.', 'A migration rule between versions is not confirmed by that label.', 'The listing does not define how save conflicts or progress variants are handled.'] },
+      { heading: 'Why this still matters after 1.0', paragraphs: ['Two groups of players still need this page. The first is anyone who has not launched the game since before September 2, 2026 and wants to know what happens to an old file on first load. The second is anyone playing now, because 1.0 is a starting point for patches rather than the end of updates, and the same absence of a published policy applies to those.', 'A third case is specific to the launch build: Hardcore Mode carries its own progress penalty by design. That is a game rule, not a save-transfer rule, and the two should not be confused when reading community reports.'] },
+      { heading: 'Low-risk preparation for any update', paragraphs: ['The safest preparation is reversible and does not depend on an invented file path or migration command. Keep an offline backup of important save data before a major update, and keep that backup separate from any copy created afterwards.'], bullets: ['Record the current game version and the progress you want to check after the update.', 'Copy your save data somewhere outside the game folder before applying a large patch.', 'Do not overwrite the pre-update backup until you have confirmed the post-update result yourself.', 'Treat Steam Cloud as a listed feature, not as proof of cross-version preservation.', 'Keep any official version note that does discuss saves, since that would be the first real rule published.'] },
+      { heading: 'How to read the Steam Cloud status safely', paragraphs: ['For this question, the useful confirmed fact is simply that Steam Cloud appears in the Steam feature listing. Use that to confirm the feature remains advertised, but do not turn it into a claim about cross-platform saves, a guaranteed restore, or a wipe decision. Those are separate questions that need explicit wording from the developer or a version note.'] },
+      { heading: 'What to watch for next', paragraphs: ['A real update on this would come from Digital Sun or 11 bit studios in a developer announcement, patch note, or version note. Look for direct wording about save migration, wipe behavior, compatibility with existing progress, and any required player action. Until those terms are published, this page stays a preparation guide rather than a promise.'] },
     ],
     relatedPages: [
       { href: '/steam-features-guide/', title: 'Moonlighter 2 Steam Features Guide', description: 'Current Steam Cloud, controller, and single-player listing details.' },
-      { href: '/version-1-release-date/', title: 'Moonlighter 2 Version 1.0 Release Date', description: 'The confirmed September 2, 2026 launch date and announced 1.0 scope.' },
-      { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'Early Access history and the current 1.0 date.' },
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Everything the launch-day announcement does describe, including the postgame reset rule.' },
+      { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'The Early Access date, the 1.0 date, and what Steam shows now.' },
     ],
     sources: [],
   },
@@ -541,5 +590,154 @@ export const PAGE_DATA: Record<string, PageData> = {
       { href: '/walkthrough/', title: 'Walkthrough', description: 'The release-aware route framework for working through the game in order.' },
     ],
     sources: [],
+  },
+  'version-1-0-update': {
+    slug: 'version-1-0-update',
+    title: 'Moonlighter 2 Version 1.0 Update: Everything in the Launch Build',
+    description:
+      'Moonlighter 2 version 1.0: the Infinite Endless Vault threshold rule, Hardcore Mode, the four Endless Weapon Aspects, the Bomb Path, Shop Level 5, and physical editions.',
+    kicker: 'Version 1.0 · launch build contents',
+    status: 'Launch-day update',
+    intro:
+      'Moonlighter 2: The Endless Vault left Early Access on September 2, 2026. The launch-day announcement from Digital Sun and 11 bit studios is the only first-party description of what actually shipped, and it is unusually specific in some places while giving no numbers at all in others. This page keeps those apart: the rules 1.0 publishes — the Infinite Endless Vault reset condition, what each Endless Weapon Aspect special does, what Hardcore Mode costs you — and the values it never provides.',
+    sections: [
+      {
+        heading: 'What actually changed on September 2',
+        paragraphs: [
+          'The announcement opens with the line that matters for the store page: Moonlighter 2: The Endless Vault is “officially out of Early Access on PC, and console versions are available now”. The Steam listing has followed. The release field reads Sep 2, 2026, the Early Access tag is gone, and the genres are now Action, Adventure and RPG.',
+          'Note what that sentence does not do: it asserts that console versions exist without naming a single console. Steam still lists Windows as the only platform, so if you came looking for confirmation of a specific console release, the launch post is not it.',
+        ],
+        bullets: [
+          'Early Access ran from November 19, 2025 to September 2, 2026 — roughly nine and a half months.',
+          'The main story now has an ending. Version 1.0 adds quests, cutscenes and discoveries that bring Will’s journey in Tresna to its conclusion, and changes the world around you along the way.',
+          'A postgame exists past that ending, and it is the headline addition rather than a bonus mode.',
+          'Platform listed on Steam: Windows. Console versions are asserted by the developer but not named.',
+        ],
+        note: {
+          label: 'Store snapshot, September 3, 2026',
+          text: 'Steam listed the base price at $29.99 with a 30% launch discount active at $20.99 when this page was checked. A launch discount is time-limited by definition, so treat $29.99 as the durable figure and the store page as the authority on what is running today.',
+        },
+      },
+      {
+        heading: 'The Infinite Endless Vault has one hard rule',
+        paragraphs: [
+          'The postgame unlocks after you complete the main story, and it is built as “an endless series of increasingly difficult thresholds”. One sentence defines how it works: “Each one must be completed in a single run, meaning that failing to reach the required amount of gold will reset your progress for that threshold.”',
+          'That is worth reading twice, because it inverts a habit the rest of the game teaches. A threshold is a gold target, not a boss room, and it is scored per run. Partial progress does not bank. Come up short — by dying, or by leaving early — and that threshold starts from zero. The usual Moonlighter approach of chipping away at a dungeon across several trips does not transfer here.',
+          'Rewards scale with how far you push, and the announcement names four categories that unlock along the way: equipment, shop upgrades, decorations and cosmetics. It does not say where the ladder ends. The post poses the question “Can you discover how far the Endless Vault truly goes?” rather than answering it.',
+        ],
+        bullets: [
+          'Unlock condition: complete the main story.',
+          'Structure: an endless series of thresholds, each harder than the last.',
+          'Fail state: not reaching the required gold in one run resets your progress for that threshold.',
+          'Scope: one run per threshold, with no partial progress carried between runs.',
+          'Rewards: equipment, shop upgrades, decorations and cosmetics.',
+        ],
+        note: {
+          label: 'No numbers are published',
+          text: 'The announcement gives no gold value for any threshold, no threshold count and no scaling rule. Any specific gold requirement you see quoted is a player measurement, not an official figure.',
+        },
+      },
+      {
+        heading: 'The four Endless Weapon Aspects, by what their special actually does',
+        paragraphs: [
+          'These are aspects rather than new weapon types: each one re-specifies the special attack on a weapon class you already use. The descriptions are concrete about mechanics and silent about damage, which means you can plan a build from them but not compute one.',
+          'Three of the four are explicitly risk-forward, framed around the Endless Vault’s own philosophy of risk and reward. The Great Sword is the outlier, and the only one whose special opens defensively.',
+        ],
+        bullets: [
+          'Endless Short Sword — the special becomes a swift piercing strike that lands multiple hits, and the number of strikes increases with your combo. It pays for keeping momentum instead of resetting between engagements.',
+          'Endless Great Sword — crafted by the Golden Guild. The special puts you into a defensive stance that blocks incoming attacks, increases Sharpness, then follows up with a counterattack.',
+          'Endless Spear — the special consumes all stored spearheads and turns your basic attacks into empowered special attacks for a limited time, with bonus damage scaling on the number of spearheads consumed.',
+          'Endless Gauntlets — while Berserk is active, your attacks become significantly more powerful. This one amplifies a playstyle rather than adding a new input.',
+        ],
+      },
+      {
+        heading: 'The Bomb Path is a perk path, not a gadget',
+        paragraphs: [
+          'The Bomb Path joins the existing perk paths. It lets you mark enemies with explosive effects that trigger after they have taken a certain number of attacks; when the bomb goes off, it damages nearby enemies.',
+          'The trigger is a hit count rather than a timer, which is why the announcement frames the path as a new way to build your deck instead of a new item to use. Two things it does not publish: how many attacks the trigger needs, and how far the explosion reaches.',
+        ],
+      },
+      {
+        heading: 'Shop Level 5 adds exactly two slots',
+        paragraphs: [
+          'The shop ceiling moved up one level. Shop Level 5 gives more room to customise the shop, and the announcement names precisely two additions: an additional Bloblet slot, and a new cosmetic placement slot for one more decoration.',
+          'No unlock cost or requirement is published for Shop Level 5, and the post does not say what the total Bloblet count becomes at that level.',
+        ],
+      },
+      {
+        heading: 'Hardcore Mode, and a wording change worth knowing about',
+        paragraphs: [
+          'The launch post describes Hardcore Mode in one line: “Death comes with a much greater cost, as dying means losing your progress and starting the journey again from the very beginning.”',
+          'The August 5 announcement described the same feature differently. It called the mode Hardcore Difficulty and said it makes “you lose all your relics upon defeat in the ML1 style”. Losing your relics and restarting the whole journey are not the same penalty, and neither post reconciles the two.',
+          'This page does not pick a winner. If you are deciding whether to start a Hardcore file, the safe reading is the harsher one: assume a defeat can cost the run from the beginning until the in-game description tells you otherwise.',
+        ],
+        note: {
+          label: 'Unresolved between two official posts',
+          text: 'August 5, 2026: lose all relics upon defeat. September 2, 2026: lose your progress and start again from the very beginning. Both are first-party. The second describes the build that actually shipped, which is why it is quoted first here.',
+        },
+      },
+      {
+        heading: 'Three August items the launch post never mentions again',
+        paragraphs: [
+          'The pre-launch announcement on August 5 listed content that the launch-day post does not bring up. Absence from one post is not removal, but it does mean these items have no launch-day confirmation, so they belong in their own list rather than mixed in above.',
+        ],
+        bullets: [
+          'A craftable Machine Gun gadget.',
+          'The Endless Armour set — described in August as forged by the Golden Guild, with increased base critical hit chance and additional critical damage for every Spark perk equipped.',
+          'Endless Vault VII, described in August as introducing “a brand-new threshold to conquer”. The launch post discusses the Infinite Endless Vault instead and never uses the number VII, so whether these are one feature under two names is not something either announcement settles.',
+          'Two named vendors: K33P3R Level 5, and Spark, called an endgame merchant. The launch post confirms “new vendors” without naming any of them.',
+        ],
+      },
+      {
+        heading: 'Everything else 1.0 lists without describing',
+        paragraphs: [
+          'The closing section of the announcement is a list rather than a description. It is still worth recording, because it marks where 1.0 content exists even though none of it arrives with specifics.',
+        ],
+        bullets: [
+          'New vendors.',
+          'New Endless Vault cosmetics.',
+          'New Codex pages covering enemies, characters, perks and furniture.',
+          'Additional quests and cutscenes.',
+          'Unspecified improvements.',
+        ],
+      },
+      {
+        heading: 'Physical editions arrive November 13, 2026',
+        paragraphs: [
+          'Digital Sun and 11 bit studios are partnering with Silver Lining Interactive on physical editions releasing on 13 November 2026, more than two months after the digital launch. Two versions are announced: a standard boxed copy, and a Collector’s Edition.',
+          'The Collector’s Edition contents are itemised: art cards, patches, a poster, stickers, a metal coin, and a digital artbook. No price, no platform list and no retailer is given for either edition.',
+        ],
+      },
+      {
+        heading: 'What 1.0 still does not answer',
+        paragraphs: [
+          'The announcement is a feature list, not a patch note. There is no version string, no build size, and no changelog of balance changes carried over from the last Early Access build. Every new system arrives without numbers attached.',
+        ],
+        bullets: [
+          'No gold thresholds, threshold count or scaling rule for the Infinite Endless Vault.',
+          'No damage, Sharpness or critical values for any Endless Weapon Aspect.',
+          'No hit-count trigger or blast radius for the Bomb Path.',
+          'No Shop Level 5 unlock cost, and no final Bloblet total.',
+          'No save-transfer or wipe rule for Early Access files — the launch post does not mention saves at all.',
+          'No console platform names, despite the post confirming console versions are out.',
+        ],
+      },
+    ],
+    table: {
+      heading: 'Endless Weapon Aspects at a glance',
+      headers: ['Aspect', 'What the special does', 'Scales with'],
+      rows: [
+        ['Endless Short Sword', 'A swift piercing strike that lands multiple hits', 'Your combo — a longer combo means more strikes'],
+        ['Endless Great Sword', 'A blocking stance that raises Sharpness, then counterattacks', 'Nothing published; a Golden Guild craft'],
+        ['Endless Spear', 'Consumes all stored spearheads, turning basic attacks into empowered specials for a limited time', 'The number of spearheads consumed'],
+        ['Endless Gauntlets', 'Attacks become significantly more powerful', 'Berserk being active'],
+      ],
+    },
+    relatedPages: [
+      { href: '/version-1-release-date/', title: 'Version 1.0 Release Date', description: 'The announcement history behind the September 2, 2026 launch date.' },
+      { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'The four bosses Steam names, ordered by how many owners have beaten each one.' },
+      { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The confirmed weapon, armor, gadget and village upgrade categories.' },
+    ],
+    sources: [SOURCES.steamVersionOneNews, SOURCES.steamLaunchNews, SOURCES.steam],
   },
 };

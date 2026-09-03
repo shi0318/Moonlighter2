@@ -9,6 +9,7 @@ const sourceUrls = [
 const requiredPages = [
   '/', '/guides/', '/beginner-guide/', '/items/', '/prices/', '/shop-guide/',
   '/dungeon-guide/', '/walkthrough/', '/weapons/', '/faq/', '/release-date/',
+  '/version-1-0-update/',
   '/moonlighter-2-switch-2/', '/save-transfer-progress-guide/', '/about/', '/contact/', '/privacy-policy/',
 ];
 const requiredImages = [
@@ -45,7 +46,8 @@ if (existsSync(distIndex)) {
   assert(body.split(/\s+/).filter(Boolean).length >= 650, 'Homepage content is too thin.');
   assert(html.includes('Moonlighter 2 Steam store page'), 'Visible source panel is missing.');
   assert(!html.includes('Grave Seasons'), 'Copied Grave Seasons content remains in homepage output.');
-  assert(!html.includes('2026-09-02'), 'Unverified 1.0 date is presented in homepage output.');
+  assert(!html.includes('>Early Access</dd>'), 'Homepage still presents Early Access as the current Steam state.');
+  assert(html.includes('Left Early Access Sep 2, 2026'), 'Homepage no longer records the version 1.0 release state.');
 
   const homeCardImages = {
     '/save-transfer-progress-guide/': '/images/moonlighter-2-shot-5.jpg',
@@ -66,6 +68,7 @@ if (existsSync(distIndex)) {
 const articleImages = {
   '/moonlighter-2-switch-2/': 'moonlighter-2-header.jpg',
   '/save-transfer-progress-guide/': 'moonlighter-2-shot-5.jpg',
+  '/version-1-0-update/': 'moonlighter-2-shot-4.jpg',
   '/items/': 'moonlighter-2-shot-3.jpg',
   '/prices/': 'moonlighter-2-shot-4.jpg',
   '/shop-guide/': 'moonlighter-2-shot-5.jpg',
@@ -94,6 +97,7 @@ const guidesPath = join(root, 'dist', 'guides', 'index.html');
 if (existsSync(guidesPath)) {
   const guidesText = readFileSync(guidesPath, 'utf8');
   assert(guidesText.includes('href="/save-transfer-progress-guide/"'), 'Guide directory must list the save-transfer page.');
+  assert(guidesText.includes('href="/version-1-0-update/"'), 'Guide directory must list the version 1.0 update page.');
 }
 
 const homeHeader = existsSync(distIndex) ? readFileSync(distIndex, 'utf8').match(/<header[\s\S]*?<\/header>/i)?.[0] ?? '' : '';
@@ -102,7 +106,16 @@ assert(!homeHeader.includes('href="/save-transfer-progress-guide/"'), 'Save-tran
 const sitemapPath = join(root, 'dist', 'sitemap-0.xml');
 if (existsSync(sitemapPath)) {
   const sitemap = readFileSync(sitemapPath, 'utf8');
-  assert(sitemap.includes('<loc>https://moonlighter2guide.org/save-transfer-progress-guide/</loc><lastmod>2026-08-31T00:00:00.000Z</lastmod>'), 'Sitemap must include the save-transfer page with the 2026-08-31 lastmod.');
+  assert(sitemap.includes('<loc>https://moonlighter2guide.org/save-transfer-progress-guide/</loc><lastmod>2026-09-03T00:00:00.000Z</lastmod>'), 'Sitemap must include the save-transfer page with the 2026-09-03 lastmod.');
+  assert(sitemap.includes('<loc>https://moonlighter2guide.org/version-1-0-update/</loc><lastmod>2026-09-03T00:00:00.000Z</lastmod>'), 'Sitemap must include the version 1.0 update page with the 2026-09-03 lastmod.');
+}
+
+const siteSourcePath = join(root, 'src', 'data', 'site.ts');
+if (existsSync(siteSourcePath)) {
+  const siteSource = readFileSync(siteSourcePath, 'utf8');
+  assert(siteSource.includes("releaseWindow: 'Version 1.0 released September 2, 2026'"), 'SITE.releaseWindow no longer records the shipped 1.0 state.');
+  assert(siteSource.includes("steamReleaseText: 'Sep 2, 2026'"), 'SITE.steamReleaseText no longer matches the Steam release field.');
+  assert(!siteSource.includes("'Current store state: Early Access'"), 'A page still presents Early Access as the current store state.');
 }
 
 const sourceFiles = ['src/data/site.ts', 'src/data/sources.ts', 'src/pages/index.astro', 'src/components/Footer.astro'].map((file) => join(root, file));
@@ -112,7 +125,6 @@ for (const sourceUrl of sourceUrls) {
 for (const file of sourceFiles) {
   if (!existsSync(file)) continue;
   const text = readFileSync(file, 'utf8');
-  assert(!text.includes('2026-09-02'), 'Unverified Moonlighter 2 1.0 date found in ' + file);
   assert(!text.includes('Grave Seasons'), 'Old Grave Seasons claim found in ' + file);
 }
 

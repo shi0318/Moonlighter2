@@ -78,6 +78,7 @@ export const PAGE_ASSETS: Record<string, AssetKey> = {
   'co-op-status': 'shot5',
   'save-transfer-progress-guide': 'shot5',
   'version-1-release-date': 'shot5',
+  'version-1-0-update': 'shot4',
   faq: 'shot5',
   about: 'header',
   contact: 'shot2',
