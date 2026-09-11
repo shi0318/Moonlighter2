@@ -1,5 +1,7 @@
 // Add a path only after that page has had a material, verifiable update.
 const PAGE_LASTMOD = {
+  '/': '2026-09-07',
+  '/beginner-guide/': '2026-09-07',
   '/version-1-0-update/': '2026-09-03',
   '/release-date/': '2026-09-03',
   '/version-1-release-date/': '2026-09-03',
@@ -13,6 +15,16 @@ const PAGE_LASTMOD = {
   '/dungeon-guide/': '2026-09-03',
   '/walkthrough/': '2026-09-03',
   '/bosses/': '2026-09-02',
+  '/moonlighter-2-best-weapon/': '2026-09-10',
+  '/moonlighter-2-infinite-endless-vault-guide/': '2026-09-10',
+  '/moonlighter-2-hardcore-mode/': '2026-09-10',
+  '/moonlighter-2-shop-level-5/': '2026-09-10',
+  '/moonlighter-2-endless-weapon-aspects/': '2026-09-10',
+  '/moonlighter-2-bomb-path/': '2026-09-10',
+  '/moonlighter-2-relic-loot-guide/': '2026-09-10',
+  '/moonlighter-2-dungeon-extraction-guide/': '2026-09-10',
+  '/moonlighter-2-boss-completion-guide/': '2026-09-10',
+  '/moonlighter-2-postgame-guide/': '2026-09-10',
 };
 
 export function pageLastmod(pathname) {

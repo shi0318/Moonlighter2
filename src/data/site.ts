@@ -19,6 +19,7 @@ export interface PageData {
   table?: { heading: string; headers: string[]; rows: string[][] };
   relatedPages?: { href: string; title: string; description: string }[];
   sources?: readonly SourceRef[];
+  showImageCredit?: boolean;
 }
 
 export const SITE = {
@@ -48,10 +49,12 @@ export const SITE = {
 
 export const NAV = [
   { label: 'Guides', href: '/guides/' },
+  { label: 'Beginner', href: '/beginner-guide/' },
   { label: 'Items', href: '/items/' },
   { label: 'Prices', href: '/prices/' },
   { label: 'Shop', href: '/shop-guide/' },
   { label: 'Dungeons', href: '/dungeon-guide/' },
+  { label: 'Bosses', href: '/bosses/' },
   { label: 'Weapons', href: '/weapons/' },
   { label: 'Release', href: '/release-date/' },
 ] as const;
@@ -120,6 +123,16 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-best-weapon/', title: 'Moonlighter 2 Best Weapon', description: 'A version 1.0 weapon comparison built from the four named Endless Weapon Aspects and the limits of the published data.', priority: 'New', image: 'shot4' },
+  { href: '/moonlighter-2-infinite-endless-vault-guide/', title: 'Infinite Endless Vault Guide', description: 'How the postgame thresholds work, what resets on a failed run, and which reward categories are confirmed.', priority: 'New', image: 'hero' },
+  { href: '/moonlighter-2-hardcore-mode/', title: 'Hardcore Mode Guide', description: 'The version 1.0 Hardcore wording, the unresolved penalty descriptions, and a safe first-run decision.', priority: 'New', image: 'shot2' },
+  { href: '/moonlighter-2-shop-level-5/', title: 'Shop Level 5 Guide', description: 'The two additions named for Shop Level 5: an extra Bloblet slot and a cosmetic placement slot.', priority: 'New', image: 'shot5' },
+  { href: '/moonlighter-2-endless-weapon-aspects/', title: 'Endless Weapon Aspects', description: 'The four named version 1.0 aspects and what each special attack is confirmed to do.', priority: 'New', image: 'shot4' },
+  { href: '/moonlighter-2-bomb-path/', title: 'Bomb Path Guide', description: 'How the Bomb Path perk path is described, with its hit-count trigger and unpublished values kept separate.', priority: 'New', image: 'shot3' },
+  { href: '/moonlighter-2-relic-loot-guide/', title: 'Relic and Loot Guide', description: 'A practical post-launch way to log relics, backpack risk, shop value and versioned observations.', priority: 'P1', image: 'shot3' },
+  { href: '/moonlighter-2-dungeon-extraction-guide/', title: 'Dungeon Extraction Guide', description: 'When to turn a Moonlighter 2 run around, how to preserve a valuable haul, and what the official loop confirms.', priority: 'P1', image: 'hero' },
+  { href: '/moonlighter-2-boss-completion-guide/', title: 'Boss Completion Guide', description: 'How to track the named boss completion goals without inventing a full boss route or damage table.', priority: 'P1', image: 'shot2' },
+  { href: '/moonlighter-2-postgame-guide/', title: 'Version 1.0 Postgame Guide', description: 'A post-launch checklist for the main story conclusion, Infinite Endless Vault, Shop Level 5 and new systems.', priority: 'New', image: 'shot5' },
   { href: '/version-1-0-update/', title: 'Version 1.0 Update: Everything in the Launch Build', description: 'The Infinite Endless Vault reset rule, Hardcore Mode, the four Endless Weapon Aspects, the Bomb Path, Shop Level 5, and the November 13 physical editions.', priority: 'New', image: 'shot4' },
   { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'Every boss Steam names, ordered by how many owners have actually beaten them, plus the Ultimate Challenge and Endless Vault completion rates.', priority: 'New', image: 'hero' },
   { href: '/save-transfer-progress-guide/', title: 'Moonlighter 2: The Endless Vault Save Transfer and Progress Guide', description: 'What happened at the 1.0 transition, what Steam Cloud actually covers, and why no official wipe or migration rule was ever published.', priority: 'New', image: 'shot5' },
@@ -222,7 +235,7 @@ export const PAGE_DATA: Record<string, PageData> = {
     description: 'A fact-first Moonlighter 2 beginner guide covering dungeon runs, relics, shop prices, and village reinvestment.',
     kicker: 'First session',
     status: 'Verified',
-    intro: 'Moonlighter 2 asks you to manage two connected roles: adventurer and merchant. The reliable pre-launch plan is to understand the loop and reserve all exact builds, item values, and route claims for hands-on testing.',
+    intro: 'Moonlighter 2 asks you to manage two connected roles: adventurer and merchant. The released-build starting plan is to understand the loop first, then keep exact builds, item values, and route claims tied to a versioned in-game check.',
     sections: [
       { heading: 'Start with the two-role loop', paragraphs: ['Steam presents the game as an action RPG with roguelike elements. You leave the village to explore dangerous dungeons, gather relics, return with a backpack of loot, and sell that loot in your shop.'], bullets: ['Treat a dungeon run as a risk-and-reward trip, not only a combat stage.', 'Keep the shop step connected to the run: loot has no value to your progress until it is sold or used for an upgrade.', 'Reinvest in the village because the Steam description links a growing village with better weapons, armor, upgrades, and new people.'] },
       { heading: 'What to record on the first real run', paragraphs: ['The Steam page confirms the systems, but it does not publish a complete item database. On the first playable run, record the item name, where it came from, the displayed sale price, customer reaction, and whether the result changed after an upgrade or event.'], note: { label: 'Not yet verified', text: 'No exact optimal price, best weapon, dungeon route, or boss strategy is published here before a reproducible in-game test.' } },
@@ -433,6 +446,196 @@ export const PAGE_DATA: Record<string, PageData> = {
       { href: '/steam-features-guide/', title: 'Moonlighter 2 Steam Features Guide', description: 'Current Steam Cloud, controller, and single-player listing details.' },
       { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Everything the launch-day announcement does describe, including the postgame reset rule.' },
       { href: '/release-date/', title: 'Moonlighter 2 Release Date', description: 'The Early Access date, the 1.0 date, and what Steam shows now.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-best-weapon': {
+    slug: 'moonlighter-2-best-weapon',
+    title: 'Moonlighter 2 Best Weapon: Version 1.0 Comparison',
+    description: 'Moonlighter 2 best weapon guide comparing the four named Endless Weapon Aspects, their special attacks, and what the published version 1.0 data does not reveal.',
+    kicker: 'Weapons · post-launch answer',
+    status: 'Verified',
+    intro: 'There is no official damage table that proves one Moonlighter 2 weapon is universally best. Version 1.0 does name four Endless Weapon Aspects and describes what each special does, which is enough to choose by playstyle without inventing a tier list.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'The four confirmed Endless Weapon Aspects', paragraphs: ['The launch build names Endless Short Sword, Endless Great Sword, Endless Spear and Endless Gauntlets. They are aspects for existing weapon classes, not a published list of four new base weapon categories.'], bullets: ['Short Sword: a multi-hit piercing special whose strike count rises with your combo.', 'Great Sword: a defensive stance that blocks attacks, raises Sharpness, then counterattacks.', 'Spear: consumes stored spearheads and empowers basic attacks for a limited time.', 'Gauntlets: attacks become significantly more powerful while Berserk is active.'] },
+      { heading: 'Which one should you choose?', paragraphs: ['Choose Short Sword if you can keep a combo alive, Great Sword if you prefer a defensive opening, Spear if you already manage stored spearheads, and Gauntlets if your build reliably activates Berserk. Those are role recommendations from the published effects, not damage rankings.'] },
+      { heading: 'What the public data does not give you', paragraphs: ['No official source tracked here publishes base damage, Sharpness values, exact hit counts, Berserk multipliers or a complete acquisition route. A real best-weapon test should name the version, weapon level, perk path, enemy, relics and shop state before comparing results.'] },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The wider weapon, armor, gadget and village upgrade categories.' },
+      { href: '/moonlighter-2-endless-weapon-aspects/', title: 'Endless Weapon Aspects', description: 'Each named aspect and its confirmed special attack.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-infinite-endless-vault-guide': {
+    slug: 'moonlighter-2-infinite-endless-vault-guide',
+    title: 'Moonlighter 2 Infinite Endless Vault Guide',
+    description: 'How the Moonlighter 2 Infinite Endless Vault works after the main story, including single-run gold thresholds, resets and confirmed reward categories.',
+    kicker: 'Postgame · Endless Vault',
+    status: 'Verified',
+    intro: 'The Infinite Endless Vault is the version 1.0 postgame in Moonlighter 2: The Endless Vault. It unlocks after the main story and turns the merchant loop into increasingly difficult gold thresholds that must be completed in one run.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'How the Endless Vault works', paragraphs: ['The launch announcement describes an endless series of increasingly difficult thresholds. Each threshold must be completed in a single run, and failing to reach its required amount of gold resets progress for that threshold. Partial gold progress does not bank between attempts.'] },
+      { heading: 'What the Vault rewards', paragraphs: ['The confirmed reward categories are equipment, shop upgrades, decorations and cosmetics. The announcement does not publish a threshold count, exact gold target, scaling formula or final depth, so a guide should not fill those fields with a guessed number.'], bullets: ['Unlock: complete the main story.', 'Run rule: each threshold is completed in one run.', 'Failure: falling short of the gold requirement resets that threshold.', 'Rewards: equipment, shop upgrades, decorations and cosmetics.'] },
+      { heading: 'A safe first attempt', paragraphs: ['Treat the first run as a route test. Record the vault stage, relic categories, backpack pressure, shop return decision and gold target shown by the build. Push only as far as you can extract without turning a valuable haul into an avoidable reset.'] },
+    ],
+    relatedPages: [
+      { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'The risk, relic and route loop before the postgame.' },
+      { href: '/moonlighter-2-dungeon-extraction-guide/', title: 'Dungeon Extraction Guide', description: 'How to decide when to return with a valuable backpack.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-hardcore-mode': {
+    slug: 'moonlighter-2-hardcore-mode',
+    title: 'Moonlighter 2 Hardcore Mode Guide: What Happens on Death?',
+    description: 'Moonlighter 2 Hardcore Mode explained: the launch-day wording, the earlier relic-loss wording, and the safer way to start a file.',
+    kicker: 'Difficulty · Hardcore Mode',
+    status: 'Launch-day update',
+    intro: 'Moonlighter 2 version 1.0 includes Hardcore Mode. The launch-day announcement says dying means losing progress and starting from the very beginning, while an earlier announcement described losing relics on defeat. Because the two official wordings differ, the safe assumption is the harsher one.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'The current Hardcore wording', paragraphs: ['The September 2 launch post describes death as losing progress and starting the journey again from the very beginning. That is the wording attached to the build that shipped with version 1.0.'] },
+      { heading: 'Why older guides disagree', paragraphs: ['The August 5 announcement described Hardcore Difficulty as losing all relics upon defeat in the Moonlighter style. Losing relics and restarting the whole journey are different penalties, and neither announcement explains the difference. This page keeps both statements visible instead of silently choosing one.'], note: { label: 'Practical rule', text: 'Until the in-game description or a later patch note clarifies the difference, assume a defeat can erase the run from the beginning.' } },
+      { heading: 'Who should start Hardcore first?', paragraphs: ['Use a normal file to learn the shop, dungeon, relic and extraction loop before committing a Hardcore run. If you do start immediately, keep an offline save backup only for technical recovery; do not use it to claim that the mode has a different in-game death rule.'] },
+    ],
+    relatedPages: [
+      { href: '/beginner-guide/', title: 'Beginner Guide', description: 'The safer first-session order for the released game.' },
+      { href: '/save-transfer-progress-guide/', title: 'Save Transfer Guide', description: 'Steam Cloud and the absence of an official migration rule.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-shop-level-5': {
+    slug: 'moonlighter-2-shop-level-5',
+    title: 'Moonlighter 2 Shop Level 5 Guide: New Slots Explained',
+    description: 'What Moonlighter 2 Shop Level 5 adds in version 1.0: an additional Bloblet slot and one new cosmetic placement slot.',
+    kicker: 'Shop progression · version 1.0',
+    status: 'Verified',
+    intro: 'Shop Level 5 raises the shop ceiling in Moonlighter 2 version 1.0. The launch announcement names exactly two additions: an additional Bloblet slot and a new cosmetic placement slot.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'What Shop Level 5 adds', paragraphs: ['The version 1.0 announcement says Shop Level 5 gives more room to customise the shop. Its two named additions are one additional Bloblet slot and one new cosmetic placement slot for another decoration.'], bullets: ['Additional Bloblet slot.', 'New cosmetic placement slot.', 'No published unlock cost or requirement in the announcement.'] },
+      { heading: 'Why this matters to a shop build', paragraphs: ['The two slots improve shop capacity and presentation, but no official price multiplier, customer formula or decoration bonus is attached to them. Keep “more room” separate from a claim that Level 5 automatically creates more gold.'] },
+      { heading: 'How to test the upgrade', paragraphs: ['Record the shop level before and after the upgrade, the number of active Bloblets, the available cosmetic positions and the same item’s customer reaction. Keep the item, price and shop state constant if you want to measure a change rather than a coincidence.'] },
+    ],
+    relatedPages: [
+      { href: '/shop-guide/', title: 'Shop Guide', description: 'Pricing, customers, decorations and reinvestment.' },
+      { href: '/prices/', title: 'Item Prices', description: 'Versioned sale observations instead of an invented universal price table.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-endless-weapon-aspects': {
+    slug: 'moonlighter-2-endless-weapon-aspects',
+    title: 'Moonlighter 2 Endless Weapon Aspects Guide',
+    description: 'Moonlighter 2 Endless Weapon Aspects explained: Short Sword, Great Sword, Spear and Gauntlets in the version 1.0 build.',
+    kicker: 'Weapons · version 1.0',
+    status: 'Verified',
+    intro: 'Version 1.0 adds four named Endless Weapon Aspects to Moonlighter 2: Endless Short Sword, Endless Great Sword, Endless Spear and Endless Gauntlets. The official descriptions explain their specials but do not publish their damage values.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'Endless Short Sword', paragraphs: ['Its special becomes a swift piercing strike that lands multiple hits. The number of strikes increases with your combo, so the aspect rewards maintaining momentum between encounters.'] },
+      { heading: 'Endless Great Sword', paragraphs: ['The Great Sword aspect is a Golden Guild craft. Its special enters a defensive stance that blocks attacks, increases Sharpness, and then counterattacks. It is the most explicitly defensive description among the four.'] },
+      { heading: 'Endless Spear', paragraphs: ['The Spear aspect consumes all stored spearheads. Basic attacks become empowered special attacks for a limited time, with the bonus described as scaling with the number of spearheads consumed.'] },
+      { heading: 'Endless Gauntlets', paragraphs: ['The Gauntlets aspect makes attacks significantly more powerful while Berserk is active. It amplifies a state-based build instead of adding a separate published input.'] },
+      { heading: 'Numbers still need an in-game test', paragraphs: ['The launch announcement gives no damage, Sharpness, duration, strike-count maximum or acquisition table for the four aspects. Use the description to choose a playstyle, then record a versioned test before calling one the best.'] },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-bomb-path': {
+    slug: 'moonlighter-2-bomb-path',
+    title: 'Moonlighter 2 Bomb Path Guide: How the Perk Works',
+    description: 'How the Moonlighter 2 Bomb Path perk path is described in version 1.0, including its hit-count trigger and area damage.',
+    kicker: 'Perks · version 1.0',
+    status: 'Verified',
+    intro: 'The Bomb Path is a new perk path in Moonlighter 2 version 1.0. It marks enemies with explosive effects that trigger after they take a certain number of attacks and damage nearby enemies when the bomb goes off.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'Bomb Path is a perk path', paragraphs: ['It is not described as a standalone bomb gadget. The launch announcement places it alongside existing perk paths and frames it as a new way to build your deck.'] },
+      { heading: 'The confirmed trigger loop', paragraphs: ['Mark an enemy, land the required number of attacks, and let the explosive effect trigger. The resulting blast damages nearby enemies. The exact hit count and blast radius are not published, so do not quote a fixed number without a retail-build test.'] },
+      { heading: 'How to test the path', paragraphs: ['Use one enemy group with a stable position. Count attacks from the mark to the detonation, note whether misses or environmental hits count, and record the number of nearby enemies affected. Repeat on the same build before comparing the path with another perk.'] },
+    ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update', description: 'The wider launch-build feature list and its unanswered numbers.' },
+      { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Route planning around relics, risk and backpack space.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-relic-loot-guide': {
+    slug: 'moonlighter-2-relic-loot-guide',
+    title: 'Moonlighter 2 Relic and Loot Guide: What to Record',
+    description: 'A Moonlighter 2 relic and loot guide for version 1.0 players tracking item categories, backpack risk, sale observations and unknown values.',
+    kicker: 'Items · post-launch tracking',
+    status: 'Verified',
+    intro: 'Moonlighter 2’s core loop turns dungeon loot into shop decisions. The Steam listing does not provide a complete item-price database, so the most useful post-launch guide is a versioned record of what you found, how risky the route was, and what customers did with it.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'The five fields for every relic note', paragraphs: ['Record the displayed item name, the dungeon or run context, the backpack position, the listed or observed sale price, and the customer reaction. Add the game version when a patch could have changed an item or pricing rule.'] },
+      { heading: 'Do not turn a category into a price table', paragraphs: ['The released store description confirms relic collection and player-set pricing, but not a universal value for every item. A guide that gives one “best price” without the item, shop state, customer reaction and version is not a reproducible economy guide.'] },
+      { heading: 'What to carry home', paragraphs: ['Prioritize a haul you can extract safely over a larger backpack that forces a risky final room. Keep one note for items that were lost, discarded or used for an upgrade; the missing value is part of the route decision.'] },
+    ],
+    relatedPages: [
+      { href: '/items/', title: 'Items & Relics', description: 'The tracked item categories and data boundaries.' },
+      { href: '/prices/', title: 'Item Prices', description: 'Observed sale prices with version context.' },
+      { href: '/moonlighter-2-dungeon-extraction-guide/', title: 'Dungeon Extraction Guide', description: 'When to leave with a valuable backpack.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-dungeon-extraction-guide': {
+    slug: 'moonlighter-2-dungeon-extraction-guide',
+    title: 'Moonlighter 2 Dungeon Extraction Guide: When to Turn Back',
+    description: 'When to leave a Moonlighter 2 dungeon, how to protect relics, and how to make a repeatable extraction decision after version 1.0.',
+    kicker: 'Dungeons · risk management',
+    status: 'Verified',
+    intro: 'The safest Moonlighter 2 dungeon route is not always the deepest one. Extraction is the bridge between a successful fight and a shop inventory, so the decision should weigh relic value, backpack pressure, healing, route knowledge and the cost of a death.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'Leave when the haul has a clear purpose', paragraphs: ['Turn back when the backpack contains the item or category you came for, when the next branch is unknown and expensive, or when healing and safe exits are running low. The official loop rewards returning with loot; it does not require every run to reach the deepest room.'] },
+      { heading: 'A simple extraction check', paragraphs: ['Before opening the next door, ask three questions: can I survive the next encounter, do I know the route back, and would losing this haul damage my shop plan? If two answers are no, extract and convert what you have into information, pricing and village progress.'] },
+      { heading: 'Endless Vault is different', paragraphs: ['The Infinite Endless Vault uses one-run gold thresholds after the main story. Falling short resets progress for that threshold, so extraction planning there must account for the required gold shown by the build. No universal threshold number or depth is published.'] },
+    ],
+    relatedPages: [
+      { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'The released game’s dungeon-to-shop loop.' },
+      { href: '/beginner-guide/', title: 'Beginner Guide', description: 'A safer order for learning the first sessions.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-boss-completion-guide': {
+    slug: 'moonlighter-2-boss-completion-guide',
+    title: 'Moonlighter 2 Boss Completion Guide: How to Track Progress',
+    description: 'A Moonlighter 2 boss completion guide for the released version 1.0 build, with a clean checklist and no invented boss damage table.',
+    kicker: 'Bosses · completion route',
+    status: 'Verified',
+    intro: 'Moonlighter 2’s Steam achievement data provides a useful completion signal for bosses, while the public store material does not provide a complete boss route, health table or universal weapon recommendation. Track each named encounter with the same versioned method.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'Separate boss completion from the main story', paragraphs: ['A boss defeat can be a story milestone, a Steam achievement, an Endless Vault test or a personal route objective. Log which kind it is. Completing the main story does not automatically prove that every postgame challenge or named encounter is complete.'] },
+      { heading: 'The checklist fields that matter', paragraphs: ['For each boss, record the displayed name, location or dungeon label, weapon and relic setup, whether the run was normal or Hardcore, and the date or version. Add the reward only after it is visible in the build.'] },
+      { heading: 'Avoid a fake best-build answer', paragraphs: ['The launch data confirms weapons, armor, gadgets and village upgrades as progression categories, but it does not publish a complete boss weakness or damage ranking. Test one variable at a time and describe a build as suitable for a specific encounter rather than universally best.'] },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'Moonlighter 2 Bosses', description: 'The named boss and achievement tracking hub.' },
+      { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The released game’s confirmed upgrade categories.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-postgame-guide': {
+    slug: 'moonlighter-2-postgame-guide',
+    title: 'Moonlighter 2 Postgame Guide: What to Do After Version 1.0',
+    description: 'What to do after finishing Moonlighter 2 version 1.0: Infinite Endless Vault, Hardcore Mode, Endless Weapon Aspects, Bomb Path and Shop Level 5.',
+    kicker: 'Postgame checklist · 1.0',
+    status: 'Verified',
+    intro: 'Moonlighter 2 version 1.0 released on September 2, 2026 and adds a postgame rather than ending the loop at the final story scene. The clean route is to finish the story, choose a new challenge, and keep the shop and dungeon records versioned.',
+    showImageCredit: false,
+    sections: [
+      { heading: 'Finish the main story first', paragraphs: ['The Infinite Endless Vault unlocks after the main story. Finish that route before judging the postgame, because the Vault is explicitly framed as the next stage of the merchant-and-dungeon loop.'] },
+      { heading: 'Pick one postgame goal', paragraphs: ['Choose between an Endless Vault threshold, a Hardcore file, an Endless Weapon Aspect test, the Bomb Path, Shop Level 5 or boss and achievement cleanup. Trying to measure all of them in one first postgame run makes the result hard to reproduce.'], bullets: ['Endless Vault: one-run gold thresholds with resets on a failed threshold.', 'Weapons: four named Endless Weapon Aspects.', 'Perks: the Bomb Path hit-count explosion loop.', 'Shop: Level 5 adds a Bloblet slot and a cosmetic placement slot.', 'Challenge: Hardcore Mode uses the harsher launch-day death wording.'] },
+      { heading: 'What is still not a public database', paragraphs: ['The 1.0 announcement does not publish gold thresholds, damage values, boss routes, item prices, shop costs or a save-transfer rule. Those are excellent hands-on article topics, but they should be added only after a build-specific test rather than copied as precise numbers.'] },
+    ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update', description: 'The full launch-build feature breakdown.' },
+      { href: '/moonlighter-2-infinite-endless-vault-guide/', title: 'Infinite Endless Vault', description: 'The postgame thresholds and reset rule.' },
+      { href: '/moonlighter-2-hardcore-mode/', title: 'Hardcore Mode', description: 'The two official descriptions and safe preparation.' },
     ],
     sources: [],
   },

@@ -35,7 +35,7 @@ const statusClass = page.status === 'Verified'
 
     <div class="mt-8 overflow-hidden rounded-md border border-white/10">
       <img src={pageAsset.src} alt={pageAsset.alt} width={pageAsset.width} height={pageAsset.height} class="h-56 w-full object-cover md:h-72" loading="eager" />
-      <p class="border-t border-white/10 bg-soil px-4 py-3 text-xs text-fog">{pageAsset.credit}. This image is used for identification and editorial context.</p>
+      {page.showImageCredit !== false && <p class="border-t border-white/10 bg-soil px-4 py-3 text-xs text-fog">{pageAsset.credit}. This image is used for identification and editorial context.</p>}
     </div>
 
     <div class="prose-page mt-10">
