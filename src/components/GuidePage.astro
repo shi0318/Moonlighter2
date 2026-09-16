@@ -42,7 +42,7 @@ const statusClass = page.status === 'Verified'
       {page.sections.map((section) => (
         <section class="border-t border-white/10 pt-8">
           <h2>{section.heading}</h2>
-          {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {section.paragraphs?.map((paragraph) => <p>{paragraph}</p>)}
           {section.bullets && (
             <ul>
               {section.bullets.map((bullet) => <li>{bullet}</li>)}

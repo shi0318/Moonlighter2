@@ -42,6 +42,14 @@ export const SOURCES = {
     lastChecked: '2026-09-03',
     note: 'The launch-day post, “Moonlighter 2: The Endless Vault is Available Now!”, read September 3, 2026. It confirms the game is officially out of Early Access on PC with console versions available the same day, and describes the main story conclusion, the Infinite Endless Vault postgame, four Endless Weapon Aspects, Shop Level 5, the Bomb Path, Hardcore Mode, new vendors, cosmetics and Codex pages, and physical editions with Silver Lining Interactive on 13 November 2026.',
   },
+  steamHotfixOne: {
+    label: 'Official Steam 1.0 Hotfix 1 announcement (September 10, 2026)',
+    url: 'https://store.steampowered.com/news/app/2350790/view/1843481262692293',
+    publisher: 'Digital Sun / 11 bit studios',
+    status: 'official',
+    lastChecked: '2026-09-16',
+    note: 'The first post-1.0 hotfix, read September 16, 2026. It adds a DirectX 11 / DirectX 12 selection option and names specific content in its fixes: the Weapon Mastery quest, Hazy Jane, Babyl, Spark, Tresna, the dungeons Kalina and the Gallery area, the enemies Senda, Sergeant Roberto, the CH4 Turret and Electric Slimes, the weapons The Vow and the second greatsword, the Scarabastion armor, Barrier Blessing, legendary chests, the Bloblet room, and the Shared Secret relic.',
+  },
 } satisfies Record<string, SourceRef>;
 
 export const CORE_SOURCES = [SOURCES.steam, SOURCES.steamNews] as const;

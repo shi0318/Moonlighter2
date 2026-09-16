@@ -3,7 +3,7 @@ import type { SourceRef } from './sources';
 
 export interface PageSection {
   heading: string;
-  paragraphs: string[];
+  paragraphs?: string[];
   bullets?: string[];
   note?: { label: string; text: string };
 }
@@ -55,6 +55,7 @@ export const NAV = [
   { label: 'Shop', href: '/shop-guide/' },
   { label: 'Dungeons', href: '/dungeon-guide/' },
   { label: 'Bosses', href: '/bosses/' },
+  { label: 'Characters', href: '/characters/' },
   { label: 'Weapons', href: '/weapons/' },
   { label: 'Release', href: '/release-date/' },
 ] as const;
@@ -123,6 +124,8 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 (September 10)', description: 'The DirectX 11/12 switch and every named fix: Kalina out-of-map, Hazy Jane input loss, Scarabastion invincibility.', priority: 'New', image: 'shot2' },
+  { href: '/characters/', title: 'Characters', description: 'Will, Tresna, Hazy Jane, Babyl, Spark and every character the official posts name.', priority: 'New', image: 'shot5' },
   { href: '/moonlighter-2-best-weapon/', title: 'Moonlighter 2 Best Weapon', description: 'A version 1.0 weapon comparison built from the four named Endless Weapon Aspects and the limits of the published data.', priority: 'New', image: 'shot4' },
   { href: '/moonlighter-2-infinite-endless-vault-guide/', title: 'Infinite Endless Vault Guide', description: 'How the postgame thresholds work, what resets on a failed run, and which reward categories are confirmed.', priority: 'New', image: 'hero' },
   { href: '/moonlighter-2-hardcore-mode/', title: 'Hardcore Mode Guide', description: 'The version 1.0 Hardcore wording, the unresolved penalty descriptions, and a safe first-run decision.', priority: 'New', image: 'shot2' },
@@ -942,5 +945,122 @@ export const PAGE_DATA: Record<string, PageData> = {
       { href: '/weapons/', title: 'Weapons & Upgrades', description: 'The confirmed weapon, armor, gadget and village upgrade categories.' },
     ],
     sources: [SOURCES.steamVersionOneNews, SOURCES.steamLaunchNews, SOURCES.steam],
+  },
+  'moonlighter-2-hotfix-1': {
+    slug: 'moonlighter-2-hotfix-1',
+    title: 'Moonlighter 2 Hotfix 1 (September 10): DX11/DX12 Option and Every Fix',
+    description:
+      'Moonlighter 2 version 1.0 Hotfix 1 adds a DirectX 11 / DirectX 12 switch and fixes Kalina map-out bugs, Hazy Jane input loss, the Scarabastion boss invincibility and more.',
+    kicker: 'Patch · Hotfix 1',
+    status: 'Launch-day update',
+    intro:
+      'Eight days after the September 2, 2026 version 1.0 release, Digital Sun shipped Hotfix 1 on September 10. The headline change is a DirectX 11 / DirectX 12 selection option, which the developers tie directly to the crash reports from launch week. The rest of the notes name specific quests, NPCs, enemies, weapons and dungeons that were broken — this page records exactly what the official notes say and what they do not.',
+    sections: [
+      {
+        heading: 'The DirectX switch is the stability fix',
+        paragraphs: [
+          'The notes state that many of the crashes and performance issues players hit may be related to the graphics API, and recommend switching between DirectX 11 and DirectX 12 to see which runs best on your system. If you are crashing on the 1.0 build, this is the first setting to try before anything else.',
+          'The developers also say the patch addresses "most of the concerns raised by the community during the 1.0 release" and that further balancing work will be assessed after the console port of these fixes ships.',
+        ],
+      },
+      {
+        heading: 'Progression and quest fixes',
+        bullets: [
+          'The Weapon Mastery quest marker pointed to the wrong location; fixed.',
+          'A crash could occur right after completing a certain main quest; fixed.',
+          'Talking to Hazy Jane in later stages could cause a loss of player input; fixed.',
+          'The game could freeze on the loading screen when returning to Tresna during the tutorial; fixed.',
+          'Babyl sometimes became duplicated, which could make Spark almost impossible to reach if Babyl had not been unlocked yet; fixed.',
+        ],
+      },
+      {
+        heading: 'Enemy behavior fixes',
+        bullets: [
+          'Senda no longer ignores poison damage from gadget shots during his second phase.',
+          'Sergeant Roberto now reacts when shot from a distance.',
+          'The CH4 Turret no longer gets stuck in its shooting animation after being tased.',
+          'Tased Electric Slimes no longer deal electric field damage.',
+        ],
+      },
+      {
+        heading: 'Weapons, armor and dungeon fixes',
+        bullets: [
+          'A specific Wound + Ignite perk combination caused a crash; fixed.',
+          'Spearhead projectiles froze in midair when reaching Will; fixed.',
+          'The second greatsword\u2019s sharpness drain was not working as intended; fixed.',
+          'The Vow weapon\u2019s description did not match its actual behavior; fixed.',
+          'Equipping the Scarabastion could make players invincible during boss fights; fixed.',
+          'A spot in the Kalina dungeon let players fall out of the map with no way to recover the run; fixed.',
+          'Will could get stuck behind an obstacle in the Gallery area; fixed.',
+          'Barrier Blessing shield charges were not restored when retrying a dungeon; fixed.',
+          'Certain rewards did not appear in legendary chests dropped after defeating a miniboss; fixed.',
+          'Dungeon music did not restart after the Bloblet room if you left before the track ended; fixed.',
+          'The Shared Secret relic description contained placeholder text, debug text and a misspelling; fixed in English and Portuguese.',
+        ],
+      },
+      {
+        heading: 'What the patch does not change',
+        paragraphs: [
+          'No weapon, relic or perk balance numbers were touched in Hotfix 1 — every listed change is a crash, input, progression, or behavior fix. The developers say balancing comes after the console port, so if you are reading a version 1.0 guide that quotes stats, those quotes still describe the current build.',
+        ],
+        note: {
+          label: 'Verification boundary',
+          text: 'Everything on this page is quoted from the official Hotfix 1 announcement on the Steam news hub for App 2350790, read September 16, 2026. The notes do not publish repro steps or affected-save details, so this page does not invent them.',
+        },
+      },
+    ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Everything the launch build shipped with, before Hotfix 1.' },
+      { href: '/moonlighter-2-best-weapon/', title: 'Best Weapon Guide', description: 'Weapon behavior notes that Hotfix 1 corrected for The Vow and the second greatsword.' },
+      { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Route planning for dungeons including Kalina and the Gallery area named in the fix list.' },
+    ],
+    sources: [SOURCES.steamHotfixOne, SOURCES.steamNews],
+  },
+  'characters': {
+    slug: 'characters',
+    title: 'Moonlighter 2 Characters: Will, Tresna and the Named Cast',
+    description:
+      'Moonlighter 2 characters guide: Will, Hazy Jane, Babyl, Spark, Senda and Sergeant Roberto, with every fact the official 1.0 and Hotfix 1 announcements confirm.',
+    kicker: 'Characters · named in official posts',
+    status: 'Launch-day update',
+    intro:
+      'This page lists only characters that official Digital Sun / 11 bit studios posts name directly: the launch announcement, the August 5 pre-launch post, and the September 10 Hotfix 1 notes. Moonlighter 2 has not had a first-party full cast list published, so where a character\u2019s role is not documented, this page says so instead of guessing.',
+    sections: [
+      {
+        heading: 'Will — the player character',
+        paragraphs: [
+          'Will is the merchant-dungeoner you play, and version 1.0 is built around finishing his arc: the launch post describes "the conclusion of the main story" that brings "Will\u2019s journey in Tresna to its conclusion." Hotfix 1 confirms he is still the only player character by fixing spearhead projectiles that froze "when reaching Will."',
+        ],
+      },
+      {
+        heading: 'Tresna — the town',
+        paragraphs: [
+          'Tresna is the settlement the whole loop runs on: the launch post frames the whole adventure as exploring Tresna and the vault beneath it, and Hotfix 1 fixes a tutorial freeze "when returning to Tresna," confirming it as the hub you move between dungeon runs.',
+        ],
+      },
+      {
+        heading: 'Named NPCs and characters',
+        bullets: [
+          'Hazy Jane — an NPC you talk to; losing player input during later-stage conversations with her was a Hotfix 1 bug, now fixed.',
+          'Babyl — an unlockable character whose duplication bug could block access to Spark; fixed in Hotfix 1.',
+          'Spark — reached through Babyl\u2019s unlock chain; named in both the August 5 pre-launch vendor list and the Hotfix 1 fix.',
+          'K33P3R — a vendor with a Level 5 progression, named in the August 5 pre-launch announcement.',
+          'Senda — an enemy with a second phase that ignored poison from gadget shots before Hotfix 1.',
+          'Sergeant Roberto — an enemy that did not react to ranged shots before Hotfix 1.',
+        ],
+      },
+      {
+        heading: 'What is not documented',
+        paragraphs: [
+          'The official posts do not publish character bios, dialogue trees, quest-giver roles beyond the vendor names above, or a complete cast list. The Codex added in version 1.0 covers "enemies, characters, perks and furniture" in-game, but its text is not published online, so this page does not reproduce it. Expect this list to grow as Digital Sun names more characters in patch notes.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 Patch Notes', description: 'The fix list that names Hazy Jane, Babyl, Spark, Senda and Sergeant Roberto.' },
+      { href: '/shop-guide/', title: 'Shop Guide', description: 'The merchant loop Will runs from Tresna.' },
+      { href: '/beginner-guide/', title: 'Beginner Guide', description: 'First hours in Tresna and the dungeon loop.' },
+    ],
+    sources: [SOURCES.steamVersionOneNews, SOURCES.steamHotfixOne, SOURCES.steamLaunchNews],
   },
 };
