@@ -1014,7 +1014,7 @@ export const PAGE_DATA: Record<string, PageData> = {
       { href: '/moonlighter-2-best-weapon/', title: 'Best Weapon Guide', description: 'Weapon behavior notes that Hotfix 1 corrected for The Vow and the second greatsword.' },
       { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Route planning for dungeons including Kalina and the Gallery area named in the fix list.' },
     ],
-    sources: [SOURCES.steamHotfixOne, SOURCES.steamNews],
+    sources: [],
   },
   'characters': {
     slug: 'characters',
@@ -1061,6 +1061,6 @@ export const PAGE_DATA: Record<string, PageData> = {
       { href: '/shop-guide/', title: 'Shop Guide', description: 'The merchant loop Will runs from Tresna.' },
       { href: '/beginner-guide/', title: 'Beginner Guide', description: 'First hours in Tresna and the dungeon loop.' },
     ],
-    sources: [SOURCES.steamVersionOneNews, SOURCES.steamHotfixOne, SOURCES.steamLaunchNews],
+    sources: [],
   },
 };
