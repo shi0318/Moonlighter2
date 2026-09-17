@@ -330,7 +330,7 @@ export const PAGE_DATA: Record<string, PageData> = {
     intro: 'Steam confirms that weapons, armor, gadgets, shop decorations, and upgrades are part of Moonlighter 2 progression. Version 1.0 also named four specific weapon aspects and described what each special attack does — the first equipment detail with real mechanics attached rather than a category label.',
     sections: [
       { heading: 'What is confirmed', paragraphs: ['The Steam page names weapons and armor as unlockable categories and ties equipment improvements to a village that grows through investment. It also mentions gadgets and shop decorations as additional unlockable categories.'], bullets: ['Weapons and armor: confirmed categories.', 'Gadgets: confirmed category, exact list unverified.', 'Village establishments: investment can lead to better equipment and upgrades.', 'Best build and tier list: not supportable before hands-on comparisons.'] },
-      { heading: 'The four Endless Weapon Aspects from version 1.0', paragraphs: ['These are the only weapons the official sources describe by name and behaviour. Each one changes the special attack on a weapon class rather than adding a new class, and none comes with a damage number.'], bullets: ['Endless Short Sword — the special becomes a swift piercing strike landing multiple hits, with the number of strikes increasing based on your combo.', 'Endless Great Sword — a Golden Guild craft. The special enters a defensive stance that blocks attacks, increases Sharpness, then counterattacks.', 'Endless Spear — the special consumes all stored spearheads, turning basic attacks into empowered special attacks for a limited time, with bonus damage scaling on spearheads consumed.', 'Endless Gauntlets — attacks become significantly more powerful while Berserk is active.'] },
+      { heading: 'The four Endless Weapon Aspects from version 1.0', paragraphs: ['These are the only weapons the official sources describe by name and behaviour. Each one changes the special attack on a weapon class rather than adding a new class, and none comes with a damage number.'], bullets: ['<a href="/weapons-endless-short-sword/">Endless Short Sword</a> — multi-hit piercing special; combo increases strike count.', '<a href="/weapons-endless-great-sword/">Endless Great Sword</a> — Golden Guild craft; block stance, Sharpness, counterattack.', '<a href="/weapons-endless-spear/">Endless Spear</a> — spends spearheads to empower basic attacks.', '<a href="/weapons-endless-gauntlets/">Endless Gauntlets</a> — stronger attacks while Berserk is active.'] },
       { heading: 'Equipment the August announcement named but 1.0 did not repeat', paragraphs: ['Two items appeared in the August 5, 2026 pre-launch post and are absent from the launch-day announcement. They are listed here separately rather than mixed in with the confirmed set.'], bullets: ['A craftable Machine Gun gadget.', 'The Endless Armour set — described as forged by the Golden Guild, with increased base critical hit chance and additional critical damage for every Spark perk equipped.'] },
       { heading: 'Build data policy', paragraphs: ['A useful equipment page should report the exact version, upgrade cost, stat line, and test condition. This guide will prefer a small reproducible comparison over a large unsourced tier list.'], note: { label: 'Not yet verified', text: 'Beyond the officially named aspects above, no weapon names, damage values, Sharpness figures, upgrade costs, or optimal build are invented here.' } },
     ],
@@ -692,10 +692,10 @@ export const PAGE_DATA: Record<string, PageData> = {
           'The spread is narrower than it looks. Between the Curator at 43.6% and Monte at 21.2% you lose about half the player base, but the steps between adjacent bosses are 5 to 12 points each. There is no single wall where everyone stops.',
         ],
         bullets: [
-          'The Curator — 43.6% of owners have defeated it. The first boss most players clear.',
-          'Senda — 38.7%. A 4.9 point step down from the Curator, so most players who beat one beat the other.',
-          'Tyke — 26.1%. The largest gap on the list opens up before this one.',
-          'Monte — 21.2%. The rarest confirmed boss kill, and roughly one owner in five.',
+          '<a href="/bosses-the-curator/">The Curator</a> — 43.6%, first named kill.',
+          '<a href="/bosses-senda/">Senda</a> — 38.7%; Hotfix 1 restored second-phase gadget poison.',
+          '<a href="/bosses-tyke/">Tyke</a> — 26.1%; largest gap on the named-boss list.',
+          '<a href="/bosses-monte/">Monte</a> — 21.2%; rarest named kill.',
         ],
       },
       {
@@ -1060,6 +1060,281 @@ export const PAGE_DATA: Record<string, PageData> = {
       { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 Patch Notes', description: 'The fix list that names Hazy Jane, Babyl, Spark, Senda and Sergeant Roberto.' },
       { href: '/shop-guide/', title: 'Shop Guide', description: 'The merchant loop Will runs from Tresna.' },
       { href: '/beginner-guide/', title: 'Beginner Guide', description: 'First hours in Tresna and the dungeon loop.' },
+    ],
+    sources: [],
+  },
+  'bosses-the-curator': {
+    slug: 'bosses-the-curator',
+    title: 'Moonlighter 2 The Curator Boss Guide',
+    description:
+      'The Curator is the first confirmed Moonlighter 2 boss. Steam says 43.6% of owners have defeated it — the most common named boss kill.',
+    kicker: 'Boss · The Curator',
+    status: 'Verified',
+    intro:
+      'The Curator is the first of four Moonlighter 2 bosses named in Steam achievements. The achievement requirement is simply “Defeat The Curator,” and 43.6% of owners have it. That makes this the first boss most players clear, somewhere in the early hours of a typical run.',
+    sections: [
+      {
+        heading: 'What Steam confirms',
+        bullets: [
+          'Name: The Curator',
+          'Requirement: Defeat The Curator',
+          'Global unlock: 43.6% of owners',
+          'Place in the named-boss order: first',
+        ],
+      },
+      {
+        heading: 'How to read the rate',
+        paragraphs: [
+          '43.6% is close to Senda at 38.7%. Most players who beat one beat the other. The Curator is not a wall; the first large drop on the boss list opens later, before Tyke.',
+        ],
+      },
+      {
+        heading: 'What is not published',
+        paragraphs: [
+          'Steam does not publish The Curator’s arena, health, moveset, or drops. Hotfix 1 also does not name this fight. This page does not invent a pattern chart.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'All bosses', description: 'The four named bosses ordered by Steam unlock rate.' },
+      { href: '/moonlighter-2-boss-completion-guide/', title: 'Boss completion guide', description: 'How the four kills sit against Ultimate Challenges and the Vault ladder.' },
+    ],
+    sources: [],
+  },
+  'bosses-senda': {
+    slug: 'bosses-senda',
+    title: 'Moonlighter 2 Senda Boss Guide',
+    description:
+      'Senda in Moonlighter 2: defeated by 38.7% of owners. Hotfix 1 confirmed a second phase that ignored poison from gadget shots — now fixed.',
+    kicker: 'Boss · Senda',
+    status: 'Launch-day update',
+    intro:
+      'Senda is the second named Moonlighter 2 boss. Steam lists the kill at 38.7%. Hotfix 1 (10 September 2026) is the only official patch note that describes a mechanic: Senda’s second phase ignored poison damage from gadget shots. That bug is fixed.',
+    sections: [
+      {
+        heading: 'What Steam confirms',
+        bullets: [
+          'Name: Senda',
+          'Requirement: Defeat Senda',
+          'Global unlock: 38.7% of owners',
+          'Place in the named-boss order: second',
+        ],
+      },
+      {
+        heading: 'What Hotfix 1 confirmed',
+        paragraphs: [
+          'Senda has at least two phases. Before Hotfix 1, gadget-shot poison did not apply in the second phase. After the patch, that damage works. No other move is named in the notes.',
+        ],
+      },
+      {
+        heading: 'What is not published',
+        paragraphs: [
+          'Arena, health, and the rest of the moveset are not in the achievement text or the hotfix. Do not copy another boss’s pattern onto Senda.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'All bosses', description: 'Named-boss order and hidden achievements around this fight.' },
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'The patch that restored poison on Senda’s second phase.' },
+    ],
+    sources: [],
+  },
+  'bosses-tyke': {
+    slug: 'bosses-tyke',
+    title: 'Moonlighter 2 Tyke Boss Guide',
+    description:
+      'Tyke in Moonlighter 2: defeated by 26.1% of owners. The largest gap on the named-boss list opens before this fight.',
+    kicker: 'Boss · Tyke',
+    status: 'Verified',
+    intro:
+      'Tyke is the third named Moonlighter 2 boss. The kill sits at 26.1%. The step down from Senda (38.7%) is the largest gap among the four named bosses.',
+    sections: [
+      {
+        heading: 'What Steam confirms',
+        bullets: [
+          'Name: Tyke',
+          'Requirement: Defeat Tyke',
+          'Global unlock: 26.1% of owners',
+          'Place in the named-boss order: third',
+        ],
+      },
+      {
+        heading: 'How to read the gap',
+        paragraphs: [
+          'The hidden achievement The Fallen King sits at 29.4%, between Senda and Tyke. Its requirement is unpublished, so this page does not call it a boss. It only marks the same stretch of a run as the drop into Tyke.',
+        ],
+      },
+      {
+        heading: 'What is not published',
+        paragraphs: [
+          'No arena, health, or moveset is attached to the Tyke achievement. Official patch notes do not name this fight.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'All bosses', description: 'The four named bosses and the hidden achievement between Senda and Tyke.' },
+    ],
+    sources: [],
+  },
+  'bosses-monte': {
+    slug: 'bosses-monte',
+    title: 'Moonlighter 2 Monte Boss Guide',
+    description:
+      'Monte in Moonlighter 2: defeated by 21.2% of owners, the rarest of the four confirmed named boss kills.',
+    kicker: 'Boss · Monte',
+    status: 'Verified',
+    intro:
+      'Monte is the fourth named Moonlighter 2 boss and the rarest confirmed kill at 21.2% of owners — roughly one player in five.',
+    sections: [
+      {
+        heading: 'What Steam confirms',
+        bullets: [
+          'Name: Monte',
+          'Requirement: Defeat Monte',
+          'Global unlock: 21.2% of owners',
+          'Place in the named-boss order: fourth / rarest named kill',
+        ],
+      },
+      {
+        heading: 'Context from other achievements',
+        paragraphs: [
+          'Defeating a boss with the broom sits at 23.3%, above Monte. More owners have won a named fight with the joke weapon than have beaten Monte. That is a signal that these fights are readable pattern tests more than raw damage checks — not a Monte-specific strategy.',
+        ],
+      },
+      {
+        heading: 'What is not published',
+        paragraphs: [
+          'No official arena, health, or moveset is published for Monte.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'All bosses', description: 'Named-boss order, broom kill rate, and Ultimate Challenges past Monte.' },
+    ],
+    sources: [],
+  },
+  'weapons-endless-short-sword': {
+    slug: 'weapons-endless-short-sword',
+    title: 'Moonlighter 2 Endless Short Sword Guide',
+    description:
+      'Endless Short Sword in Moonlighter 2: the special becomes a multi-hit piercing strike, with more strikes as your combo grows.',
+    kicker: 'Weapon · Endless Short Sword',
+    status: 'Launch-day update',
+    intro:
+      'Endless Short Sword is one of four Endless Weapon Aspects named in the version 1.0 launch post. The special becomes a swift piercing strike that lands multiple hits. The number of strikes increases based on your combo.',
+    sections: [
+      {
+        heading: 'Confirmed behaviour',
+        bullets: [
+          'Class: short sword aspect, not a new weapon class.',
+          'Special: multi-hit piercing strike.',
+          'Scaling: longer combo means more strikes.',
+          'Damage numbers: not published.',
+        ],
+      },
+      {
+        heading: 'What Hotfix 1 did not change',
+        paragraphs: [
+          'Hotfix 1 did not retune this aspect. It fixed spearhead projectiles freezing when reaching Will, which belongs to the spear, not this sword.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons hub', description: 'All four named aspects and unpublished equipment categories.' },
+      { href: '/moonlighter-2-endless-weapon-aspects/', title: 'Endless Weapon Aspects', description: 'The four aspects compared from the launch post.' },
+    ],
+    sources: [],
+  },
+  'weapons-endless-great-sword': {
+    slug: 'weapons-endless-great-sword',
+    title: 'Moonlighter 2 Endless Great Sword Guide',
+    description:
+      'Endless Great Sword in Moonlighter 2: a Golden Guild craft. The special blocks, raises Sharpness, then counterattacks. Hotfix 1 fixed the second greatsword’s sharpness drain.',
+    kicker: 'Weapon · Endless Great Sword',
+    status: 'Launch-day update',
+    intro:
+      'Endless Great Sword is described as a Golden Guild craft. Its special enters a defensive stance that blocks incoming attacks, increases Sharpness, then follows with a counterattack.',
+    sections: [
+      {
+        heading: 'Confirmed behaviour',
+        bullets: [
+          'Maker: Golden Guild.',
+          'Special: block stance, Sharpness increase, then counterattack.',
+          'Damage numbers: not published.',
+        ],
+      },
+      {
+        heading: 'Hotfix 1',
+        paragraphs: [
+          'Hotfix 1 fixed the second greatsword’s sharpness drain not working as intended. The notes do not say this aspect is that second greatsword, so treat the drain fix as greatsword-family, not as proof this aspect was broken.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons hub', description: 'Named aspects and the August-only Endless Armour set.' },
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'Sharpness drain fix on the second greatsword.' },
+    ],
+    sources: [],
+  },
+  'weapons-endless-spear': {
+    slug: 'weapons-endless-spear',
+    title: 'Moonlighter 2 Endless Spear Guide',
+    description:
+      'Endless Spear in Moonlighter 2: the special spends stored spearheads to turn basic attacks into empowered specials. Bonus damage scales with spearheads consumed.',
+    kicker: 'Weapon · Endless Spear',
+    status: 'Launch-day update',
+    intro:
+      'Endless Spear consumes all stored spearheads on special. Basic attacks become empowered special attacks for a limited time, with bonus damage scaling on how many spearheads were spent.',
+    sections: [
+      {
+        heading: 'Confirmed behaviour',
+        bullets: [
+          'Special spends every stored spearhead.',
+          'Basic attacks become empowered specials for a limited time.',
+          'Bonus damage scales with spearheads consumed.',
+          'Exact duration and damage: not published.',
+        ],
+      },
+      {
+        heading: 'Hotfix 1',
+        paragraphs: [
+          'Spearhead projectiles could freeze in midair when reaching Will. That is fixed. It confirms spearheads are a real projectile resource in the 1.0 build.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons hub', description: 'All four Endless Weapon Aspects.' },
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'Spearhead projectile freeze fix.' },
+    ],
+    sources: [],
+  },
+  'weapons-endless-gauntlets': {
+    slug: 'weapons-endless-gauntlets',
+    title: 'Moonlighter 2 Endless Gauntlets Guide',
+    description:
+      'Endless Gauntlets in Moonlighter 2: attacks become significantly more powerful while Berserk is active. No damage number is published.',
+    kicker: 'Weapon · Endless Gauntlets',
+    status: 'Launch-day update',
+    intro:
+      'Endless Gauntlets amplify offense while Berserk is active. The launch post gives that one rule and no numbers.',
+    sections: [
+      {
+        heading: 'Confirmed behaviour',
+        bullets: [
+          'While Berserk is active, attacks become significantly more powerful.',
+          'Berserk duration, trigger, and damage multiplier: not published.',
+        ],
+      },
+      {
+        heading: 'What is not published',
+        paragraphs: [
+          'Hotfix 1 does not name the gauntlets. Do not attach Wound/Ignite crash notes or other perk bugs to this aspect without a matching official line.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons hub', description: 'The four named aspects from version 1.0.' },
+      { href: '/moonlighter-2-endless-weapon-aspects/', title: 'Endless Weapon Aspects', description: 'Side-by-side of the four specials.' },
     ],
     sources: [],
   },
