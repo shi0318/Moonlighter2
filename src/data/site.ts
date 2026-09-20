@@ -124,6 +124,8 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-very-positive/', title: 'Very Positive Reviews', description: '1,580 of 1,903 Steam reviews: combat praise versus grind, Aeolia bugs, and a campaign that is only half the game.', priority: 'New', image: 'shot2' },
+  { href: '/moonlighter-2-aeolia-bugs/', title: 'Aeolia Bugs', description: 'Why reviews say an hour-long Aeolia run can be wasted, plus the 7.6% Ultimate Challenge rate.', priority: 'New', image: 'hero' },
   { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 (September 10)', description: 'The DirectX 11/12 switch and every named fix: Kalina out-of-map, Hazy Jane input loss, Scarabastion invincibility.', priority: 'New', image: 'shot2' },
   { href: '/characters/', title: 'Characters', description: 'Will, Tresna, Hazy Jane, Babyl, Spark and every character the official posts name.', priority: 'New', image: 'shot5' },
   { href: '/moonlighter-2-best-weapon/', title: 'Moonlighter 2 Best Weapon', description: 'A version 1.0 weapon comparison built from the four named Endless Weapon Aspects and the limits of the published data.', priority: 'New', image: 'shot4' },
@@ -1335,6 +1337,246 @@ export const PAGE_DATA: Record<string, PageData> = {
     relatedPages: [
       { href: '/weapons/', title: 'Weapons hub', description: 'The four named aspects from version 1.0.' },
       { href: '/moonlighter-2-endless-weapon-aspects/', title: 'Endless Weapon Aspects', description: 'Side-by-side of the four specials.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-very-positive': {
+    slug: 'moonlighter-2-very-positive',
+    title: 'Moonlighter 2 Reviews — Very Positive, 1,580 of 1,903',
+    description:
+      'Moonlighter 2 is Very Positive on Steam: 1,580 of 1,903 reviews. Combat praise versus grind, inventory, Aeolia bugs, and a campaign that is only half the game.',
+    kicker: 'Reviews',
+    status: 'Verified',
+    intro:
+      'Moonlighter 2: The Endless Vault is Very Positive: 1,580 of 1,903 reviews, about 83%. Version 1.0 launched 2 September 2026 after Early Access from 19 November 2025.',
+    sections: [
+      {
+        heading: 'What players like',
+        bullets: [
+          'Fast, precise combat; a better sequel loop than the first game for some owners.',
+          'Shop perks make each sale run different.',
+          'Finishing the campaign at about 50% completion, with more weapon sets and upgrades left.',
+        ],
+      },
+      {
+        heading: 'What they dislike',
+        bullets: [
+          'A major dungeon-clear mechanic feels grindy if you can take multiple loops in one room.',
+          'Inventory management and the ending.',
+          'Aeolia called so bugged that an hour-long run can be wasted.',
+          'Some say it feels too easy.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'Bosses', description: 'Named boss kill rates.' },
+      { href: '/shop-guide/', title: 'Shop', description: 'Merchant loop.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-aeolia-bugs': {
+    slug: 'moonlighter-2-aeolia-bugs',
+    title: 'Moonlighter 2 Aeolia Bugs — Why Runs Get Wasted',
+    description:
+      'Steam reviews call Aeolia so glitchy that a good hour-long run can be wasted. Ultimate Aeolia Challenge is 7.6% of owners; first entry to Aeolia is 49.9%.',
+    kicker: 'Dungeons · Aeolia',
+    status: 'Launch-day update',
+    intro:
+      'A recent review recommends the game but singles out Aeolia: annoying, and so bugged that a strong run can be thrown away. Entering Aeolia for the first time is 49.9% of owners. Completing the Ultimate Aeolia Challenge is 7.6%.',
+    sections: [
+      {
+        heading: 'What is confirmed',
+        bullets: [
+          'Aeolia is a named area with an Ultimate Challenge achievement.',
+          'Hotfix 1 named Kalina (fall out of map) and the Gallery (stuck behind an obstacle), not Aeolia specifically.',
+        ],
+      },
+      {
+        heading: 'What to do',
+        paragraphs: [
+          'If your run dies to a geometry bug, treat it as a known risk in this dungeon family until a patch names Aeolia. Switch DirectX 11/12 if the issue is a crash rather than a trap.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'Named dungeon collision fixes.' },
+      { href: '/dungeon-guide/', title: 'Dungeon guide', description: 'Extraction and backpack risk.' },
+      { href: '/bosses/', title: 'Bosses', description: 'Ultimate Challenge rates including Aeolia.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-grind': {
+    slug: 'moonlighter-2-grind',
+    title: 'Moonlighter 2 Grind — Multi-Clear Rooms and Shop Loops',
+    description:
+      'Players who like Moonlighter 2 still dislike a grindy room-clear rule: you can loop a cleared room for more loot. How that sits next to the shop loop.',
+    kicker: 'Gameplay · grind',
+    status: 'Verified',
+    intro:
+      'A first-time player with no comparison to Moonlighter 1 still flagged one mechanic: after clearing a room you can take multiple passes, which turns a good combat game into a grind. That is recent Steam language.',
+    sections: [
+      {
+        heading: 'How it collides with the official loop',
+        paragraphs: [
+          'The store loop is dungeon, relics, shop prices, village. If a room can be farmed after it is clear, the dungeon step never ends. Extraction guides exist because leaving with a backpack is part of the design — not infinite clears.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-dungeon-extraction-guide/', title: 'Extraction', description: 'When to leave.' },
+      { href: '/shop-guide/', title: 'Shop', description: 'Sell the haul instead of reclearing.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-campaign-half': {
+    slug: 'moonlighter-2-campaign-half',
+    title: 'Moonlighter 2 Campaign Is Only Half the Game',
+    description:
+      'Players finish the Moonlighter 2 campaign around 50% completion, then find more weapon sets, upgrades, and the Infinite Endless Vault.',
+    kicker: 'Postgame',
+    status: 'Verified',
+    intro:
+      'A review after finishing the campaign still sat at about 50% completion, with more upgrades, weapon sets, and playstyles left. Version 1.0’s Infinite Endless Vault is the named postgame: thresholds that reset if you miss the gold target in a single run.',
+    sections: [
+      {
+        heading: 'The numbers',
+        bullets: [
+          'Story ending exists in 1.0.',
+          'Vault 1st challenge: 75.8% of owners; 7th: 0.1%.',
+          'The drop from 4th (39.3%) to 5th (13.7%) is the real wall.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-infinite-endless-vault-guide/', title: 'Infinite Endless Vault', description: 'Threshold reset rule.' },
+      { href: '/moonlighter-2-postgame-guide/', title: 'Postgame', description: 'What 1.0 added after the story.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-too-easy': {
+    slug: 'moonlighter-2-too-easy',
+    title: 'Moonlighter 2 Too Easy? Hardcore Mode and Boss Tuning',
+    description:
+      'Some reviews say Moonlighter 2 feels too easy. Hardcore Mode exists in 1.0. Beating a boss with the broom is 23.3% of owners — above Monte at 21.2%.',
+    kicker: 'Difficulty',
+    status: 'Verified',
+    intro:
+      'Players who bounced on difficulty call the sequel too easy in small doses. The achievement list says a boss can be beaten with the broom (23.3%), which is more common than defeating Monte (21.2%). Hardcore Mode is the 1.0 setting that raises the cost of death.',
+    sections: [
+      {
+        heading: 'Read the broom rate',
+        paragraphs: [
+          'If a joke weapon clears a named boss for nearly a quarter of owners, the fights are pattern tests. Gear farming is optional for the story bosses. Hardcore is the knob if default feels light.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-hardcore-mode/', title: 'Hardcore Mode', description: 'What 1.0 actually says about death cost.' },
+      { href: '/bosses/', title: 'Bosses', description: 'Kill rates including the broom achievement.' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-will': {
+    slug: 'moonlighter-2-will',
+    title: 'Moonlighter 2 Will — Merchant and Dungeoneer',
+    description:
+      'Will is the player character in Moonlighter 2. Version 1.0 finishes his Tresna story. Hotfix 1 mentions spearhead projectiles freezing when reaching Will.',
+    kicker: 'Characters · Will',
+    status: 'Launch-day update',
+    intro:
+      'Will is the merchant-dungeoneer you play. The 1.0 launch post frames the update as the conclusion of Will’s journey in Tresna. Hotfix 1 confirms he is still the only player body by naming spearheads that froze when reaching Will.',
+    sections: [
+      {
+        heading: 'Related pages',
+        bullets: [
+          '<a href="/characters/">Characters hub</a>',
+          '<a href="/shop-guide/">Shop</a>',
+          '<a href="/beginner-guide/">Beginner</a>',
+        ],
+      },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-tresna': {
+    slug: 'moonlighter-2-tresna',
+    title: 'Moonlighter 2 Tresna — The Town Hub',
+    description:
+      'Tresna is Moonlighter 2’s town. Hotfix 1 fixed a tutorial freeze when returning to Tresna. Shop Level 5 and vendors live here.',
+    kicker: 'Locations · Tresna',
+    status: 'Launch-day update',
+    intro:
+      'Tresna is the settlement between dungeon runs. Hotfix 1 fixed the game freezing on the loading screen when returning to Tresna during the tutorial. Shop Level 5 adds a Bloblet slot and a cosmetic slot in the shop that sits in this town.',
+    sections: [
+      {
+        heading: 'Related pages',
+        bullets: [
+          '<a href="/moonlighter-2-shop-level-5/">Shop Level 5</a>',
+          '<a href="/characters/">Named NPCs</a>',
+          '<a href="/dungeon-guide/">Dungeons</a>',
+        ],
+      },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-kalina': {
+    slug: 'moonlighter-2-kalina',
+    title: 'Moonlighter 2 Kalina Dungeon — Out-of-Map Fix',
+    description:
+      'Hotfix 1 fixed a Kalina spot where players could fall out of the map with no way to recover the run. Ultimate Kalina Challenge is 7.7% of owners.',
+    kicker: 'Dungeons · Kalina',
+    status: 'Launch-day update',
+    intro:
+      'Kalina is a named dungeon. Hotfix 1 (10 September 2026) fixed a specific spot where you could fall out of the map and lose the run. The Ultimate Kalina Challenge achievement is at 7.7% of owners.',
+    sections: [
+      {
+        heading: 'Related pages',
+        bullets: [
+          '<a href="/moonlighter-2-hotfix-1/">Hotfix 1</a>',
+          '<a href="/bosses/">Ultimate Challenges</a>',
+          '<a href="/dungeon-guide/">Dungeon guide</a>',
+        ],
+      },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-gallery': {
+    slug: 'moonlighter-2-gallery',
+    title: 'Moonlighter 2 Gallery Dungeon — First Visit 68.7%',
+    description:
+      'Entering the Gallery for the first time is 68.7% of Moonlighter 2 owners. Hotfix 1 fixed Will getting stuck behind an obstacle there. Ultimate Gallery Challenge is 10.4%.',
+    kicker: 'Dungeons · Gallery',
+    status: 'Launch-day update',
+    intro:
+      'The Gallery is the most-entered named challenge area: 68.7% of owners have walked in. About one in seven of those finish the Ultimate Gallery Challenge (10.4%). Hotfix 1 fixed getting stuck behind an obstacle in the Gallery.',
+    sections: [
+      {
+        heading: 'Related pages',
+        bullets: [
+          '<a href="/moonlighter-2-hotfix-1/">Hotfix 1</a>',
+          '<a href="/bosses/">Bosses and challenges</a>',
+        ],
+      },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-inventory': {
+    slug: 'moonlighter-2-inventory',
+    title: 'Moonlighter 2 Inventory — Why Reviews Call It a Weak Point',
+    description:
+      'Steam reviews that like Moonlighter 2 still list inventory management as a bad point, next to the ending. How that ties to backpack risk and shop sales.',
+    kicker: 'Systems · inventory',
+    status: 'Verified',
+    intro:
+      'A review that calls the game cute and the combat precise still names inventory management and the ending as the bad points. Official copy never publishes a backpack size. Extraction is the design answer: leave before the bag is a puzzle you hate.',
+    sections: [
+      {
+        heading: 'Related pages',
+        bullets: [
+          '<a href="/moonlighter-2-dungeon-extraction-guide/">Extraction</a>',
+          '<a href="/items/">Items</a>',
+          '<a href="/prices/">Prices</a>',
+        ],
+      },
     ],
     sources: [],
   },
