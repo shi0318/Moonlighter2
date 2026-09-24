@@ -42,10 +42,10 @@ const statusClass = page.status === 'Verified'
       {page.sections.map((section) => (
         <section class="border-t border-white/10 pt-8">
           <h2>{section.heading}</h2>
-          {section.paragraphs?.map((paragraph) => <p>{paragraph}</p>)}
+          {section.paragraphs?.map((paragraph) => <p set:html={paragraph} />)}
           {section.bullets && (
             <ul>
-              {section.bullets.map((bullet) => <li>{bullet}</li>)}
+              {section.bullets.map((bullet) => <li set:html={bullet} />)}
             </ul>
           )}
           {section.note && (
@@ -67,7 +67,7 @@ const statusClass = page.status === 'Verified'
               <tbody>
                 {page.table.rows.map((row) => (
                   <tr class="border-t border-white/10 align-top">
-                    {row.map((cell) => <td class="px-4 py-3 text-fog">{cell}</td>)}
+                    {row.map((cell) => <td class="px-4 py-3 text-fog" set:html={cell} />)}
                   </tr>
                 ))}
               </tbody>

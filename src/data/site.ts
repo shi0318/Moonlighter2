@@ -1,5 +1,9 @@
 import { SOURCES } from './sources';
 import type { SourceRef } from './sources';
+import { WEAPON_PAGES } from './pages/weapons';
+import { BOSS_PAGES, MINIBOSS_PAGES } from './pages/bosses';
+import { CHARACTER_PAGES } from './pages/characters';
+import { DUNGEON_PAGES } from './pages/dungeons';
 
 export interface PageSection {
   heading: string;
@@ -55,6 +59,7 @@ export const NAV = [
   { label: 'Shop', href: '/shop-guide/' },
   { label: 'Dungeons', href: '/dungeon-guide/' },
   { label: 'Bosses', href: '/bosses/' },
+  { label: 'Minibosses', href: '/minibosses/' },
   { label: 'Characters', href: '/characters/' },
   { label: 'Weapons', href: '/weapons/' },
   { label: 'Release', href: '/release-date/' },
@@ -199,7 +204,7 @@ export const FAQS = [
   },
 ] ;
 
-export const PAGE_DATA: Record<string, PageData> = {
+const INLINE_PAGES: Record<string, PageData> = {
   'moonlighter-2-switch-2': {
     slug: 'moonlighter-2-switch-2',
     title: 'Moonlighter 2 Switch 2: Is It Coming to Nintendo Switch 2?',
@@ -300,7 +305,8 @@ export const PAGE_DATA: Record<string, PageData> = {
     status: 'Verified',
     intro: 'Steam describes dangerous dungeons and vibrant dimensions full of loot and enemies. It also says deeper exploration brings greater rewards, which makes route planning and extraction decisions central to the guide.',
     sections: [
-      { heading: 'Plan the run around extraction', paragraphs: ['The published game description advises players to plot a clever route, arrange loot carefully, and remember that deeper runs bring greater rewards. This gives us a confirmed decision pattern: what to carry, how far to push, and when to return matter as much as clearing enemies.'], bullets: ['Start with a route that leaves room for the loot you expect to collect.', 'Separate confirmed game text from future room-by-room navigation notes.', 'Record the depth, loot category, and outcome for every repeatable run.'] },
+      { heading: 'The three dimensions', paragraphs: ['Moonlighter 2 has three dimensions, each with an easier first floor and a harder second floor, and each running its own relic curse. Floors unlock through Tresna story quests rather than levels.'], bullets: ['<a href="/dungeons-kalina/">Kalina</a> — desert dimension; Burn and Armor curse; bosses The Herald and Thalaam.', '<a href="/dungeons-the-gallery/">The Gallery</a> — museum-machine dimension; Shock and Overcharge curse; bosses The Curator and Tyke.', '<a href="/dungeons-aeolia/">Aeolia</a> — windy magic isles; Petrify and Absorb curse; bosses Senda and Monte.'] },
+      { heading: 'Plan the run around extraction', paragraphs: ['The published game description advises players to plot a clever route, arrange loot carefully, and remember that deeper runs bring greater rewards. This gives us a confirmed decision pattern: what to carry, how far to push, and when to return matter as much as clearing enemies.'], bullets: ['Start with a route that leaves room for the loot you expect to collect.', 'The pendant teleports you home at any time with everything in the bag; there is no penalty beyond skipped loot.', 'Record the depth, loot category, and outcome for every repeatable run.'] },
       { heading: 'Endless Vault context', paragraphs: ['The Endless Vault is described as an ancient artifact whose trials test merchants and raise the stakes for rewards and town upgrades. Its exact rooms, encounters, and boss behavior are not published in the Steam description.'], note: { label: 'Not yet verified', text: 'There are no invented map names, boss patterns, or “best route” claims here.' } },
       { heading: 'The Infinite Endless Vault changes how you plan a run', paragraphs: ['Version 1.0 added a postgame that unlocks after the main story, and it is the one place where the extraction decision has a published rule. The launch announcement describes an endless series of increasingly difficult thresholds and states that each one must be completed in a single run — failing to reach the required amount of gold resets your progress for that threshold.', 'That makes gold, not depth, the scoring metric there, and it removes the option of banking partial progress across trips. No gold target, threshold count or scaling rule has been published, so the only honest planning advice is to treat every threshold attempt as a single closed run.'] },
     ],
@@ -320,7 +326,12 @@ export const PAGE_DATA: Record<string, PageData> = {
     intro: 'This walkthrough hub is intentionally a framework until the game version and route data are recorded. Steam confirms the starting premise and progression loop, and the version 1.0 announcement confirms the main story now has an ending — but neither publishes a quest order or the ending itself.',
     sections: [
       { heading: 'Published premise', paragraphs: ['The player starts without money alongside other townsfolk, stranded in Tresna. The stated goal is to rebuild the shop into the village’s economic center while exploring dungeons, collecting relics, and reinvesting in the community.'], bullets: ['Starting situation: stranded in the distant village of Tresna.', 'Progression loop: dungeon loot to shop sales to town and equipment upgrades.', 'Long-term challenge: the Endless Vault tests merchants through escalating trials.', 'Version 1.0 conclusion: new quests, cutscenes and discoveries bring Will’s journey to an end, followed by the Infinite Endless Vault postgame.'] },
-      { heading: 'What will be added from a playable build', paragraphs: ['Route order, named objectives, unlock conditions and spoiler labels are added only when they can be reproduced. Each walkthrough step keeps a version note, since balance and layout can still change across post-launch patches.'], note: { label: 'Launch-day update', text: 'Story outcomes, boss strategies, and exact objective order are intentionally not claimed from announcement text alone.' } },
+      { heading: 'Choosing a difficulty', paragraphs: ['Difficulty in Moonlighter 2 is mostly about how much relic risk you carry out of a run. On Easy, Normal and Hard, dying halves the quality of every relic in your backpack; on Expert you lose those relics outright; and on Hardcore, added in Version 1.0, a death ends the whole save and you start over. Pick the mode that matches how much you are willing to lose when a run goes wrong — the enemy patterns are the same, but the penalty is not.'], bullets: ['Easy / Normal / Hard: death halves backpack relic quality.', 'Expert: death loses the relics in your backpack.', 'Hardcore (1.0): death loses your progress and restarts the save.'] },
+      { heading: 'Picking your first weapon', paragraphs: ['There are four melee classes — Short Swords, Large Swords, Spears and Gauntlets — plus a gun that rides alongside your melee weapon. New players are steered to the <a href="/weapons-merchant-sword/">Merchant’s Sword</a>: fast, balanced, and the weapon most creators used for early money runs. Swap to the <a href="/weapons-aetherium-heart/">Aetherium Heart</a> or an Ultimate aspect once you can craft one. Whatever you carry, use the gun to knock flying enemies out of the air and keep one bullet in reserve for enemies winding up aerial attacks.'] },
+      { heading: 'Reading the combat HUD', paragraphs: ['Each melee class has its own meter to watch: Short Swords chain into a Special Finisher after three hits, Large Swords spend and rebuild Sharpness, Spears plant spearheads the Special recalls, and Gauntlets fill a Berserk gauge. Your gun’s ammo refills slowly on its own and faster when you land melee hits.'], bullets: ['Weapon meter: the class resource (Finisher, Sharpness, spearheads or Berserk).', 'Ammo: refills on melee hits and breakables; keep one shot in reserve.', 'Rupture: an enemy at half health turns purple and can be launched with the backpack — but elites and minibosses never rupture.', 'Tomo’s Radar: the branching node map (chests, events, potions, blacksmith, elite, miniboss, boss, perk rooms) you pick a path through.'] },
+      { heading: 'Getting potions and healing', paragraphs: ['<a href="/characters-eris/">Eris</a>, at the Witch Hut, sells potions, health and dungeon perk unlocks, and her riddles point to hidden weapon recipes. Creator guides agree she is the first vendor to upgrade: in the opening hours a reliable healing option matters more than raw damage, so buy more and stronger potions before you invest in weapons.'] },
+      { heading: 'Managing the shop', paragraphs: ['The loop is dungeon loot to shop sales to upgrades. Sell relics for gold, then reinvest: <a href="/characters-miss-scratch/">Ms. Scratch</a> raises your shop level, <a href="/characters-k33p3r/">K33P3R</a> adds permanent merchant bonuses and Haggle customers, and <a href="/characters-the-countess/">the Countess</a> sells showcases that raise the price of a whole relic rarity. Nothing you buy in Tresna is lost on death, so shop upgrades are always safe investments — unlike the relics you carry in your backpack.'] },
+      { heading: 'What still needs a playable build', paragraphs: ['Exact quest order and the story ending are added only when they can be reproduced first-hand; balance and layout can still shift across post-launch patches, so each step keeps a version note.'] },
     ],
   },
   weapons: {
@@ -329,12 +340,16 @@ export const PAGE_DATA: Record<string, PageData> = {
     description: 'A source-tracked Moonlighter 2 weapons and upgrades guide based on official equipment categories and village progression.',
     kicker: 'Equipment',
     status: 'Verified',
-    intro: 'Steam confirms that weapons, armor, gadgets, shop decorations, and upgrades are part of Moonlighter 2 progression. Version 1.0 also named four specific weapon aspects and described what each special attack does — the first equipment detail with real mechanics attached rather than a category label.',
+    intro: 'Moonlighter 2 has four melee classes — Short Swords, Large Swords, Spears and Gauntlets — plus a gun that rides alongside your melee weapon and a set of armor. Every class has a Merchant’s starter, an Ultimate version, named Early Access aspects, a Boss Rush aspect from the Blob-Life update, and an Endless aspect from Version 1.0. This page indexes every weapon with its special effect, how to unlock it, and where it fits.',
     sections: [
-      { heading: 'What is confirmed', paragraphs: ['The Steam page names weapons and armor as unlockable categories and ties equipment improvements to a village that grows through investment. It also mentions gadgets and shop decorations as additional unlockable categories.'], bullets: ['Weapons and armor: confirmed categories.', 'Gadgets: confirmed category, exact list unverified.', 'Village establishments: investment can lead to better equipment and upgrades.', 'Best build and tier list: not supportable before hands-on comparisons.'] },
-      { heading: 'The four Endless Weapon Aspects from version 1.0', paragraphs: ['These are the only weapons the official sources describe by name and behaviour. Each one changes the special attack on a weapon class rather than adding a new class, and none comes with a damage number.'], bullets: ['<a href="/weapons-endless-short-sword/">Endless Short Sword</a> — multi-hit piercing special; combo increases strike count.', '<a href="/weapons-endless-great-sword/">Endless Great Sword</a> — Golden Guild craft; block stance, Sharpness, counterattack.', '<a href="/weapons-endless-spear/">Endless Spear</a> — spends spearheads to empower basic attacks.', '<a href="/weapons-endless-gauntlets/">Endless Gauntlets</a> — stronger attacks while Berserk is active.'] },
-      { heading: 'Equipment the August announcement named but 1.0 did not repeat', paragraphs: ['Two items appeared in the August 5, 2026 pre-launch post and are absent from the launch-day announcement. They are listed here separately rather than mixed in with the confirmed set.'], bullets: ['A craftable Machine Gun gadget.', 'The Endless Armour set — described as forged by the Golden Guild, with increased base critical hit chance and additional critical damage for every Spark perk equipped.'] },
-      { heading: 'Build data policy', paragraphs: ['A useful equipment page should report the exact version, upgrade cost, stat line, and test condition. This guide will prefer a small reproducible comparison over a large unsourced tier list.'], note: { label: 'Not yet verified', text: 'Beyond the officially named aspects above, no weapon names, damage values, Sharpness figures, upgrade costs, or optimal build are invented here.' } },
+      { heading: 'How the weapon classes work', bullets: ['Short Swords: three arcing slashes and an Attack Finisher; the Special is a spin that chains into a Special Finisher after three hits.', 'Large Swords: wide slashes that spend Sharpness; the Special rebuilds it, and damage scales with the current Sharpness level.', 'Spears: quick stabs that plant spearheads; the Special recalls every spearhead, hitting everything in their path.', 'Gauntlets: rapid punches that fill the Berserk meter; the Special slams both gauntlets and Berserk raises damage and attack speed.', 'Guns: built at Babyl’s Workshop, ammo refills on melee hits, and shots knock flying enemies out of the air.'] },
+      { heading: 'Short Swords', bullets: ['<a href="/weapons-merchant-sword/">Merchant’s Sword</a> — bonus damage for 3s after a Special Finisher; the beginner pick.', '<a href="/weapons-everlasting-fury/">Everlasting Fury</a> — +50%/60%/75% damage to Elites, Minibosses and Bosses.', '<a href="/weapons-ray-axe/">Ray Axe</a> — chain the Special Finisher straight after the Attack Finisher for +20%.', '<a href="/weapons-ultimate-short-sword/">Ultimate Short Sword</a> — +20% Special Finisher; a kill grants 3s of infinite ammo.', '<a href="/weapons-starsign-horn/">Starsign Horn</a> — Blob-Life aspect, reward for Lita’s Kalina Boss Rush.', '<a href="/weapons-endless-short-sword/">Endless Short Sword</a> — Version 1.0: multi-hit piercing Special that scales with combo.'] },
+      { heading: 'Large Swords', bullets: ['<a href="/weapons-merchant-large-sword/">Merchant’s Large Sword</a> — more damage while Sharpness is above a threshold.', '<a href="/weapons-the-vow/">The Vow</a> — attacks stop consuming Sharpness, but 2% drains per second.', '<a href="/weapons-aetherium-heart/">Aetherium Heart</a> — Special deals +40% per Sharpness level; a top-rated weapon.', '<a href="/weapons-ultimate-large-sword/">Ultimate Large Sword</a> — one less max Sharpness, but Sharpness boosts ailments.', '<a href="/weapons-protocol-breaker/">Protocol Breaker</a> — Blob-Life aspect, reward for Babyl’s Gallery Boss Rush.', '<a href="/weapons-endless-great-sword/">Endless Great Sword</a> — Version 1.0 Golden Guild block-and-counter stance.'] },
+      { heading: 'Spears', bullets: ['<a href="/weapons-broom-spear/">Broom Spear</a> — the no-Special starting weapon; boss kills earn Humble Hero.', '<a href="/weapons-merchant-spear/">Merchant’s Spear</a> — spearheads deal bonus damage.', '<a href="/weapons-combat-rod/">Combat Rod</a> — slow recall dealing 200% continuous damage.', '<a href="/weapons-the-rectifier/">The Rectifier</a> — returned spearheads orbit you for 5s at +70%/85%/100%.', '<a href="/weapons-ultimate-spear/">Ultimate Spear</a> — homing recall; a top-rated weapon.', '<a href="/weapons-dreampiercer/">Dreampiercer</a> — Blob-Life aspect, reward for Julien’s Aeolia Boss Rush.', '<a href="/weapons-endless-spear/">Endless Spear</a> — Version 1.0: spends spearheads to empower basic attacks.'] },
+      { heading: 'Gauntlets', bullets: ['<a href="/weapons-merchant-gauntlets/">Merchant’s Gauntlets</a> — extends Berserk duration.', '<a href="/weapons-sun-and-moon-ballad/">Sun and Moon Ballad</a> — double hits for 3s/4s after Berserk ends.', '<a href="/weapons-heartbeat-hunter/">Heartbeat Hunter</a> — +40% damage in Berserk, but you take double damage.', '<a href="/weapons-ultimate-gauntlets/">Ultimate Gauntlets</a> — bank charges for extra Special hits.', '<a href="/weapons-single-strike/">Single Strike</a> — Blob-Life aspect, reward for the Interdimensional Boss Rush.', '<a href="/weapons-endless-gauntlets/">Endless Gauntlets</a> — Version 1.0: much stronger attacks while Berserk is active.'] },
+      { heading: 'Guns and gadgets', bullets: ['<a href="/weapons-blob-gun/">Blob Gun</a> — the default anti-air gun; refills on melee hits.', '<a href="/weapons-blo-blaster/">Blo-Blaster</a> — close-range cannon; hidden treasure in Aeolia.', '<a href="/weapons-blo-beam/">Blo-Beam</a> — long-range beam; a top-rated gun.', '<a href="/weapons-blo-blitz/">Blo-Blitz</a> — dual guns for on-hit perk builds (Greed & Glory).', '<a href="/weapons-blo-buddy/">Blo-Buddy</a> — floating auto-fire companion, great for Ice/Poison.', '<a href="/weapons-machine-gun/">Machine Gun</a> — a Version 1.0 craftable gadget.'] },
+      { heading: 'Armor sets', bullets: ['<a href="/weapons-nimbus-regalia/">Nimbus Regalia</a> — a dungeon-start Shield that grants +20% damage on break (Greed & Glory).', '<a href="/weapons-endless-void-armour/">Endless Void Armour</a> — Version 1.0 crit set that scales with Spark perks.'] },
+      { heading: 'Upgrading and best picks', paragraphs: ['Upgrades raise the number in a weapon’s effect text. Tiers cost 2,000 gold (Common), 5,000 (Uncommon), 20,000 (Rare) and 50,000 (Epic), each with a growing count of that weapon’s material; a Legendary tier exists but its full cost is not published. Early Access tier lists agree the Aetherium Heart, Ultimate Spear, Ultimate Short Sword and Blo-Beam are the strongest picks; the Version 1.0 Endless aspects have not been ranked yet.'] },
     ],
     relatedPages: [
       { href: '/version-1-0-update/', title: 'Version 1.0 Update Breakdown', description: 'Every system in the launch build, including the four Endless Weapon Aspects in context.' },
@@ -677,6 +692,27 @@ export const PAGE_DATA: Record<string, PageData> = {
       { heading: 'Basic policy', paragraphs: ['The site may later use privacy-respecting analytics or advertising after deployment. Any such service will be disclosed here before it is enabled. External Steam links are governed by their own policies.'], note: { label: 'Contact', text: 'For privacy questions, email nmlkareem161@gmail.com.' } },
     ],
   },
+  minibosses: {
+    slug: 'minibosses',
+    title: 'Moonlighter 2 Minibosses: All 12 by Floor, with Drops',
+    description: 'Every Moonlighter 2 miniboss: two per floor across Kalina, The Gallery and Aeolia, the material each one drops, and how to beat them.',
+    kicker: 'Minibosses · 2 per floor',
+    status: 'Verified',
+    intro:
+      'Every floor in Moonlighter 2 has two minibosses that appear at the halfway point of a run, before the floor boss. Each drops the crafting material used for that dimension’s early weapon upgrades. Minibosses spawn with two or three helpers — kill the helpers first, because taser and stun effects wear off much faster on the miniboss itself, and elites and minibosses never enter the Rupture state, so the backpack throw only works on their adds.',
+    sections: [
+      { heading: 'Kalina minibosses', bullets: ['<a href="/minibosses-dafest/">Dafest</a>, Guardian of Disco-Hell — Day Realm; drops Broken Microphone.', '<a href="/minibosses-garrx/">Garr’x</a>, Dancefloor Assassin — Day Realm; drops Broken Microphone.', '<a href="/minibosses-hajji/">Hajji</a>, Queen of Techno — Night Realm; drops Kalina rare material.', '<a href="/minibosses-punkest/">Punkest</a>, Oracle of the After — Night Realm; drops Kalina rare material.'] },
+      { heading: 'The Gallery minibosses', bullets: ['<a href="/minibosses-4rt-tr4p/">4RT-TR4P</a>, Exhibition Champion — Exhibition Wing; drops Ancient Translator.', '<a href="/minibosses-v3nus/">V3NUS</a>, Muse of the Gallery — Exhibition Wing; drops Ancient Translator.', '<a href="/minibosses-sergeant-trajano/">Sergeant Trajano</a>, Treasury guard — Treasury Halls; drops Gallery rare material.', '<a href="/minibosses-sergeant-roberto/">Sergeant Roberto</a>, Treasury guard — Treasury Halls; drops Gallery rare material.'] },
+      { heading: 'Aeolia minibosses', bullets: ['<a href="/minibosses-t-hawk/">T-Hawk</a>, Pro-Glider — Zephyr Fields; drops Oneiric Core.', '<a href="/minibosses-orphis/">Orphis</a>, The Orb Keeper — Zephyr Fields; drops Oneiric Core.', '<a href="/minibosses-ataulfo/">Ataulfo</a>, The Rumbling Colossus — Howling Harbor; drops Oneiric Core.', '<a href="/minibosses-wisteria/">Wisteria</a>, The Anchor — Howling Harbor; drops Oneiric Core.'] },
+      { heading: 'Turning miniboss drops into boss materials', paragraphs: ['Nou and Anacard, at the Silent Exchange, swap miniboss materials for boss materials, so surplus Broken Microphones, Ancient Translators and Oneiric Cores are not wasted once you have upgraded that dimension’s early weapons.'] },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'All bosses', description: 'The six realm bosses and the Boss Rush challenges.' },
+      { href: '/characters-nou-and-anacard/', title: 'Nou and Anacard', description: 'The vendors who swap miniboss materials for boss materials.' },
+      { href: '/weapons/', title: 'Weapons', description: 'The aspects those upgrade materials feed.' },
+    ],
+    sources: [],
+  },
   bosses: {
     slug: 'bosses',
     title: 'Moonlighter 2 Bosses: Every Confirmed Boss and the Order Players Beat Them',
@@ -685,8 +721,23 @@ export const PAGE_DATA: Record<string, PageData> = {
     kicker: 'Bosses · measured completion data',
     status: 'Verified',
     intro:
-      'Four Moonlighter 2 bosses are confirmed by name in the Steam achievement list, each with a stated requirement to defeat them: the Curator, Senda, Tyke and Monte. Because Steam also publishes what percentage of all owners has each achievement, the four names come with a reliable difficulty order attached. This page uses those rates rather than a guessed progression, and it marks clearly where an achievement exists but its requirement is hidden.',
+      'Moonlighter 2 has six realm bosses — two per dimension across Kalina, The Gallery and Aeolia — plus twelve minibosses and the story antagonist Moloch. Four of the six have a public "Defeat" achievement on Steam, so this page pairs the full boss roster with the measured completion rates where they exist, and marks clearly where a requirement is hidden.',
     sections: [
+      {
+        heading: 'The six realm bosses by floor',
+        paragraphs: [
+          'Each of the three dimensions has two floors, and each floor ends in a boss. Every realm boss drops a rare crafting material and two chests; each floor also has two minibosses at the halfway point that drop the material for that dimension’s early weapon upgrades.',
+        ],
+        bullets: [
+          '<a href="/bosses-the-herald/">The Herald</a> — Kalina, Day Realm; 3 phases; drops Sound of Harmony.',
+          '<a href="/bosses-thalaam/">Thalaam</a> — Kalina, Night Realm; 3 phases; bell-throwing shield fight.',
+          '<a href="/bosses-the-curator/">The Curator</a> — The Gallery, Exhibition Wing; 3 phases; drops Quantum Core.',
+          '<a href="/bosses-tyke/">Tyke</a> — The Gallery, Treasury Halls; 3 phases; frees a captured friend.',
+          '<a href="/bosses-senda/">Senda</a> — Aeolia, Zephyr Fields; 2 phases; drops The King’s Left Mask.',
+          '<a href="/bosses-monte/">Monte</a> — Aeolia, Howling Harbor; 3 phases; rated the hardest realm boss.',
+          '<a href="/minibosses/">All twelve minibosses</a> and <a href="/bosses-moloch/">Moloch</a>, the story finale.',
+        ],
+      },
       {
         heading: 'The four confirmed bosses, hardest last',
         paragraphs: [
@@ -1041,14 +1092,20 @@ export const PAGE_DATA: Record<string, PageData> = {
         ],
       },
       {
-        heading: 'Named NPCs and characters',
+        heading: 'The Tresna vendors',
         bullets: [
-          'Hazy Jane — an NPC you talk to; losing player input during later-stage conversations with her was a Hotfix 1 bug, now fixed.',
-          'Babyl — an unlockable character whose duplication bug could block access to Spark; fixed in Hotfix 1.',
-          'Spark — reached through Babyl\u2019s unlock chain; named in both the August 5 pre-launch vendor list and the Hotfix 1 fix.',
-          'K33P3R — a vendor with a Level 5 progression, named in the August 5 pre-launch announcement.',
-          'Senda — an enemy with a second phase that ignored poison from gadget shots before Hotfix 1.',
-          'Sergeant Roberto — an enemy that did not react to ranged shots before Hotfix 1.',
+          '<a href="/characters-andrei/">Andrei</a> — the Forge; crafts and upgrades weapons and armor.',
+          '<a href="/characters-eris/">Eris</a> — the Witch Hut; potions, health, perk unlocks, and riddles pointing to hidden weapons.',
+          '<a href="/characters-babyl/">Babyl</a> — the Workshop; guns and gadgets, and the Gallery Boss Rush.',
+          '<a href="/characters-spark/">Spark</a> — the Version 1.0 endgame merchant, reached through Babyl.',
+          '<a href="/characters-miss-scratch/">Ms. Scratch</a> — landlady; shop-level upgrades and cosmetics.',
+          '<a href="/characters-tomo/">Tomo</a> — Trade Research; relic quality, Double Chests, and the Gallery-opening quest.',
+          '<a href="/characters-the-countess/">The Countess</a> — Homeware; showcases and furniture that raise sell prices.',
+          '<a href="/characters-julien/">Julien</a> — Tailoring; backpack patches, and the Aeolia Boss Rush.',
+          '<a href="/characters-sliver/">Sliver</a> — Empty Pockets; backpack capacity and the Greed Colosseum.',
+          '<a href="/characters-nou-and-anacard/">Nou and Anacard</a> — Silent Exchange; swap miniboss materials for boss materials.',
+          '<a href="/characters-k33p3r/">K33P3R</a> — Merchant Progression; permanent shop bonuses and Haggle customers.',
+          '<a href="/characters-hazy-jane/">Hazy Jane</a> — pet seller; Bloblet adoption (listed as Zane Jane in some guides).',
         ],
       },
       {
@@ -1580,4 +1637,13 @@ export const PAGE_DATA: Record<string, PageData> = {
     ],
     sources: [],
   },
+};
+
+export const PAGE_DATA: Record<string, PageData> = {
+  ...INLINE_PAGES,
+  ...WEAPON_PAGES,
+  ...CHARACTER_PAGES,
+  ...DUNGEON_PAGES,
+  ...MINIBOSS_PAGES,
+  ...BOSS_PAGES,
 };
