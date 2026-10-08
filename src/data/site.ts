@@ -1637,7 +1637,252 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  'moonlighter-2-six-regions': {
+    slug: 'moonlighter-2-six-regions',
+    title: 'Moonlighter 2 Has Six Regions After 1.0',
+    description: 'Moonlighter 2 version 1.0 runs six regions. Here is how a run uses two boon types without treating every region as a new ruleset.',
+    kicker: 'Regions',
+    status: 'Launch-day update',
+    intro: "Players who finished the 1.0 build describe six regions and two boon types per run. That is the post-Early-Access shape. It is not the first game's single-town loop with a new coat.",
+    sections: [
+      {
+        heading: 'How a run should feel',
+        paragraphs: [
+          'Pick the two boons and stay with them. Swapping fantasy every floor is how the shop and the dungeon stop talking to each other.',
+          'Six regions is variety of ground, not six difficulty systems. The desert canyon in the current shots is one of those grounds: vertical platforms, a bridge, and elites that punish a bag you refused to extract.',
+        ],
+        bullets: [
+          '<a href="/dungeon-guide/">Dungeons</a>',
+          '<a href="/moonlighter-2-dungeon-extraction-guide/">Extraction</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/dungeon-guide/', title: 'Dungeons', description: 'Region loop' },
+      { href: '/moonlighter-2-infinite-endless-vault-guide/', title: 'Endless Vault', description: 'What 1.0 reset' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-healing-and-dodge': {
+    slug: 'moonlighter-2-healing-and-dodge',
+    title: "Moonlighter 2 Healing: Why the First Game's Dodge Window Is Gone",
+    description: "Moonlighter 2 does not give you the first game's mid-swing dodge. Healing is scarce because that cancel is gone.",
+    kicker: 'Healing',
+    status: 'Launch-day update',
+    intro: 'The complaint that shows up next to the praise is healing. You cannot cancel an attack into a dodge the way Moonlighter 1 allowed. A swing you committed to is a hit you eat.',
+    sections: [
+      {
+        heading: 'What to change',
+        paragraphs: [
+          'Stop swinging when an elite winds up. The desert elites with the red telegraph are the lesson. The dodge is before the swing, not during it.',
+          'Buy healing at the shop before you buy a damage toy you cannot survive long enough to use. Shop Level 5 does not refund a death.',
+          'If the screen flash on hits is the actual problem, that is a separate accessibility complaint players have filed. It is not a healing potion.',
+        ],
+        bullets: [
+          '<a href="/shop-guide/">Shop</a>',
+          '<a href="/weapons/">Weapons</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/shop-guide/', title: 'Shop', description: 'Where potions are a purchase' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-will-the-merchant': {
+    slug: 'moonlighter-2-will-the-merchant',
+    title: 'Will in Moonlighter 2: The Merchant Is Still the Point',
+    description: 'Will is the merchant you play in Moonlighter 2. The 1.0 loop is still dungeon, bag, shop, not a pure roguelike score attack.',
+    kicker: 'Will',
+    status: 'Launch-day update',
+    intro: 'Will is the kid with the backpack in the combat shots and the person behind the counter between runs. If you only play the dungeon, you are skipping the half of the game the price is for.',
+    sections: [
+      {
+        heading: 'The loop',
+        paragraphs: [
+          'Clear until the bag is a decision, extract, price the relics, sleep, go back. Six regions do not replace that.',
+          'Players keep asking for a clerk or a janitor. Those are wishes. The register is still yours in the 1.0 launch build and in Hotfix 1.',
+        ],
+        bullets: [
+          '<a href="/characters/">Characters</a>',
+          '<a href="/prices/">Prices</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/characters/', title: 'Characters', description: 'Who else is in town' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-two-boons': {
+    slug: 'moonlighter-2-two-boons',
+    title: 'Moonlighter 2 Two Boons Per Run',
+    description: 'Moonlighter 2 limits you to two boon types in a run. That focus is the build. Adding a third in your head is how the bag overflows.',
+    kicker: 'Boons',
+    status: 'Launch-day update',
+    intro: 'Reviews that like the 1.0 combat call out the two-boon limit as the thing that keeps a run readable. It is a constraint, not a bug.',
+    sections: [
+      {
+        heading: 'Pick before the second region',
+        paragraphs: [
+          'One boon for the weapon you are actually swinging. One for the problem that region has, usually sustain or a bomb angle. A third idea belongs to the next run.',
+          'Endless Weapon Aspects are a different system. Do not stack a boon plan and an aspect plan and then blame the shop when the bag is nonsense.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-endless-weapon-aspects/">Weapon aspects</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons', description: 'What the boon is attached to' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-elite-telegraph': {
+    slug: 'moonlighter-2-elite-telegraph',
+    title: 'Moonlighter 2 Elite Telegraphs in the Desert Region',
+    description: "Red-outlined elites in Moonlighter 2 are the extract check. Dodge before the swing. The first game's cancel is not in this one.",
+    kicker: 'Elites',
+    status: 'Launch-day update',
+    intro: 'The desert platforms show the tell: a red body, a wind-up, a bridge you should not be standing on. That enemy is why healing feels scarce.',
+    sections: [
+      {
+        heading: 'The tell',
+        paragraphs: [
+          'If the elite is glowing, you are late to move and early to extract. Kill the small ones first only if they body-block the dodge.',
+          'A full bag on that bridge is a failed run even if you win the fight. Extraction is the win condition. The kill is optional.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-dungeon-extraction-guide/">When to leave</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'Bosses', description: 'Named fights, not these elites' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-backpack-is-the-puzzle': {
+    slug: 'moonlighter-2-backpack-is-the-puzzle',
+    title: 'Moonlighter 2 Backpack: The Puzzle Is the Bag',
+    description: 'Moonlighter 2 never publishes a single backpack size as a marketing number. The puzzle is still which relic you refuse to carry.',
+    kicker: 'Bag',
+    status: 'Launch-day update',
+    intro: 'The currency counter in the corner goes up. The bag does not. That tension is the game. A review that wants a bigger bag is asking for a different game.',
+    sections: [
+      {
+        heading: 'What to drop',
+        paragraphs: [
+          'Drop the relic you cannot price tonight. A famous item you will undercharge is worse than a small item you know.',
+          'Hotfix 1 did not add a bag expansion. Shop Level 5 changes the store, not the dungeon grid.',
+        ],
+        bullets: [
+          '<a href="/items/">Items</a>',
+          '<a href="/prices/">Prices</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/items/', title: 'Items', description: 'What is worth a slot' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-sale-price-october': {
+    slug: 'moonlighter-2-sale-price-october',
+    title: 'Moonlighter 2 at $20.99: The October 2026 Price',
+    description: 'Moonlighter 2 launched at $29.99 and is $20.99 on the US Steam listing in October 2026. The sale does not add a region.',
+    kicker: 'Price',
+    status: 'Launch-day update',
+    intro: 'The US listing shows $20.99 against a $29.99 base. Version 1.0 has been out since September 2. The discount is a price, not a content patch.',
+    sections: [
+      {
+        heading: 'What the sale includes',
+        paragraphs: [
+          'The six regions, the shop, Hardcore, and the Endless Vault rules that shipped in 1.0. Hotfix 1 is free on top.',
+          "It does not include a Switch 2 version. It does not include a clerk NPC. It does not include the first game's dodge cancel.",
+        ],
+        bullets: [
+          '<a href="/release-date/">Release</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0', description: 'What you are buying' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-screen-flash': {
+    slug: 'moonlighter-2-screen-flash',
+    title: 'Moonlighter 2 Screen Flash and Hit Effects',
+    description: 'Some Moonlighter 2 players cannot play through the hit flash. It is a reported accessibility gap, separate from the combat being bad.',
+    kicker: 'Accessibility',
+    status: 'Launch-day update',
+    intro: 'A negative review that would otherwise forgive the game names constant screen flashing, and says a community report was warned instead of fixed. That is a real gap in the 1.0 build.',
+    sections: [
+      {
+        heading: 'What you can do now',
+        paragraphs: [
+          "Turn effect intensity and screen shake down in the options before you write the game off. If those sliders do not touch the flash you mean, they do not. Hotfix 1's notes are about DirectX, bosses, and input loss, not a photosensitivity preset.",
+          'Do not buy the sale price to test a medical problem. Wishlist is the wrong state too. The game is out. The slider is either there or it is not.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'What that patch did fix' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-shop-still-manual': {
+    slug: 'moonlighter-2-shop-still-manual',
+    title: 'Moonlighter 2 Shop: You Still Run the Register',
+    description: 'Players want a clerk in Moonlighter 2. Version 1.0 and Hotfix 1 still leave the register in your hands.',
+    kicker: 'The register',
+    status: 'Launch-day update',
+    intro: 'The wish shows up in otherwise positive reviews: someone to run the register, a janitor, a longer dungeon button. None of those shipped. The shop is still the second half of the run.',
+    sections: [
+      {
+        heading: 'Run the shop like a system',
+        paragraphs: [
+          "Price from what sold yesterday, not from the relic's rarity color. The [prices page](/prices/) is the habit.",
+          'A bad day at the counter is not a bug. It is the reason the next dungeon has a goal. If you want a score-attack roguelike with no counter, this is the wrong $20.99.',
+        ],
+        bullets: [
+          '<a href="/shop-guide/">Shop guide</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/shop-guide/', title: 'Shop', description: 'The full counter loop' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-hotfix-1-still-the-crash-fix': {
+    slug: 'moonlighter-2-hotfix-1-still-the-crash-fix',
+    title: 'Moonlighter 2 After Hotfix 1: What Is Still Broken',
+    description: 'Hotfix 1 fixed the DirectX crash switch and named bosses. It did not add dodge cancel, a clerk, or a seventh region.',
+    kicker: 'After Hotfix 1',
+    status: 'Launch-day update',
+    intro: 'Hotfix 1 on September 10 is still the stability patch. October complaints about healing, flash, and the register are design, not a missed checkbox in that note.',
+    sections: [
+      {
+        heading: 'Split the list',
+        paragraphs: [
+          'Install Hotfix 1 if the game crashes or a named boss is invincible. The notes name Kalina, Hazy Jane, and Scarabastion among others.',
+          'Do not wait on Hotfix 1 for a longer dungeon or a mid-swing dodge. Those were not in the 1.0 promise, and they are not in the hotfix.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-hotfix-1/">Hotfix 1 notes</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'The actual list' },
+    ],
+    sources: [],
+  },
 };
+
+
 
 export const PAGE_DATA: Record<string, PageData> = {
   ...INLINE_PAGES,
