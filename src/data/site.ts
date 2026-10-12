@@ -1880,6 +1880,83 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  'moonlighter-2-very-positive-october': {
+    slug: 'moonlighter-2-very-positive-october',
+    title: 'Moonlighter 2 Very Positive in October 2026',
+    description: 'Moonlighter 2 is Very Positive in October 2026: 1,672 of 2,022 reviews, Metacritic 72, $29.99. What the score actually buys.',
+    kicker: 'Reviews',
+    status: 'Launch-day update',
+    intro: 'Checked October 12, 2026: Moonlighter 2: The Endless Vault is Very Positive — 1,672 positive out of 2,022. Metacritic is 72. The live PC price is $29.99, no discount. Fifty-six achievements. Version 1.0 shipped September 2.',
+    sections: [
+      {
+        heading: 'How to read 72 and Very Positive together',
+        paragraphs: [
+          'The Steam pile likes the six-region loop, the two-boon limit, and watching the numbers go up. Files at 50–100 hours still recommend it, including one that 100%’d in about 100 hours. Metacritic 72 is the cooler critic number for the same product: a refined successor that is more roguelite than the first shop-sim.',
+          'The complaint that sits next to the praise is still the split. After the third heal the run feels solvable. Healing is scarce because the mid-swing dodge from Moonlighter 1 is gone. Some files still want a clerk. None of that is a missing hotfix checkbox.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-too-easy/">Too easy after three heals</a>',
+          '<a href="/moonlighter-2-healing-and-dodge/">Healing and dodge</a>',
+          '<a href="/moonlighter-2-sale-price-october/">October price</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/version-1-0-update/', title: 'Version 1.0', description: 'What 1.0 added' },
+      { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1', description: 'What that patch fixed' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-hundred-percent': {
+    slug: 'moonlighter-2-hundred-percent',
+    title: 'Moonlighter 2 100% in About 100 Hours',
+    description: 'A Moonlighter 2 file hit 100% achievements in about 100 hours. What that clock includes, and what it does not.',
+    kicker: 'Completion',
+    status: 'Launch-day update',
+    intro: 'One long positive file at 113 hours says it took right about 100 hours to 100% the accomplishment list. Fifty-six achievements. That is a completion clock, not a story clock. A casual shop-and-dungeon run is much shorter.',
+    sections: [
+      {
+        heading: 'What 100 hours is buying',
+        paragraphs: [
+          'The 100% file is weapon-type mastery, region coverage, and the postgame ladder — Infinite Endless Vault gold thresholds, Hardcore, Endless Weapon Aspects — not a first-weekend story. Six regions and two boons per run keep each expedition readable. They also mean a completionist repeats the loop until the list pops.',
+          'Do not use 100 hours as a reason to skip the game. Use it as a reason not to promise a weekend 100%. The [six regions page](/moonlighter-2-six-regions/) is the shape. The [Endless Vault page](/moonlighter-2-infinite-endless-vault-guide/) is the postgame.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-very-positive-october/">Very Positive in October</a>',
+          '<a href="/weapons/">Weapons</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-postgame-guide/', title: 'Postgame', description: 'What 1.0 added after the story' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-metacritic-72': {
+    slug: 'moonlighter-2-metacritic-72',
+    title: 'Moonlighter 2 Metacritic 72: Different, Not Broken',
+    description: 'Moonlighter 2 sits at Metacritic 72 with Very Positive Steam reviews. Why the critic number is cooler than the shop-and-dungeon files.',
+    kicker: 'Metacritic 72',
+    status: 'Launch-day update',
+    intro: 'Metacritic 72 and Very Positive on Steam (1,672 of 2,022) describe the same September 2 1.0 build. The critic number is cooler because the sequel is more Hades-like and less of a pure shop sim. Players who wanted Moonlighter 1 with a new coat are the 72. Players who wanted a six-region roguelite with a register are the Very Positive pile.',
+    sections: [
+      {
+        heading: 'What 72 is not',
+        paragraphs: [
+          'It is not a missing clerk. It is not Hotfix 1 failing to add dodge-cancel. It is not a $20.99 sale from last week — the live tag is $29.99 again. Digital Sun developed it. 11 bit studios published it.',
+          'If the first game’s mid-swing dodge is the thing you loved, read [healing and dodge](/moonlighter-2-healing-and-dodge/) before you treat 72 as a graphics complaint. If you 100% games, the [100-hour page](/moonlighter-2-hundred-percent/) is the clock.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-too-easy/">Too easy</a>',
+          '<a href="/shop-guide/">Shop</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-very-positive-october/', title: 'Very Positive', description: 'The Steam pile' },
+    ],
+    sources: [],
+  },
 };
 
 
