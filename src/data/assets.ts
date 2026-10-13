@@ -167,6 +167,7 @@ export const PAGE_ASSETS: Record<string, AssetKey> = {
   'moonlighter-2-very-positive-october': 'header',
   'moonlighter-2-hundred-percent': 'shot3',
   'moonlighter-2-metacritic-72': 'hero',
+  'moonlighter-2-autosave': 'shot3',
   about: 'header',
   contact: 'shot2',
   'privacy-policy': 'header',

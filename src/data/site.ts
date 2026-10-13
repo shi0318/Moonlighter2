@@ -1957,6 +1957,31 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  'moonlighter-2-autosave': {
+    slug: 'moonlighter-2-autosave',
+    title: 'Moonlighter 2 Autosave: You Cannot Sleep Mid-Run',
+    description: 'Moonlighter 2 autosave waits until the run ends. You cannot sleep whenever you want. How to treat that as a loop rule, not a missing Cloud setting.',
+    kicker: 'Saves',
+    status: 'Launch-day update',
+    intro: 'A 20-hour file that still recommends the game warns the auto-save is terrible. A 3.9-hour negative file is blunter: saving is painful, you always have to finish the run, and you cannot sleep whenever you want. That is the 1.0 loop, not a Steam Cloud failure.',
+    sections: [
+      {
+        heading: 'What the loop actually saves',
+        paragraphs: [
+          'Extract, sell, sleep in Tresna, then go back. Sleep is the hub save. A dungeon run that is still open is not a rest. Hardcore already ends the whole file on death. Do not confuse that penalty with an autosave that will not fire in the vault.',
+          'Steam Cloud is on the listing. It syncs a file that exists. It does not add a mid-floor rest. See <a href="/save-transfer-progress-guide/">save transfer</a> for the 1.0 migration silence, and <a href="/shop-guide/">the shop</a> for the counter you still run yourself.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-dungeon-extraction-guide/">Extraction</a>',
+          '<a href="/moonlighter-2-shop-still-manual/">The register</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/save-transfer-progress-guide/', title: 'Save transfer', description: 'Cloud is listed. A mid-run sleep is not.' },
+    ],
+    sources: [],
+  },
 };
 
 
