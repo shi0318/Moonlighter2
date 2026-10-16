@@ -129,9 +129,9 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
-  { href: '/moonlighter-2-very-positive/', title: 'Very Positive Reviews', description: '1,580 of 1,903 Steam reviews: combat praise versus grind, Aeolia bugs, and a campaign that is only half the game.', priority: 'New', image: 'shot2' },
-  { href: '/moonlighter-2-aeolia-bugs/', title: 'Aeolia Bugs', description: 'Why reviews say an hour-long Aeolia run can be wasted, plus the 7.6% Ultimate Challenge rate.', priority: 'New', image: 'hero' },
-  { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 (September 10)', description: 'The DirectX 11/12 switch and every named fix: Kalina out-of-map, Hazy Jane input loss, Scarabastion invincibility.', priority: 'New', image: 'shot2' },
+  { href: '/moonlighter-2-very-positive/', title: 'Very Positive Reviews', description: '1,580 of 1,903 Steam reviews: combat praise versus grind, Aeolia bugs, and a campaign that is only half the game.', priority: 'New', image: 'hotDesert' },
+  { href: '/moonlighter-2-aeolia-bugs/', title: 'Aeolia Bugs', description: 'Why reviews say an hour-long Aeolia run can be wasted, plus the 7.6% Ultimate Challenge rate.', priority: 'New', image: 'hotCombat' },
+  { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 (September 10)', description: 'The DirectX 11/12 switch and every named fix: Kalina out-of-map, Hazy Jane input loss, Scarabastion invincibility.', priority: 'New', image: 'hotCombat' },
   { href: '/characters/', title: 'Characters', description: 'Will, Tresna, Hazy Jane, Babyl, Spark and every character the official posts name.', priority: 'New', image: 'shot5' },
   { href: '/moonlighter-2-best-weapon/', title: 'Moonlighter 2 Best Weapon', description: 'A version 1.0 weapon comparison built from the four named Endless Weapon Aspects and the limits of the published data.', priority: 'New', image: 'shot4' },
   { href: '/moonlighter-2-infinite-endless-vault-guide/', title: 'Infinite Endless Vault Guide', description: 'How the postgame thresholds work, what resets on a failed run, and which reward categories are confirmed.', priority: 'New', image: 'hero' },
@@ -152,7 +152,7 @@ export const REQUIRED_GUIDES = [
   { href: '/steam-features-guide/', title: 'Steam Features Guide', description: 'Controller support, Steam Cloud, single-player status, and what the current store listing actually confirms.', priority: 'New', image: 'shot4' },
   { href: '/beginner-guide/', title: 'Beginner Guide', description: 'A fact-first first-session route built from the published dungeon, shop, and town loop.', priority: 'P0', image: 'shot2' },
   { href: '/items/', title: 'Items & Relics', description: 'Track what is officially described, what is observed, and what still needs a hands-on entry.', priority: 'P0', image: 'shot3' },
-  { href: '/prices/', title: 'Item Prices', description: 'The core tool page for observed sale prices and customer responses after testing.', priority: 'P0', image: 'shot4' },
+  { href: '/prices/', title: 'Item Prices', description: 'The core tool page for observed sale prices and customer responses after testing.', priority: 'P0', image: 'hotShop' },
   { href: '/shop-guide/', title: 'Shop Guide', description: 'Use the confirmed pricing, customer-reading, decoration, and perk systems as the page spine.', priority: 'P1', image: 'shot5' },
   { href: '/dungeon-guide/', title: 'Dungeon Guide', description: 'Plan routes around relic collection, risk, backpack space, and the published deeper-is-better reward loop.', priority: 'P1', image: 'hero' },
   { href: '/version-1-release-date/', title: 'Version 1.0 Release Date', description: 'September 2, 2026, and how the August announcement compares with what the launch-day post confirmed.', priority: 'New', image: 'shot5' },

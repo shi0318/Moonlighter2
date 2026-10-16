@@ -50,14 +50,14 @@ if (existsSync(distIndex)) {
   assert(html.includes('Left Early Access Sep 2, 2026'), 'Homepage no longer records the version 1.0 release state.');
 
   const homeCardImages = {
-    '/save-transfer-progress-guide/': '/images/moonlighter-2-shot-5.jpg',
-    '/moonlighter-2-switch-2/': '/images/moonlighter-2-header.jpg',
-    '/beginner-guide/': '/images/moonlighter-2-shot-2.jpg',
-    '/items/': '/images/moonlighter-2-shot-3.jpg',
-    '/prices/': '/images/moonlighter-2-shot-4.jpg',
-    '/shop-guide/': '/images/moonlighter-2-shot-5.jpg',
-    '/dungeon-guide/': '/images/moonlighter-2-shot-1.jpg',
-    '/release-date/': '/images/moonlighter-2-header.jpg',
+    '/moonlighter-2-very-positive/': '/images/m2-hot-0.webp',
+    '/moonlighter-2-aeolia-bugs/': '/images/m2-hot-6.webp',
+    '/moonlighter-2-hotfix-1/': '/images/m2-hot-6.webp',
+    '/characters/': '/images/moonlighter-2-shot-5.jpg',
+    '/moonlighter-2-best-weapon/': '/images/moonlighter-2-shot-4.jpg',
+    '/moonlighter-2-infinite-endless-vault-guide/': '/images/moonlighter-2-shot-1.jpg',
+    '/moonlighter-2-hardcore-mode/': '/images/moonlighter-2-shot-2.jpg',
+    '/moonlighter-2-shop-level-5/': '/images/moonlighter-2-shot-5.jpg',
   };
   for (const [href, image] of Object.entries(homeCardImages)) {
     const cardPattern = new RegExp(`<a href="${href}"[^>]*>\\s*<img[^>]*src="${image}"`, 'i');
@@ -70,8 +70,8 @@ const articleImages = {
   '/save-transfer-progress-guide/': 'moonlighter-2-shot-5.jpg',
   '/version-1-0-update/': 'moonlighter-2-shot-4.jpg',
   '/items/': 'moonlighter-2-shot-3.jpg',
-  '/prices/': 'moonlighter-2-shot-4.jpg',
-  '/shop-guide/': 'moonlighter-2-shot-5.jpg',
+  '/prices/': 'm2-hot-2.webp',
+  '/shop-guide/': 'm2-hot-2.webp',
   '/release-date/': 'moonlighter-2-header.jpg',
 };
 for (const [page, image] of Object.entries(articleImages)) {
@@ -94,10 +94,17 @@ if (existsSync(saveTransferPath)) {
 }
 
 const guidesPath = join(root, 'dist', 'guides', 'index.html');
+const guidesPage2 = join(root, 'dist', 'guides', 'page', '2', 'index.html');
 if (existsSync(guidesPath)) {
   const guidesText = readFileSync(guidesPath, 'utf8');
-  assert(guidesText.includes('href="/save-transfer-progress-guide/"'), 'Guide directory must list the save-transfer page.');
-  assert(guidesText.includes('href="/version-1-0-update/"'), 'Guide directory must list the version 1.0 update page.');
+  for (const href of ['/moonlighter-2-very-positive/', '/moonlighter-2-aeolia-bugs/', '/moonlighter-2-hotfix-1/']) {
+    assert(guidesText.includes(`href="${href}"`), `Guide directory must list ${href}.`);
+  }
+}
+if (existsSync(guidesPage2)) {
+  const page2 = readFileSync(guidesPage2, 'utf8');
+  assert(page2.includes('href="/save-transfer-progress-guide/"'), 'Guide directory page 2 must list the save-transfer page.');
+  assert(page2.includes('href="/version-1-0-update/"'), 'Guide directory page 2 must list the version 1.0 update page.');
 }
 
 const homeHeader = existsSync(distIndex) ? readFileSync(distIndex, 'utf8').match(/<header[\s\S]*?<\/header>/i)?.[0] ?? '' : '';
@@ -106,8 +113,11 @@ assert(!homeHeader.includes('href="/save-transfer-progress-guide/"'), 'Save-tran
 const sitemapPath = join(root, 'dist', 'sitemap-0.xml');
 if (existsSync(sitemapPath)) {
   const sitemap = readFileSync(sitemapPath, 'utf8');
-  assert(sitemap.includes('<loc>https://moonlighter2guide.org/save-transfer-progress-guide/</loc><lastmod>2026-09-03T00:00:00.000Z</lastmod>'), 'Sitemap must include the save-transfer page with the 2026-09-03 lastmod.');
-  assert(sitemap.includes('<loc>https://moonlighter2guide.org/version-1-0-update/</loc><lastmod>2026-09-03T00:00:00.000Z</lastmod>'), 'Sitemap must include the version 1.0 update page with the 2026-09-03 lastmod.');
+  for (const href of ['/moonlighter-2-very-positive/', '/moonlighter-2-aeolia-bugs/', '/moonlighter-2-very-positive-october/', '/moonlighter-2-autosave/']) {
+    assert(sitemap.includes(`<loc>https://moonlighter2guide.org${href}</loc><lastmod>2026-10-15T00:00:00.000Z</lastmod>`), `Sitemap must include ${href} with the 2026-10-15 lastmod.`);
+  }
+  assert(sitemap.includes('<loc>https://moonlighter2guide.org/save-transfer-progress-guide/</loc><lastmod>2026-09-03T00:00:00.000Z</lastmod>'), 'Sitemap must retain the save-transfer page lastmod.');
+  assert(sitemap.includes('<loc>https://moonlighter2guide.org/version-1-0-update/</loc><lastmod>2026-09-03T00:00:00.000Z</lastmod>'), 'Sitemap must retain the version 1.0 update page lastmod.');
 }
 
 const siteSourcePath = join(root, 'src', 'data', 'site.ts');

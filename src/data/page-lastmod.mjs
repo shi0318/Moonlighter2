@@ -25,6 +25,15 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-dungeon-extraction-guide/': '2026-09-10',
   '/moonlighter-2-boss-completion-guide/': '2026-09-10',
   '/moonlighter-2-postgame-guide/': '2026-09-10',
+  '/moonlighter-2-very-positive/': '2026-10-15',
+  '/moonlighter-2-aeolia-bugs/': '2026-10-15',
+  '/moonlighter-2-very-positive-october/': '2026-10-15',
+  '/moonlighter-2-autosave/': '2026-10-15',
+  '/moonlighter-2-hundred-percent/': '2026-10-15',
+  '/moonlighter-2-metacritic-72/': '2026-10-15',
+  '/moonlighter-2-sale-price-october/': '2026-10-15',
+  '/moonlighter-2-screen-flash/': '2026-10-15',
+  '/moonlighter-2-shop-still-manual/': '2026-10-15',
 };
 
 export function pageLastmod(pathname) {
