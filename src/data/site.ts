@@ -1982,6 +1982,188 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  'moonlighter-2-price-october-16': {
+    slug: 'moonlighter-2-price-october-16',
+    title: 'Moonlighter 2 Price on October 16: Still $29.99',
+    description: 'Moonlighter 2 is $29.99 on Steam with no discount. What the live tag buys after version 1.0 and Hotfix 1.',
+    kicker: 'Price',
+    status: 'Launch-day update',
+    intro: 'Checked October 16, 2026: Steam App 2350790 lists Moonlighter 2: The Endless Vault at $29.99, discount 0. Version 1.0 left Early Access on September 2, 2026. Digital Sun developed it. 11 bit studios published it. Fifty-six achievements.',
+    sections: [
+      {
+        heading: 'What $29.99 is buying now',
+        paragraphs: [
+          'The live tag is the full 1.0 game: the story conclusion, Infinite Endless Vault, four Endless Weapon Aspects, Shop Level 5, the Bomb Path, and Hardcore Mode. Hotfix 1 on September 10 is still the named stability patch. A checkout total can still change with region, tax, or a later promotion. This page is the US listing, not a sale timer.',
+          'English Steam reviews are Very Positive: 1,688 positive out of 2,042. That pile likes the shop-and-dungeon loop. It does not add a mid-run sleep or a seventh region.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-autosave/">Autosave waits until the run ends</a>',
+          '<a href="/version-1-0-update/">What version 1.0 added</a>',
+          '<a href="/moonlighter-2-hotfix-1/">Hotfix 1</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/release-date/', title: 'Release date', description: 'September 2, 2026' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-56-achievements': {
+    slug: 'moonlighter-2-56-achievements',
+    title: 'Moonlighter 2 Has 56 Steam Achievements',
+    description: 'Steam lists 56 achievements for Moonlighter 2. How to treat that count as a completion clock, not a weekend checklist.',
+    kicker: 'Achievements',
+    status: 'Launch-day update',
+    intro: 'Steam App 2350790 lists 56 achievements. A long positive file put a full clear near 100 hours. That clock is weapon-type mastery, six regions, and the postgame ladder. It is not the length of a first shop weekend.',
+    sections: [
+      {
+        heading: 'How to use the count',
+        paragraphs: [
+          'Do not start a new file just to chase the number. Finish a run, sell, and sleep in Tresna before you judge a missing pop. Hardcore ends the file on death. The Infinite Endless Vault resets a failed gold threshold. Those two rules eat more time than any single achievement name.',
+          'The listing does not publish a missable table. If a pop fails after Hotfix 1, retest the same save on the current build before you assume the achievement is gone.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-hundred-percent/">The 100-hour completion clock</a>',
+          '<a href="/moonlighter-2-infinite-endless-vault-guide/">Infinite Endless Vault</a>',
+          '<a href="/moonlighter-2-hardcore-mode/">Hardcore Mode</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'Bosses', description: 'Named completion targets' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-reviews-october-16': {
+    slug: 'moonlighter-2-reviews-october-16',
+    title: 'Moonlighter 2 Reviews on October 16: Very Positive',
+    description: 'Moonlighter 2 is Very Positive on October 16: 1,688 of 2,042 English Steam reviews. What that score still agrees on.',
+    kicker: 'Reviews',
+    status: 'Launch-day update',
+    intro: 'Checked October 16, 2026: English Steam reviews for Moonlighter 2 are Very Positive, 1,688 positive out of 2,042. The live PC price is $29.99. The score moved up from the October 12 snapshot of 1,672 out of 2,022. The complaint next to the praise did not move.',
+    sections: [
+      {
+        heading: 'What the new reviews still say',
+        paragraphs: [
+          'Praise stays on the six-region loop, the two-boon limit, and the register. The complaint stays on healing, the missing mid-swing dodge, and a run you cannot sleep through. Hotfix 1 fixed named crashes and boss bugs. It did not add a clerk or a dodge cancel.',
+          'Use the newer count if you are deciding today. Do not treat 1,688 of 2,042 as a promise that every Aeolia run is safe. A long dungeon can still be wasted if you die before extraction.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-aeolia-bugs/">Aeolia runs</a>',
+          '<a href="/moonlighter-2-healing-and-dodge/">Healing and dodge</a>',
+          '<a href="/moonlighter-2-very-positive-october/">The October 12 snapshot</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-price-october-16/', title: 'October 16 price', description: '$29.99, no discount' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-windows-only': {
+    slug: 'moonlighter-2-windows-only',
+    title: 'Moonlighter 2 on Steam Is Windows Only',
+    description: 'The Moonlighter 2 Steam listing is Windows only at $29.99. What that does and does not say about consoles.',
+    kicker: 'Platforms',
+    status: 'Launch-day update',
+    intro: 'Steam App 2350790 lists Windows as the storefront platform and $29.99 as the US price. The September 2 launch post said console versions were available the same day. It did not name Nintendo Switch 2 on the Steam page.',
+    sections: [
+      {
+        heading: 'Read the listing, then the announcement',
+        paragraphs: [
+          'If you are buying on Steam, you are buying the Windows build. Steam Cloud, achievements, and full controller support are storefront features of that listing. They are not a Deck verification badge, and they are not a Switch 2 SKU.',
+          'A console copy is a different storefront. Do not wait on the Steam page to grow a second platform row. Check the publisher post if you need a named console, then come back here for the PC loop.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-switch-2/">Switch 2 status</a>',
+          '<a href="/steam-features-guide/">Steam features</a>',
+          '<a href="/co-op-status/">Single-player status</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/steam-features-guide/', title: 'Steam features', description: 'Cloud, controller, and the Windows listing' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-when-to-extract': {
+    slug: 'moonlighter-2-when-to-extract',
+    title: 'Moonlighter 2: When to Extract',
+    description: 'Use the pendant to leave a Moonlighter 2 dungeon with the bag intact. Death, not depth, is the penalty.',
+    kicker: 'Dungeon loop',
+    status: 'Launch-day update',
+    intro: 'The pendant teleports you home with everything in the bag. There is no penalty beyond the loot you did not pick up. Death is the penalty. On Easy, Normal, and Hard it halves relic quality. On Expert you lose the relics. On Hardcore it can end the save.',
+    sections: [
+      {
+        heading: 'Leave before the bag is the prize',
+        paragraphs: [
+          'Deeper rooms pay more. They also put the haul you already have on the line. If the next room is an elite and the bag is full of relics you meant to sell, use the pendant. Skipped loot is cheaper than a halved backpack.',
+          'The Infinite Endless Vault is the exception. Each gold threshold is one closed run. Falling short resets that threshold. Do not pendant out of a threshold and expect the gold to bank. See the extraction guide for the same rule in longer form.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-dungeon-extraction-guide/">Extraction guide</a>',
+          '<a href="/moonlighter-2-hardcore-mode/">Hardcore death</a>',
+          '<a href="/moonlighter-2-backpack-is-the-puzzle/">The backpack</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/dungeon-guide/', title: 'Dungeon guide', description: 'The run, not the shop' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-two-boons-per-run': {
+    slug: 'moonlighter-2-two-boons-per-run',
+    title: 'Moonlighter 2: Only Two Boons per Run',
+    description: 'A Moonlighter 2 run keeps two boons. Pick them for the next elite, not for a six-region shopping list.',
+    kicker: 'Boons',
+    status: 'Launch-day update',
+    intro: 'Two boons per run is the limit players keep naming, and it is why a six-region loop stays readable. A third offer is a replacement, not a stack. Endless Weapon Aspects are a different system. Do not plan a boon and an aspect as if they share a slot.',
+    sections: [
+      {
+        heading: 'Pick for the room you are about to enter',
+        paragraphs: [
+          'If the next node on Tomo’s Radar is an elite or a miniboss, take the boon that answers that room. A damage boon you cannot trigger before the pendant is wasted. A defensive boon on a run you already mean to extract is also wasted.',
+          'Elites and minibosses do not rupture. The backpack launch is for a normal enemy at half health, the one that turns purple. Do not save a boon for a rupture on a boss.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-two-boons/">Two boons</a>',
+          '<a href="/moonlighter-2-elite-telegraph/">Elite telegraphs</a>',
+          '<a href="/moonlighter-2-endless-weapon-aspects/">Endless Weapon Aspects</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons', description: 'The four melee meters' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-weapon-meters': {
+    slug: 'moonlighter-2-weapon-meters',
+    title: 'Moonlighter 2 Weapon Meters: Finisher, Sharpness, Spear, Berserk',
+    description: 'Each Moonlighter 2 melee class has its own meter. How to read Finisher, Sharpness, spearheads, and Berserk.',
+    kicker: 'Combat',
+    status: 'Launch-day update',
+    intro: 'Short Swords chain into a Special Finisher after three hits. Large Swords spend and rebuild Sharpness. Spears plant spearheads the Special recalls. Gauntlets fill a Berserk gauge. The gun refills on its own, and faster when melee hits land. Keep one shot.',
+    sections: [
+      {
+        heading: 'Fight the meter you equipped',
+        paragraphs: [
+          'A Short Sword that never reaches the third hit is a fast poke with no finisher. A Large Sword that dumps Sharpness into a whiff is a slow recovery. Plant spearheads where the recall will hit, not into an empty lane. Gauntlets want the gauge full before the elite, not after you are already dodging.',
+          'Breakables and melee hits refill ammo. Do not empty the gun on the first add if the elite is the next node. Rupture — purple at half health, then the backpack launch — is for normal enemies only.',
+        ],
+        bullets: [
+          '<a href="/beginner-guide/">First-session loop</a>',
+          '<a href="/moonlighter-2-healing-and-dodge/">Healing and the missing mid-swing dodge</a>',
+          '<a href="/characters-eris/">Eris potions</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons', description: 'Named swords, spears, and gauntlets' },
+    ],
+    sources: [],
+  },
 };
 
 

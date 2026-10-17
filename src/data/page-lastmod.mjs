@@ -34,6 +34,13 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-sale-price-october/': '2026-10-15',
   '/moonlighter-2-screen-flash/': '2026-10-15',
   '/moonlighter-2-shop-still-manual/': '2026-10-15',
+  '/moonlighter-2-price-october-16/': '2026-10-16',
+  '/moonlighter-2-56-achievements/': '2026-10-16',
+  '/moonlighter-2-reviews-october-16/': '2026-10-16',
+  '/moonlighter-2-windows-only/': '2026-10-16',
+  '/moonlighter-2-when-to-extract/': '2026-10-16',
+  '/moonlighter-2-two-boons-per-run/': '2026-10-16',
+  '/moonlighter-2-weapon-meters/': '2026-10-16',
 };
 
 export function pageLastmod(pathname) {
