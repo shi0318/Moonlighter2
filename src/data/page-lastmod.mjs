@@ -41,6 +41,9 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-when-to-extract/': '2026-10-16',
   '/moonlighter-2-two-boons-per-run/': '2026-10-16',
   '/moonlighter-2-weapon-meters/': '2026-10-16',
+  '/moonlighter-2-how-to-beat-tyke/': '2026-10-16',
+  '/moonlighter-2-herald-shields/': '2026-10-16',
+  '/moonlighter-2-sell-before-you-upgrade/': '2026-10-16',
 };
 
 export function pageLastmod(pathname) {

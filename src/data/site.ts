@@ -2164,6 +2164,84 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  'moonlighter-2-how-to-beat-tyke': {
+    slug: 'moonlighter-2-how-to-beat-tyke',
+    title: 'Moonlighter 2: How to Beat Tyke',
+    description: 'Tyke is the Gallery Treasury Halls boss. Dodge the pink orbs, punish the recovery, and extract if the bag is already full.',
+    kicker: 'Boss',
+    status: 'Launch-day update',
+    intro: 'Tyke is a 3-phase fight at the end of The Gallery Treasury Halls. The achievement is Dismissal Letter. Beating it is required for that floor’s story quest and frees a captured friend. The full room notes are on the Tyke page.',
+    sections: [
+      {
+        heading: 'Fight the recovery, not the orb wave',
+        paragraphs: [
+          'The arena fills with pink energy orbs. Every attack has a wind-up you can dodge. Do not swing through the wave. Wait for the recovery, then punish. Gauntlets are the burst tool for that short window, if that is the meter you brought. A Short Sword still needs its three-hit finisher. Do not change weapons in the doorway.',
+          'Elites and this boss do not rupture. The backpack launch is for purple normal enemies, not for Tyke. If the bag is already full of relics you meant to sell, pendant out before the door. A death here halves relic quality on Easy, Normal, and Hard.',
+        ],
+        bullets: [
+          '<a href="/bosses-tyke/">Tyke boss page</a>',
+          '<a href="/moonlighter-2-weapon-meters/">Weapon meters</a>',
+          '<a href="/moonlighter-2-when-to-extract/">When to extract</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/bosses/', title: 'Bosses', description: 'The other named floors' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-herald-shields': {
+    slug: 'moonlighter-2-herald-shields',
+    title: 'Moonlighter 2: Strip the Herald’s Shields',
+    description: 'The Herald starts each phase behind energy shields. Catch the purple blobs and throw them back before you swing.',
+    kicker: 'Boss',
+    status: 'Launch-day update',
+    intro: 'The Herald is the first boss, at the end of Kalina’s Day Realm. Three phases. Beating it the first time starts the quest that opens the Night Realm. The hidden achievement is Out of Tune. It starts every phase behind energy shields.',
+    sections: [
+      {
+        heading: 'Throw the blobs, then hit',
+        paragraphs: [
+          'Phase 1 puts six energy shields up. Catch the purple bomb blobs with the backpack and throw them back to strip the shields. Swinging the sword at the shields does not replace that throw. If you fail to push the phase during the stun, it returns with three shields instead of six. That is a smaller job, not a reset.',
+          'Phase 2 breaks the right-hand cover and adds a two-way laser. Phase 3 removes the cover and layers bombardment on the laser. Dodge the laser, then use the same blob throw. Do not stand in the old cover spot after phase 2.',
+        ],
+        bullets: [
+          '<a href="/bosses-the-herald/">The Herald</a>',
+          '<a href="/moonlighter-2-two-boons-per-run/">Two boons</a>',
+          '<a href="/dungeon-guide/">Dungeon loop</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-how-to-beat-tyke/', title: 'Tyke', description: 'The next wall' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-sell-before-you-upgrade': {
+    slug: 'moonlighter-2-sell-before-you-upgrade',
+    title: 'Moonlighter 2: Sell the Bag Before You Upgrade',
+    description: 'Moonlighter 2 shop upgrades survive death. Backpack relics do not. Sell, then buy potions from Eris.',
+    kicker: 'Shop',
+    status: 'Launch-day update',
+    intro: 'Nothing you buy in Tresna is lost on death. Relics in the backpack are. The first coins should become potions and a shop level, not a weapon you have not learned the meter for.',
+    sections: [
+      {
+        heading: 'A return to town, in order',
+        paragraphs: [
+          'Extract with the pendant if the bag is the prize. Sleep is the hub save. You cannot sleep mid-run. Put relics on the displays, read the customer, and take the sale before you open a weapon menu.',
+          'Eris at the Witch Hut is the first vendor players upgrade: potions, health, and dungeon perk unlocks. Ms. Scratch raises the shop level. K33P3R adds merchant bonuses. The Countess sells showcases that raise a whole rarity. Those are safe spends. A new sword is not, until the meter on the current one is boring.',
+        ],
+        bullets: [
+          '<a href="/shop-guide/">Shop guide</a>',
+          '<a href="/characters-eris/">Eris</a>',
+          '<a href="/moonlighter-2-autosave/">Autosave</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/prices/', title: 'Prices', description: 'What to write down after a sale' },
+    ],
+    sources: [],
+  },
 };
 
 
