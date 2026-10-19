@@ -44,6 +44,11 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-how-to-beat-tyke/': '2026-10-16',
   '/moonlighter-2-herald-shields/': '2026-10-16',
   '/moonlighter-2-sell-before-you-upgrade/': '2026-10-16',
+  '/moonlighter-2-relic-curses/': '2026-10-17',
+  '/moonlighter-2-radar-nodes/': '2026-10-17',
+  '/moonlighter-2-perk-paths/': '2026-10-17',
+  '/moonlighter-2-rupture-guide/': '2026-10-17',
+  '/moonlighter-2-difficulty-and-death/': '2026-10-17',
 };
 
 export function pageLastmod(pathname) {

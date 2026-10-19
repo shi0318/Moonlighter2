@@ -2242,6 +2242,299 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  "moonlighter-2-relic-curses": {
+    slug: "moonlighter-2-relic-curses",
+    title: "Moonlighter 2 Relic Curses: Burn, Shock and Petrify Explained",
+    description:
+      "Every Moonlighter 2 relic curse: Burn and Armor in Kalina, Shock and Overcharge in The Gallery, Petrify and Absorb in Aeolia, and how to pack a backpack around each.",
+    kicker: "Backpack",
+    status: 'Launch-day update',
+    intro: "Each of the three dimensions puts a different curse on the relics you pick up, and the curse is why the backpack is a puzzle instead of a list. Pack wrong and the relic you crossed a floor for is destroyed before you reach the pendant.",
+    sections: [
+      {
+        heading: "One dimension, one curse",
+        paragraphs: [
+          "The curse is a property of the dimension, not of the relic. Walk into Kalina and everything you pick up plays by Burn and Armor rules; walk into The Gallery and the same slot behaves completely differently.",
+          "That means the packing habit you built in your first dimension actively hurts you in the second. Re-learn the grid each time you unlock a new region.",
+        ],
+        bullets: [
+          "<a href=\"/dungeons-kalina/\">Kalina</a> — desert, Tier 1",
+          "<a href=\"/dungeons-the-gallery/\">The Gallery</a> — museum machines, Tier 2",
+          "<a href=\"/dungeons-aeolia/\">Aeolia</a> — witches and storms, Tier 3",
+        ],
+      },
+      {
+        heading: "Kalina — Burn and Armor",
+        paragraphs: [
+          "A burning relic is destroyed unless an **Armored** relic sits next to it. Armor is not loot you are saving for later; it is the firewall you build the rest of the bag around.",
+          "Practical rule: never let a burning relic take a slot that has no Armored neighbour. If you only have one Armored relic, you only have room for one burning relic, no matter how much empty space is left.",
+        ],
+      },
+      {
+        heading: "The Gallery — Shock and Overcharge",
+        paragraphs: [
+          "A shocked relic becomes **Overcharged** and gains quality — which makes this the one curse you can farm deliberately. Shock it a second time and it explodes, unless a **Battery** drains it.",
+          "So the Gallery bag is a risk ladder: one shock is a free upgrade, two is a loss, and a Battery is what turns the second shock back into a profit. Carry the Battery before you start chasing Overcharge.",
+        ],
+      },
+      {
+        heading: "Aeolia — Petrify and Absorb",
+        paragraphs: [
+          "Petrified relics become **Aetherium crystals**, and other relics **Absorb** those crystals for quality. Leftover Aetherium is destroyed when the run ends, so an unabsorbed crystal is a wasted slot.",
+          "That makes Aeolia the dimension where extraction timing is a quality decision, not just a safety one. Finish the absorbing before you pull the pendant, or you carry home a bag of nothing.",
+        ],
+      },
+      {
+        heading: "How to pack any of them",
+        paragraphs: [
+          "Decide the curse interaction at the moment you pick a relic up, not at the exit. Every one of these three systems punishes a bag you planned to sort later.",
+          "Elites and bosses do not rupture, so you cannot clear space with a backpack launch mid-fight. The space you have at the door is the space you fight with.",
+        ],
+        bullets: [
+          "<a href=\"/moonlighter-2-backpack-is-the-puzzle/\">The backpack is the puzzle</a>",
+          "<a href=\"/moonlighter-2-when-to-extract/\">When to extract</a>",
+          "<a href=\"/moonlighter-2-relic-loot-guide/\">Relic and loot guide</a>",
+        ],
+      },
+    ],
+    table: {
+      heading: "Relic curses by dimension",
+      headers: ["Dimension", "Curse", "What it does", "What you must carry"],
+      rows: [
+        ["Kalina", "Burn and Armor", "Burning relics are destroyed", "An Armored relic beside every burning one"],
+        ["The Gallery", "Shock and Overcharge", "First shock raises quality, second explodes", "A Battery to drain the second shock"],
+        ["Aeolia", "Petrify and Absorb", "Petrified relics become Aetherium crystals", "Relics that can Absorb before the run ends"],
+      ],
+    },
+    relatedPages: [
+      { href: "/dungeon-guide/", title: "Dungeon guide", description: "Route planning across all three dimensions" },
+      { href: "/items/", title: "Items and relics", description: "What each relic category is worth" },
+    ],
+    sources: [],
+  },
+  "moonlighter-2-radar-nodes": {
+    slug: "moonlighter-2-radar-nodes",
+    title: "Moonlighter 2 Tomo’s Radar: Every Node Type and Which Branch to Take",
+    description:
+      "Every node on Tomo’s Radar in Moonlighter 2 — chest, event, potion, blacksmith, recipe, elite, miniboss, boss and perk rooms — and how node colour sets relic quality.",
+    kicker: "Routing",
+    status: 'Launch-day update',
+    intro: "Tomo’s Radar turns each floor into a branching map, and you choose one branch at every step. The run is decided here, not in the fights — a route that skips the perk room and ends on an elite is a route you planned badly.",
+    sections: [
+      {
+        heading: "The node types",
+        paragraphs: [
+          "Every floor in all three dimensions uses the same node vocabulary. Learn it once and the routing transfers.",
+        ],
+        bullets: [
+          "**Chest** — a few Common relics plus a choice between two higher-rarity ones",
+          "**Event** — a situational room; take it when the bag is light",
+          "**Potion** — healing stock, which is the cheapest insurance in the game",
+          "**Blacksmith** — in-run weapon work",
+          "**Recipe** — unlocks, including gadget recipes",
+          "**Ice or Thunder perk rooms** — combat pedestals that hand out run perks",
+          "**Elite**, **Miniboss**, **Boss** — the fights that gate materials and quests",
+        ],
+      },
+      {
+        heading: "Node colour is the quality dial",
+        paragraphs: [
+          "Chests appear after chest nodes, minibosses and bosses, and **the node colour on the radar sets the relic quality** inside. A longer branch through richer nodes is worth more than a short branch to the boss.",
+          "That is the whole routing decision in one sentence: you are not choosing a path to the exit, you are choosing how much the bag is worth when you get there.",
+        ],
+      },
+      {
+        heading: "A branch order that works",
+        paragraphs: [
+          "**Perk room first.** A perk you take on node two works for the whole floor; the same perk taken before the boss works for one fight. The [perk path guide](/moonlighter-2-perk-paths/) covers which to stack.",
+          "**Potions before elites.** Elites and minibosses never rupture, so you cannot clear a bad fight with a backpack launch. Healing is how you survive them.",
+          "**Chests while the bag has room.** A high-rarity chest you cannot carry is worse than a Common one you can — and the curse rules mean \"room\" is not just empty slots.",
+          "**Miniboss for materials.** Each floor’s two minibosses drop the material for that dimension’s early weapon upgrades, and Nou and Anacard at the Silent Exchange will swap surplus miniboss materials for boss materials.",
+        ],
+      },
+      {
+        heading: "When to stop routing and leave",
+        paragraphs: [
+          "The pendant teleports you home at any time with everything in the bag, and there is no penalty beyond the loot you skipped. \"Back to Tresna\" relic effects also trigger on the way out.",
+          "Because floors unlock through Tresna story quests rather than levels, there is no XP to grind — extract and bank freely. The only thing a longer run buys is relics and materials, and the only thing it risks is the bag you already filled.",
+        ],
+        bullets: [
+          "<a href=\"/moonlighter-2-when-to-extract/\">When to extract</a>",
+          "<a href=\"/dungeon-guide/\">Dungeon guide</a>",
+          "<a href=\"/moonlighter-2-difficulty-and-death/\">What death costs</a>",
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: "/dungeons-kalina/", title: "Kalina", description: "The desert dimension and its floors" },
+      { href: "/moonlighter-2-six-regions/", title: "Six regions", description: "How a 1.0 run is shaped" },
+    ],
+    sources: [],
+  },
+  "moonlighter-2-perk-paths": {
+    slug: "moonlighter-2-perk-paths",
+    title: "Moonlighter 2 Perk Paths: Stack One Element, Not Three",
+    description:
+      "How combat pedestals and run perks work in Moonlighter 2: why stacking all Thunder or all Ignite beats mixing, and the one-on-the-gun, one-on-the-weapon split.",
+    kicker: "Perks",
+    status: 'Launch-day update',
+    intro: "Combat pedestals hand out run perks, and the single biggest damage decision in a run is whether you stack one element or collect a souvenir from each. Stacking wins, and it is not close.",
+    sections: [
+      {
+        heading: "Stack one path",
+        paragraphs: [
+          "Perk rooms on Tomo’s Radar come in **Ice** and **Thunder** flavours, and pedestals inside hand out the run perks. Taking all Thunder, or all Ignite, beats mixing — the stacked path compounds, the mixed one gives you three effects that never reach the threshold where they matter.",
+          "Pick the element on the first perk room you enter and then route toward more of it. A run where you took one of everything is a run where nothing procced.",
+        ],
+      },
+      {
+        heading: "One on the gun, one on the weapon",
+        paragraphs: [
+          "The usual split is **one perk on the gun and one on the melee weapon**. That covers both ranges without breaking the stack, because both are feeding the same element.",
+          "This is also why weapon class matters here: a Short Sword still needs its three-hit finisher to land, and Gauntlets are a burst tool for a short recovery window. A perk that triggers on hit count behaves very differently on each.",
+        ],
+      },
+      {
+        heading: "Perks are not boons, and neither is an Aspect",
+        paragraphs: [
+          "Three separate systems share the word \"upgrade\" and they do not stack into one plan:",
+          "Run **perks** come from combat pedestals inside a floor and last for that run. **Boons** are limited to two per run, and a third offer replaces one rather than adding to it. **Endless Weapon Aspects** are a version 1.0 weapon system and have nothing to do with either.",
+        ],
+        bullets: [
+          "<a href=\"/moonlighter-2-two-boons-per-run/\">Only two boons per run</a>",
+          "<a href=\"/moonlighter-2-endless-weapon-aspects/\">Endless Weapon Aspects</a>",
+          "<a href=\"/moonlighter-2-bomb-path/\">Bomb Path</a>",
+        ],
+      },
+      {
+        heading: "Route for the perk, then for the chest",
+        paragraphs: [
+          "A perk room taken early works for the entire floor. A perk room taken before the boss works for one fight. If the radar offers a perk branch and a chest branch at node two, the perk is almost always the better pick — the chest at the end of a stacked run is worth more anyway.",
+          "If the next node is an elite or a miniboss, take the perk that answers that room rather than the one that fits your fantasy build. Elites do not rupture, so damage you cannot apply is damage you do not have.",
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: "/moonlighter-2-radar-nodes/", title: "Tomo’s Radar nodes", description: "Which branch to take and why" },
+      { href: "/moonlighter-2-weapon-meters/", title: "Weapon meters", description: "How each class actually lands damage" },
+    ],
+    sources: [],
+  },
+  "moonlighter-2-rupture-guide": {
+    slug: "moonlighter-2-rupture-guide",
+    title: "Moonlighter 2 Rupture: The Backpack Launch and What It Does Not Work On",
+    description:
+      "How rupture works in Moonlighter 2: purple enemies at half health launch off the backpack into walls or off the edge — and why elites and bosses never rupture.",
+    kicker: "Combat",
+    status: 'Launch-day update',
+    intro: "Rupture is the most satisfying mechanic in the game and the most commonly misread. An enemy at half health turns purple, and the backpack launches it into a wall, into another enemy, or off the edge. It also never, ever works on the fights where you most want it.",
+    sections: [
+      {
+        heading: "How a rupture happens",
+        paragraphs: [
+          "Bring a normal enemy to **half health** and it turns purple. That purple state is the window: the backpack launch sends it flying into walls, into other enemies, or off a ledge entirely.",
+          "The launch is crowd control as much as damage. A purple enemy thrown into a group is how you reset a room that was closing in on you, and an edge is a free kill regardless of what health the target had left.",
+        ],
+      },
+      {
+        heading: "What never ruptures",
+        paragraphs: [
+          "**Elites and minibosses never rupture. Bosses never rupture.** This is the rule people learn the hard way, usually in a boss doorway with a full bag.",
+          "If a fight is an elite, a miniboss or a boss, the backpack is not a weapon — it is just your inventory. Everything in that fight has to be solved with the weapon meter, the perk stack and your dodge.",
+        ],
+        note: { label: "Rule of thumb", text: "If it has a name on the radar, it does not rupture." },
+      },
+      {
+        heading: "Purple is the signal to change targets",
+        paragraphs: [
+          "In a mixed room, a purple enemy is worth more than a full-health one, because the launch is faster than finishing it normally and it damages whatever it lands on. Switch targets when something turns purple rather than finishing the swing you started.",
+          "Against groups beside a ledge, this flips the whole fight: you are no longer killing six enemies, you are rupturing three and throwing them at the other three.",
+        ],
+      },
+      {
+        heading: "Why it matters for the bag",
+        paragraphs: [
+          "The backpack is both your launcher and your loot, which is the joke the system is built on. You cannot free up space mid-fight by rupturing, and the space you walked in with is the space you fight with.",
+          "That is also why a full bag in front of a boss door is a decision, not an accident — the pendant is still right there.",
+        ],
+        bullets: [
+          "<a href=\"/moonlighter-2-elite-telegraph/\">Elite telegraphs</a>",
+          "<a href=\"/minibosses/\">Minibosses</a>",
+          "<a href=\"/moonlighter-2-when-to-extract/\">When to extract</a>",
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: "/moonlighter-2-healing-and-dodge/", title: "Healing and dodge", description: "The other half of staying alive" },
+      { href: "/bosses/", title: "Bosses", description: "Every boss and how many players have beaten it" },
+    ],
+    sources: [],
+  },
+  "moonlighter-2-difficulty-and-death": {
+    slug: "moonlighter-2-difficulty-and-death",
+    title: "Moonlighter 2 Difficulty and Death: What You Lose on Each Setting",
+    description:
+      "What dying costs in Moonlighter 2 on each difficulty: half relic quality on Easy, Normal and Hard, outright relic loss on Expert, and full progress loss on Hardcore.",
+    kicker: "Difficulty",
+    status: 'Launch-day update',
+    intro: "Moonlighter 2 does not make enemies spongier as the difficulty rises. It changes what a death takes from your backpack — and on one setting, from your save. Pick the setting by how much you want a bad run to cost.",
+    sections: [
+      {
+        heading: "The death penalty ladder",
+        paragraphs: [
+          "Every difficulty uses the same dungeons and the same relic curses. The difference is what happens to the bag when you go down.",
+        ],
+        bullets: [
+          "**Easy, Normal and Hard** — every relic in your backpack loses half its quality",
+          "**Expert** — you lose the relics outright",
+          "**Hardcore** (added in version 1.0) — you lose your progress and start over",
+        ],
+      },
+      {
+        heading: "Which to pick",
+        paragraphs: [
+          "**Normal** is the setting the loop is tuned for. Half quality on a death stings enough to make extraction a real decision, without turning one bad room into an evening.",
+          "**Expert** changes how you route rather than how you fight: losing the relics outright makes every extra node a wager, so you pendant out earlier and run shorter, richer loops.",
+          "**Hardcore** is a second-playthrough mode. Its wording is a progress loss, not a relic loss — treat it as a separate campaign, not a difficulty tweak on your main save.",
+        ],
+      },
+      {
+        heading: "What difficulty does not change",
+        paragraphs: [
+          "Floors unlock through Tresna story quests, not levels, so there is no XP curve to soften. Nothing you buy in Tresna is lost on death either — shop upgrades, vendor unlocks and shop level all survive.",
+          "That asymmetry is the whole strategy: **spend before you explore**. Coins turned into potions, a shop level or a vendor unlock cannot be lost. Relics in the backpack always can.",
+        ],
+        bullets: [
+          "<a href=\"/moonlighter-2-sell-before-you-upgrade/\">Sell the bag before you upgrade</a>",
+          "<a href=\"/moonlighter-2-hardcore-mode/\">Hardcore mode</a>",
+          "<a href=\"/moonlighter-2-autosave/\">Autosave and sleeping</a>",
+        ],
+      },
+      {
+        heading: "Where the game sits now",
+        paragraphs: [
+          "Moonlighter 2: The Endless Vault is **Very Positive** on Steam with **3,446 positive of 4,238 reviews** on 17 October 2026, at **$29.99** with **56 achievements** and a Metacritic score of **72**. Version 1.0 landed on 2 September 2026.",
+          "The recurring criticism in the negative pile is grind rather than difficulty — which is another way of saying the death penalty, not the enemy health bar, is what people are actually reacting to.",
+        ],
+      },
+    ],
+    table: {
+      heading: "What a death costs",
+      headers: ["Difficulty", "Relics in the backpack", "Progress"],
+      rows: [
+        ["Easy", "Half quality", "Kept"],
+        ["Normal", "Half quality", "Kept"],
+        ["Hard", "Half quality", "Kept"],
+        ["Expert", "Lost outright", "Kept"],
+        ["Hardcore", "Lost", "Start over"],
+      ],
+    },
+    relatedPages: [
+      { href: "/moonlighter-2-when-to-extract/", title: "When to extract", description: "Turning a run around before it costs you" },
+      { href: "/moonlighter-2-grind/", title: "Is it a grind?", description: "What the reviews actually complain about" },
+    ],
+    sources: [],
+  },
 };
 
 
