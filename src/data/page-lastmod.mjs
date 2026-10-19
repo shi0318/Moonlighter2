@@ -49,6 +49,8 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-perk-paths/': '2026-10-17',
   '/moonlighter-2-rupture-guide/': '2026-10-17',
   '/moonlighter-2-difficulty-and-death/': '2026-10-17',
+  '/steam-reviews-now/': '2026-10-19',
+  '/how-to-buy-a-potion/': '2026-10-19',
 };
 
 export function pageLastmod(pathname) {

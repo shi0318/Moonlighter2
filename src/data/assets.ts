@@ -247,6 +247,8 @@ export const PAGE_ASSETS: Record<string, AssetKey> = {
   'moonlighter-2-perk-paths': 'hotFlash',
   'moonlighter-2-rupture-guide': 'hotCombat',
   'moonlighter-2-difficulty-and-death': 'hotDesert',
+  'steam-reviews-now': 'hotDesert',
+  'how-to-buy-a-potion': 'hotShop',
   about: 'header',
   contact: 'shot2',
   'privacy-policy': 'header',

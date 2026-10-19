@@ -2535,6 +2535,58 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     sources: [],
   },
+  'steam-reviews-now': {
+    slug: 'steam-reviews-now',
+    title: 'Moonlighter 2 Steam Reviews Right Now',
+    description: 'Moonlighter 2 is Very Positive on October 19, 2026: 1,692 of 2,046 English reviews, still $29.99.',
+    kicker: 'Reviews',
+    status: 'Launch-day update',
+    intro: 'Checked October 19, 2026: English Steam reviews are Very Positive, 1,692 positive out of 2,046. The US price is $29.99, discount 0. Fifty-six achievements. Version 1.0 left Early Access on September 2, 2026.',
+    sections: [
+      {
+        heading: 'Use this count, not the October 16 one',
+        paragraphs: [
+          'The October 16 page said 1,688 of 2,042. That page is a dated snapshot. This one is the current English summary. The complaint beside the praise is still the same: you cannot sleep mid-run, and a death still taxes the bag.',
+          'Easy, Normal, and Hard halve relic quality on death. Expert loses the relics. Hardcore can end the save. Extract before the next elite if the bag is the prize.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-reviews-october-16/">October 16 snapshot</a>',
+          '<a href="/moonlighter-2-when-to-extract/">When to extract</a>',
+          '<a href="/moonlighter-2-difficulty-and-death/">What a death costs</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-price-october-16/', title: 'Price', description: '$29.99, no discount' },
+    ],
+    sources: [],
+  },
+  'how-to-buy-a-potion': {
+    slug: 'how-to-buy-a-potion',
+    title: 'How to Buy a Potion in Moonlighter 2',
+    description: 'Buy Moonlighter 2 potions from Eris after you sell the bag. A potion in town survives death. A relic in the bag may not.',
+    kicker: 'Shop',
+    status: 'Launch-day update',
+    intro: 'Eris at the Witch Hut sells potions, health, and dungeon perk unlocks. She is the first vendor to fund. The coins come from a bag you already extracted and sold.',
+    sections: [
+      {
+        heading: 'Town order',
+        paragraphs: [
+          'Pendant out if the relics are the prize. Sleep in Tresna. Put the relics on the displays and take the sale. Then buy the potion. A weapon meter you have not learned is a worse spend than a heal you will use on the next elite.',
+          'Nothing bought in Tresna is lost on death. Relics still in the backpack are. Do not walk back into Kalina with the coins unspent and the bag full.',
+        ],
+        bullets: [
+          '<a href="/characters-eris/">Eris</a>',
+          '<a href="/moonlighter-2-sell-before-you-upgrade/">Sell before you upgrade</a>',
+          '<a href="/shop-guide/">Shop guide</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/prices/', title: 'Prices', description: 'What to write down after the sale' },
+    ],
+    sources: [],
+  },
 };
 
 
