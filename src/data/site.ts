@@ -129,6 +129,9 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-october-review-count/', title: 'October 20 Review Count', description: 'Very Positive on October 20: 3,459 of 4,254 Steam reviews, still $29.99, 56 achievements.', priority: 'New', image: 'hotShop' },
+  { href: '/moonlighter-2-bag-before-the-door/', title: 'Empty the Bag Before the Door', description: 'A death still taxes the backpack. Sell in Tresna before the next elite, on every difficulty that keeps the save.', priority: 'Shop', image: 'hotShop' },
+  { href: '/moonlighter-2-which-dx-after-hotfix/', title: 'Which DirectX After Hotfix 1', description: 'Hotfix 1 added a DirectX 11 and 12 switch. Pick the one that stops the crash, then retest Kalina.', priority: 'Combat', image: 'hotCombat' },
   { href: '/moonlighter-2-very-positive/', title: 'Very Positive Reviews', description: '1,580 of 1,903 Steam reviews: combat praise versus grind, Aeolia bugs, and a campaign that is only half the game.', priority: 'New', image: 'hotDesert' },
   { href: '/moonlighter-2-aeolia-bugs/', title: 'Aeolia Bugs', description: 'Why reviews say an hour-long Aeolia run can be wasted, plus the 7.6% Ultimate Challenge rate.', priority: 'New', image: 'hotCombat' },
   { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 (September 10)', description: 'The DirectX 11/12 switch and every named fix: Kalina out-of-map, Hazy Jane input loss, Scarabastion invincibility.', priority: 'New', image: 'hotCombat' },
@@ -2584,6 +2587,149 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     relatedPages: [
       { href: '/prices/', title: 'Prices', description: 'What to write down after the sale' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-october-review-count': {
+    slug: 'moonlighter-2-october-review-count',
+    title: 'Moonlighter 2 Reviews on October 20',
+    description: 'Moonlighter 2 is Very Positive on October 20, 2026: 3,459 of 4,254 Steam reviews. The US price is still $29.99.',
+    kicker: 'Reviews',
+    status: 'Launch-day update',
+    intro: 'Checked October 20, 2026: Steam reviews for Moonlighter 2: The Endless Vault are Very Positive, 3,459 positive out of 4,254. The US listing is $29.99 with no discount. Fifty-six achievements are on the store page. Version 1.0 left Early Access on September 2, 2026, and Hotfix 1 followed on September 10.',
+    sections: [
+      {
+        heading: 'Read the October 20 count, not the launch-week one',
+        paragraphs: [
+          'Earlier pages on this site recorded smaller English snapshots, including 1,692 of 2,046 on October 19 and 1,580 of 1,903 in an older Very Positive note. Those pages are dated on purpose. The October 20 figure is the all-language Steam total: 3,459 positive out of 4,254. The label is still Very Positive. The argument inside the reviews has not flipped.',
+          'A positive review with 1,624 minutes said the loop feels good: learn prices, learn monster patterns, go back to the shop, then take another dungeon run because the unlocks pull you forward. A positive review with 3,112 minutes called it a good sequel that lacks some of the first game\'s magic, and said there are too few dungeons and too little variety. A negative review with 1,067 minutes called the sales samey and the art shift a loss. A short positive review at 420 minutes liked the game and still could not beat the first boss. Those four files are the split. Praise for the shop-and-dungeon loop, complaints about length and sameness, and at least one player stuck on the first boss who recommends it anyway.',
+          'The store recommendation count on the same day was 3,458. The review query returned 4,254 total reviews. Use the review query when you cite a positive ratio. Use the store number only as the recommendation total the page itself prints. Do not average them into a third score.',
+        ],
+      },
+      {
+        heading: 'What the score does not change',
+        paragraphs: [
+          'The price did not move. $29.99, discount 0, on the US listing checked October 20. Waiting for a sale is a store decision. Waiting for the review label to become Overwhelmingly Positive is not a plan the current count supports. 3,459 of 4,254 is about 81 percent positive. That is Very Positive. It is not a promise that your Aeolia run will survive a bug.',
+          'Hotfix 1, posted September 10, is still the combat and stability patch to be on. It added a switch between DirectX 11 and DirectX 12, fixed a Kalina spot where you could fall out of the map and lose the run, fixed a loss of input when talking to Hazy Jane, fixed Scarabastion granting invincibility in boss fights, and fixed Senda ignoring poison from gadget shots in phase two. If a review from the first week describes a crash or a stuck run, check that hotfix before you treat the review as the current build. The October 20 score includes people who played after that patch. It also includes people who did not.',
+          'Fifty-six achievements are on the store page. Global rates the same day put ACH001_NAME at 98.1 percent, ACH002_NAME at 93.1 percent, and ACH003_NAME at 91.9 percent. The thin end included ACH056_NAME at 1.9 percent, ACH046_NAME at 9.3 percent, and ACH057_NAME at 9.7 percent. A Very Positive label does not mean most owners have finished the rare pops. It means most owners who reviewed the game recommended the loop. Those are different facts. Do not grind a 1.9 percent achievement because the score looks friendly.',
+        ],
+      },
+      {
+        heading: 'Who should buy it at this count',
+        paragraphs: [
+          'Buy it if the loop in the 1,624-minute review is the loop you want: price the relics, learn the monsters, fund the shop, go back in. Digital Sun developed it, 11 bit studios published it, and the Steam description still says you set your own price and read customers to find the deal. That system is the game. The 3,112-minute review says the shop side improved and the dungeon count is the disappointment. Go in knowing both.',
+          'Wait if you need the first game\'s exact feel. The 1,067-minute negative review is explicit that the art shift and the sameness of sales killed it for them. A Very Positive score does not delete that file. It outvotes it. If pixel-perfect nostalgia is the purchase reason, this count will not save you.',
+          'Do not wait for a balance patch to make the first boss trivial. A 420-minute positive review is still stuck on that fight and still recommends the game. Learn the bag rule instead. A death on Easy, Normal, or Hard halves relic quality. Expert loses the relics. Hardcore, added in version 1.0, can end the save. Extract before the next elite if the bag is the prize. The review score will not extract for you.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-bag-before-the-door/">Empty the bag before the next door</a>',
+          '<a href="/moonlighter-2-which-dx-after-hotfix/">Pick DirectX 11 or 12</a>',
+          '<a href="/steam-reviews-now/">The October 19 English snapshot</a>',
+        ],
+      },
+      {
+        heading: 'The machine the score assumes',
+        paragraphs: [
+          'Minimum on the store page is Windows 10 64-bit, a Ryzen 7 2700 or i5-10400F, 12 GB of RAM, an RX 5500 XT, GTX 1650, or Arc A750, and 6 GB of space. An SSD is recommended and an HDD is supported. Recommended is a Ryzen 5 3600 or i5-12500, 16 GB of RAM, and an RX 5700, RTX 3060, or Arc A770, on DirectX 12. Ultrawide is listed as supported. A Very Positive review written on a recommended PC does not tell you the minimum line will feel the same in Kalina.',
+          'If the game crashes, switch DirectX before you refund over the score. Hotfix 1 added that switch because many of the crashes and performance problems were tied to it. Try both. Keep the one that finishes a run. Then judge the 3,459 positive reviews against a build you have actually played, not against a crash on the API you have not toggled.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-bag-before-the-door/', title: 'The bag', description: 'What a death still costs' },
+      { href: '/prices/', title: 'Prices', description: 'Write the sale down before the next run' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-bag-before-the-door': {
+    slug: 'moonlighter-2-bag-before-the-door',
+    title: 'Empty the Moonlighter 2 Bag Before the Next Door',
+    description: 'A Moonlighter 2 death still taxes the backpack. Sell in Tresna before the next elite if the relics are the prize.',
+    kicker: 'Shop loop',
+    status: 'Launch-day update',
+    intro: 'The review score on October 20, 2026 is Very Positive, 3,459 of 4,254, and the bag rule did not get softer because of it. A death still changes what you carry. Town purchases do not. Empty the bag, sell it, and spend the coins before you open another dungeon door.',
+    sections: [
+      {
+        heading: 'What a death takes',
+        paragraphs: [
+          'Easy, Normal, and Hard halve the quality of every relic still in the backpack. Expert loses those relics outright. Hardcore, added when version 1.0 left Early Access on September 2, 2026, can end the save and start you over. The dungeons and the relic curses do not become spongier as the name on the difficulty goes up. The penalty does. Pick the difficulty by how much of the bag you are willing to lose, not by a damage fantasy the settings do not describe.',
+          'Nothing you already bought in Tresna is lost on those deaths. Potions, shop level, and vendor unlocks survive. Relics that are still on your back do not. That asymmetry is the strategy. A coin in Eris\'s shop is safer than a relic in Kalina. A relic on a display, already sold, is safer than both.',
+        ],
+      },
+      {
+        heading: 'The town order that keeps the bag',
+        paragraphs: [
+          'Pendant out when the relics are the prize. Sleep in Tresna if the run has left you sloppy. Put the relics on the displays and take the sale. Then buy the potion from Eris at the Witch Hut, or put the coins into a shop level or a vendor unlock. A weapon meter you have not learned is a worse spend than a heal you will use on the next elite. The meter can wait. The bag cannot.',
+          'Do not walk back into Kalina with the coins unspent and the bag full. That is the position every death penalty is written to punish. Hotfix 1 did not remove it. The September 10 notes fixed a Kalina hole that could dump you out of the map and waste the run, a Barrier Blessing that failed to restore shield charges on a retry, and legendary chest rewards that failed to appear after a miniboss. Those are reasons to be on the hotfix. They are not a new rule that says the bag is safe.',
+          'A 1,624-minute positive review described the loop as learning prices, learning monsters, and returning to the shop. That is this order, said by a player who kept playing. A 420-minute positive review still could not beat the first boss and recommended the game anyway. If that is you, the bag rule matters more, not less. Dying to the first boss with a full pack is how a short file becomes a frustrated one. Extract, sell, buy the heal, then try the boss with a bag you can afford to halve.',
+        ],
+        bullets: [
+          '<a href="/how-to-buy-a-potion/">Buy the potion from Eris</a>',
+          '<a href="/moonlighter-2-sell-before-you-upgrade/">Sell before you upgrade</a>',
+          '<a href="/moonlighter-2-when-to-extract/">When to extract</a>',
+        ],
+      },
+      {
+        heading: 'What to write down after the sale',
+        paragraphs: [
+          'The Steam description says you set your own price and read the customers. The October 20 store page does not print a price table for you. Write the number that sold, the number that offended, and the relic name, in the game\'s words. A price you remember is a price you will mis-set after the next death. A price you wrote down is the start of the shop the 3,112-minute review said had improved over the first game.',
+          'That same long review said there are too few dungeons and too little variety. Fewer dungeons means the bag from each one matters more. You cannot replace a wasted Aeolia hour by walking into six identical alternatives. Protect the haul you have. The 1.9 percent global rate on ACH056_NAME, checked October 20, is the thin end of a 56-achievement list. Most players are not finishing rare goals. They are deciding, run by run, whether the bag is worth the next door. Decide that in Tresna, not in the elite room.',
+        ],
+      },
+      {
+        heading: 'A door you can open',
+        paragraphs: [
+          'Update to Hotfix 1 or newer. Switch DirectX if the last run crashed before you could extract. Confirm the Kalina hole is not the spot you are about to step on. Then look at the bag. If losing half its quality would annoy you, leave. If you are on Expert and losing the relics outright would end the evening, leave. If you are on Hardcore, treat the door as a separate campaign and do not practice the route on the save you care about.',
+          'The US price is $29.99. The score is Very Positive. Neither number carries the pack out. You do. Sell it, spend it, and open the next door with a bag that can survive the difficulty you actually selected. Fifty-six achievements will still be there after the sale. ACH001_NAME at 98.1 percent is the pop almost every owner already has. ACH056_NAME at 1.9 percent is not a reason to carry a full bag into a door you have not cleared. Write the price that sold, leave Tresna lighter, and let the rare achievement wait until a run you can afford to halve. Hotfix 1's Kalina hole is a reason to patch. It is not a reason to skip the shop. A map bug and a difficulty penalty can both eat a haul, and only one of them was marked fixed on September 10. Will's shop in Tresna is the safe room. The dungeon door is the wager. Sleep, display, sell, buy the potion, and only then look at the next elite. A 420-minute player stuck on the first boss still recommended the game. They would have had a calmer evening if the bag had been empty before that door. Be that player with the sale already banked.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/prices/', title: 'Prices', description: 'Log the sale that worked' },
+      { href: '/moonlighter-2-october-review-count/', title: 'October 20 reviews', description: '3,459 of 4,254, still Very Positive' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-which-dx-after-hotfix': {
+    slug: 'moonlighter-2-which-dx-after-hotfix',
+    title: 'DirectX 11 or 12 in Moonlighter 2',
+    description: 'Hotfix 1 lets you switch DirectX 11 and 12 in Moonlighter 2. Use the API that finishes a run, then retest Kalina.',
+    kicker: 'Hotfix 1',
+    status: 'Launch-day update',
+    intro: 'Hotfix 1, posted September 10, 2026, added a switch between DirectX 11 and DirectX 12. Digital Sun said many crashes and performance problems were tied to that choice. The October 20 review score is Very Positive at 3,459 of 4,254. A crash on the wrong API is not a review. Switch, finish one run, then judge the game.',
+    sections: [
+      {
+        heading: 'Why the switch exists',
+        paragraphs: [
+          'The hotfix note is specific. Players were hitting crashes and poor performance, and the studio added an option to select DirectX 11 or DirectX 12 so you can see which one runs on your machine. It does not say one API is universally correct. It says try both. The minimum store spec still lists DirectX 11, a Ryzen 7 2700 or i5-10400F, 12 GB of RAM, and an RX 5500 XT, GTX 1650, or Arc A750. The recommended line lists DirectX 12, 16 GB of RAM, and an RX 5700, RTX 3060, or Arc A770. Those two lines are a hint, not a verdict. A recommended GPU can still prefer DX11 if the crash is the one this hotfix was written for. A minimum GPU should not be forced onto DX12 because a forum said so.',
+          'Ultrawide is supported on both the minimum and recommended notes. An ultrawide crash is still a reason to toggle the API before you blame the aspect ratio. Change one thing. Finish one loading screen back to Tresna. If that screen was the tutorial freeze the hotfix also fixed, you need the patch installed, not just the toggle. A launch build does not contain the switch.',
+        ],
+      },
+      {
+        heading: 'Retest the named fixes after you pick an API',
+        paragraphs: [
+          'Hotfix 1 is a list, not a single checkbox. After the game holds a frame, retest the bugs the notes marked fixed, because a crash on the wrong API can hide whether the fix is in your install.',
+          'Kalina had a spot where you could fall out of the map and get stuck with no way to recover the run. If that hole is why you lost a bag, the bag rule still applies to every other death, but this death was a bug. Walk the spot once on the API that no longer crashes. If you still fall out and cannot recover, you are not on the hotfix, or the spot has a new hole. Do not empty your strategy guide into a map bug.',
+          'Hazy Jane could eat your input in later conversations. Talk to her. If the input returns, that line held. Babyl could duplicate and make Spark almost impossible to reach if Babyl was not unlocked. If Spark is missing, look for the duplicate before you look for a new path. Senda ignored poison from gadget shots in phase two. Sergeant Roberto did not react to a distant shot. A tased CH4 turret could stick in its firing animation. Tased Electric Slimes could still deal field damage. The second greatsword\'s sharpness drain did not work. The Vow\'s description did not match its behavior. Scarabastion could make you invincible in a boss fight. Those are the combat lines. Retest the one you actually use. Do not equip Scarabastion and call a boss trivial until you know the invincibility bug is gone.',
+        ],
+      },
+      {
+        heading: 'What the toggle will not do',
+        paragraphs: [
+          'It will not raise the review score, and it does not need to. 3,459 positive out of 4,254 on October 20 is already Very Positive, at $29.99 with no discount. It will not fill a dungeon roster a 3,112-minute review called too small. It will not price your relics. It will not stop Easy, Normal, and Hard from halving backpack quality on a normal death. It will not stop Expert from deleting those relics, or Hardcore from ending the save.',
+          'It will let you finish the run the bag rule assumes you can finish. A crash before extraction is not a difficulty setting. Switch the API, extract, sell, and spend. Then decide whether the loop the 1,624-minute review described is the loop you want to keep paying $29.99 for. The store page lists 56 achievements. ACH001_NAME was at 98.1 percent on October 20. ACH056_NAME was at 1.9 percent. You can see the first pop on either API. You will not see the rare one if the game cannot stay open.',
+          'Console players were told the PC hotfix would come to them as soon as possible. If you are not on the Windows build, do not hunt a DirectX menu that belongs to PC. The bag rule is the cross-platform rule. The API switch is the PC rule. Use the one your version actually has. An SSD is recommended on the store page and an HDD is only supported, not preferred. A loading-screen freeze on the way back to Tresna was one of the tutorial bugs Hotfix 1 named. If that freeze is your crash, the patch matters more than the toggle. Install it, then switch APIs, then extract. The 3,459 positive reviews include people who finished that loop. Join them after the game can stay open long enough to sell the bag. Six gigabytes is the listed install size. That small number does not mean a hard drive will stream Kalina cleanly. If the toggle changes nothing and the freeze remains, move the install to an SSD before you call Hotfix 1 a failure. The API switch and the disk are two different lines in the same store page. Test both. Then take the bag to Eris.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-hotfix-1/">The full Hotfix 1 list</a>',
+          '<a href="/moonlighter-2-bag-before-the-door/">Empty the bag first</a>',
+          '<a href="/moonlighter-2-october-review-count/">October 20 review count</a>',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-aeolia-bugs/', title: 'Aeolia', description: 'A wasted hour is still a map problem, not an API problem' },
+      { href: '/shop-guide/', title: 'Shop', description: 'Spend the coins the crash was about to eat' },
     ],
     sources: [],
   },

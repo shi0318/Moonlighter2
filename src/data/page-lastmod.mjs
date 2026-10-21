@@ -51,6 +51,9 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-difficulty-and-death/': '2026-10-17',
   '/steam-reviews-now/': '2026-10-19',
   '/how-to-buy-a-potion/': '2026-10-19',
+  '/moonlighter-2-october-review-count/': '2026-10-20',
+  '/moonlighter-2-bag-before-the-door/': '2026-10-20',
+  '/moonlighter-2-which-dx-after-hotfix/': '2026-10-20',
 };
 
 export function pageLastmod(pathname) {
