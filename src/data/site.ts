@@ -129,6 +129,9 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-best-armor/', title: 'Best Armor', description: 'Armor is a town purchase, not a dungeon gamble. Buy it after the bag is sold.', priority: 'Gear', image: 'hotShop' },
+  { href: '/moonlighter-2-endless-vault-rewards/', title: 'Endless Vault Rewards', description: 'What version 1.0 names as Vault rewards, and which gold targets were never printed.', priority: 'Postgame', image: 'hotPlaza' },
+  { href: '/moonlighter-2-gun-is-not-a-class/', title: 'The Gun Is Not a Fifth Class', description: 'Four melee classes, plus a gun that rides with them. Do not tier the gun as a weapon class.', priority: 'Gear', image: 'hotCombat' },
   { href: '/moonlighter-2-october-review-count/', title: 'October 20 Review Count', description: 'Very Positive on October 20: 3,459 of 4,254 Steam reviews, still $29.99, 56 achievements.', priority: 'New', image: 'hotShop' },
   { href: '/moonlighter-2-bag-before-the-door/', title: 'Empty the Bag Before the Door', description: 'A death still taxes the backpack. Sell in Tresna before the next elite, on every difficulty that keeps the save.', priority: 'Shop', image: 'hotShop' },
   { href: '/moonlighter-2-which-dx-after-hotfix/', title: 'Which DirectX After Hotfix 1', description: 'Hotfix 1 added a DirectX 11 and 12 switch. Pick the one that stops the crash, then retest Kalina.', priority: 'Combat', image: 'hotCombat' },
@@ -2587,6 +2590,142 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     relatedPages: [
       { href: '/prices/', title: 'Prices', description: 'What to write down after the sale' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-best-armor': {
+    slug: 'moonlighter-2-best-armor',
+    title: 'Moonlighter 2 Best Armor',
+    description: 'Moonlighter 2 armor is bought in Tresna after you sell the bag. There is no official armor tier list with damage numbers.',
+    kicker: 'Armor',
+    status: 'Launch-day update',
+    intro: 'Steam names armor as an unlockable equipment category, next to weapons and gadgets. It does not print an armor tier list, a defense table, or a best-in-slot piece. The useful rule is where armor lives: in town, after a sale, where a death cannot take it back.',
+    sections: [
+      {
+        heading: 'Why there is no honest S-tier yet',
+        paragraphs: [
+          'Version 1.0, out of Early Access on September 2, 2026, names four Endless Weapon Aspects and describes their specials. It does not do the same for armor. The store page says village investment unlocks better weapons, armor, and upgrades. That is a category, not a ranking. A page that labels an unnamed chestplate S-tier is inventing the number the launch post refused to print.',
+          'Hotfix 1 on September 10 did name one armor bug. Players could become invincible in boss fights after equipping the Scarabastion. That line is a fix, not a recommendation. If a boss felt free while Scarabastion was on, you were on the bug. Update, unequip it, and fight the boss again before you call that piece the best armor in the game. Invincibility that a patch removed is not a build.',
+          'On October 20, 2026 the review score was Very Positive, 3,459 positive out of 4,254, at $29.99 with no discount. A 3,112-minute review praised the shop and said the dungeon count is thin. Thin dungeons make each piece of town gear matter more. They do not create a spreadsheet the developers did not publish.',
+        ],
+      },
+      {
+        heading: 'Buy armor the way you buy a potion',
+        paragraphs: [
+          'Nothing you buy in Tresna is lost when you die. Relics still in the backpack are. Easy, Normal, and Hard halve backpack relic quality. Expert deletes those relics. Hardcore, added in version 1.0, can end the save. Armor that is already equipped or already owned in town sits on the safe side of that line. A relic you meant to sell for the armor, and then carried back into Kalina, sits on the dangerous side.',
+          'The order is the same as a potion from Eris. Pendant out. Sleep if you are sloppy. Put the relics on the displays. Take the sale. Then buy the armor, or the shop level, or the heal. A weapon meter you have not learned is a worse spend than a piece you will still be wearing after the next death. The meter can wait in the menu. The bag cannot wait in the dungeon.',
+          'Shop Level 5, named in the September 2 post, adds one more Bloblet slot and one more cosmetic placement slot. Those are shop slots, not armor stats. Do not skip a piece of armor you die without in order to decorate a floor you have not funded. Cosmetics are confirmed. They are not mitigation.',
+        ],
+        bullets: [
+          '<a href="/how-to-buy-a-potion/">Buy the potion first if you are still dying</a>',
+          '<a href="/moonlighter-2-bag-before-the-door/">Empty the bag before the next door</a>',
+          '<a href="/moonlighter-2-best-weapon/">Weapons have named specials. Armor does not.</a>',
+        ],
+      },
+      {
+        heading: 'What to write down when you do test a piece',
+        paragraphs: [
+          'If you equip something and the next elite takes fewer hits to put you down, write the item name in the game\'s words, the dungeon, and the patch. That note is a personal log. It is not a tier list until a second run on the same piece agrees. Scarabastion taught the opposite lesson: a piece can lie until the hotfix. Retest any "best armor" claim from the first week of September on Hotfix 1 or newer.',
+          'The gun is not an armor slot and not a fifth melee class. Four melee classes are named: Short Swords, Large Swords, Spears, and Gauntlets. The gun rides alongside. Do not put the gun on an armor ranking because a search asked for best gun. That search wants a weapon page. This page is the town purchase that stays when the bag does not.',
+        ],
+      },
+      {
+        heading: 'A purchase you can defend',
+        paragraphs: [
+          'Update to Hotfix 1. Switch DirectX if the last run crashed before you could sell. Confirm Scarabastion is not granting a boss-fight invincibility the patch said it removed. Sell the bag. Buy the armor you died wishing you had. Leave the unnamed S-tier to a later patch that actually prints defense numbers.',
+          'Fifty-six achievements are on the store page. ACH001_NAME was at 98.1 percent on October 20. ACH056_NAME was at 1.9 percent. Armor will not pop the rare one. It will keep a Very Positive loop from ending in a backpack you could have sold. The $29.99 listing does not include a tier list. The town does include a shop. Use the shop. Digital Sun and 11 bit studios did not publish defense values in the September 2 post. Hotfix 1 did not add them. Until a note prints a number, the best armor is the piece you bought after a sale and were still wearing after the next death. Write that name down. Leave the S-tier thumbnail in the thumbnail.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapons', description: 'The four classes and the gun beside them' },
+      { href: '/prices/', title: 'Prices', description: 'Log the sale that paid for the piece' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-endless-vault-rewards': {
+    slug: 'moonlighter-2-endless-vault-rewards',
+    title: 'Moonlighter 2 Endless Vault Rewards',
+    description: 'Version 1.0 names Endless Vault rewards as a gold-target ladder. The gold numbers themselves were not published.',
+    kicker: 'Postgame',
+    status: 'Launch-day update',
+    intro: 'The Infinite Endless Vault is the version 1.0 postgame, unlocked after the main story. Each threshold has to be cleared in a single run. Falling short of the required gold resets progress on that threshold. The September 2 post names the ladder. It does not print the gold targets.',
+    sections: [
+      {
+        heading: 'What is confirmed about the rewards',
+        paragraphs: [
+          'The launch post describes the Vault as a gold-target ladder past the story ending. You clear a threshold in one run. If the gold is short, that threshold\'s progress resets. That is the reward structure: the next step exists only if this run paid for it. It is not a chest list with published item names and drop rates.',
+          'The same post names Endless Vault cosmetics, new vendors, and Codex pages for enemies, characters, perks, and furniture. Cosmetics and Codex entries are the reward categories that were actually written down. A guide that fills the missing gold numbers with forum guesses is not more useful than the sentence the studio printed. Write "unpublished" in the gold column until you have recorded a run yourself, with the patch version next to it.',
+          'Four Endless Weapon Aspects shipped in the same build: Endless Short Sword, Endless Great Sword, Endless Spear, and Endless Gauntlets. They are weapon specials, not Vault gold targets. Do not put them in the reward table as if the Vault drops them at a named floor. The aspects have described specials. The Vault has a described reset rule. Keep the two pages separate.',
+        ],
+      },
+      {
+        heading: 'How a failed threshold actually feels',
+        paragraphs: [
+          'A short gold run is a wiped threshold, not a wiped town. Shop purchases, armor, and potions already bought in Tresna stay. Relics you did not extract do not. The Vault reset is harsher than a normal death only if you treat the threshold as progress you were owed. The note says you were not owed it. Extract when the bag is the prize, even in the postgame. A gold target you cannot see on a public table is a reason to leave earlier, not later.',
+          'Hardcore is a different reset. Version 1.0 describes it as a progress loss, a separate campaign, not a relic-quality tax. Do not practice Vault thresholds on a Hardcore file. Practice them on the file that keeps the town. Easy, Normal, and Hard still halve backpack quality on a normal death. Expert still deletes the relics. The Vault adds a gold reset on top of whatever difficulty you already picked. Read both penalties before you open the door.',
+          'Hotfix 1 did not publish the gold targets either. It fixed a Kalina hole, a Scarabastion invincibility bug, Hazy Jane eating input, and a pile of enemy and weapon bugs. If a Vault run dies to a crash, switch DirectX 11 and 12 before you blame the gold rule. A crash is not a short threshold. A short threshold is a rule you can plan for once the game stays open.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-infinite-endless-vault-guide/">The Vault ladder in more detail</a>',
+          '<a href="/moonlighter-2-bag-before-the-door/">Sell before you wager the next threshold</a>',
+          '<a href="/version-1-0-update/">What September 2 actually named</a>',
+        ],
+      },
+      {
+        heading: 'A reward table you are allowed to keep',
+        paragraphs: [
+          'Use three columns: threshold you attempted, gold you actually extracted, and whether the game advanced you. Leave a fourth column blank for the required gold until the UI shows it on your build. That fourth number is yours to copy down. It is not a number this page can invent for every patch.',
+          'Cosmetics and Codex pages are the named extras. If a vendor in the postgame sells a Vault cosmetic, write the price the vendor shows. Steam\'s store description still says you set shop prices for relics. It does not say the Vault vendors use the same system. Read the vendor. Do not apply the shop minigame to a postgame NPC without looking.',
+          'On October 20 the score was Very Positive, 3,459 of 4,254, and ACH056_NAME was at 1.9 percent. Most owners are not at the rare end of 56 achievements. The Vault is postgame. Do not start it to fix a first-boss problem. A 420-minute positive review was still stuck on the first boss and still recommended the game. Finish the story door you have. The gold ladder will be there after the ending the September 2 post said now concludes. Cosmetics and Codex pages are the rewards the post actually named. Gold targets are the rewards it described as a rule and did not print as a table. Copy the number from your own run. Do not copy it from a video that does not show the patch. A Very Positive score at 3,459 of 4,254 will not fill the blank. Your extract will. Then sell what the extract did not need, because a Vault reset is not a town reset, and a town purchase is the only reward a failed threshold cannot take. Leave the unpublished gold cell blank until your own run fills it. A video without a patch number is not a cell.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-endless-weapon-aspects/', title: 'Weapon aspects', description: 'Named specials, not Vault gold' },
+      { href: '/moonlighter-2-best-armor/', title: 'Armor', description: 'Buy it in town before you wager a threshold' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-gun-is-not-a-class': {
+    slug: 'moonlighter-2-gun-is-not-a-class',
+    title: 'The Moonlighter 2 Gun Is Not a Fifth Class',
+    description: 'Moonlighter 2 has four melee classes. The gun rides with them. A best-gun search is not a fifth tier list.',
+    kicker: 'Weapons',
+    status: 'Launch-day update',
+    intro: 'Short Swords, Large Swords, Spears, and Gauntlets are the four melee classes. Each has a Merchant\'s starter, an Ultimate, named Early Access aspects, a Boss Rush aspect, and an Endless aspect from version 1.0. The gun is the ranged piece that rides alongside that melee weapon. It is not a fifth class with its own Endless Aspect on the launch list.',
+    sections: [
+      {
+        heading: 'What the launch post named, and what it did not',
+        paragraphs: [
+          'Version 1.0 names four Endless Weapon Aspects: Endless Short Sword, Endless Great Sword, Endless Spear, and Endless Gauntlets. Their specials are described. The short sword\'s special hits more as the combo rises. The great sword blocks, raises Sharpness, and counterattacks. The spear spends stored spearheads and empowers basic attacks. The gauntlets hit harder while Berserk is active. There is no fifth paragraph for an Endless Gun. A best-gun tier list that pretends otherwise is filling a blank.',
+          'That does not mean the gun is useless. It means the published comparison is melee-first. Use the gun for the shot the melee special is bad at. Do not respec the whole class because a search query said best gun. The class is the melee weapon you already understand. The gun is the sidearm. Hotfix 1 fixed gadget shots that failed to poison Senda in phase two, and Sergeant Roberto ignoring a distant shot. If the gun felt like it did nothing in early September, retest those two enemies on the hotfix before you bench it forever.',
+        ],
+      },
+      {
+        heading: 'How to pick the melee, then the gun',
+        paragraphs: [
+          'Pick the Endless aspect whose special matches the room, not a spreadsheet. A short sword special that scales with combo wants a room you can stay in. A great sword stance wants a hit you are willing to block. A spear wants spearheads already stored. Gauntlets want Berserk already up. The gun comes after that choice. If you are still dying before the special matters, the spend is a potion or a piece of armor in Tresna, not a new class.',
+          'Armor stays in town once you buy it. The gun does not replace that purchase. A ranged tool you have not learned is a worse first spend than a heal you will use on the next elite. Sell the bag, buy the survival piece, then experiment with the gun on a run you can afford to halve. Easy, Normal, and Hard halve backpack quality on death. The gun in your hands is not the relic in the bag. Do not confuse the two when you decide to extract.',
+          'Shop Level 5\'s extra cosmetic slot will not make the gun a class. Bomb Path is a perk path, not a gun. Hardcore is a save rule, not a weapon. The September 2 post listed those systems beside the four aspects so players would stop merging them. This page is the same request, aimed at the best-gun query.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-endless-weapon-aspects/">The four named specials</a>',
+          '<a href="/moonlighter-2-best-weapon/">Choose by special, not by a fake DPS table</a>',
+          '<a href="/moonlighter-2-best-armor/">Armor is the town purchase</a>',
+        ],
+      },
+      {
+        heading: 'What the reviews are actually praising',
+        paragraphs: [
+          'On October 20 the score was Very Positive, 3,459 of 4,254, at $29.99. A 1,624-minute review described learning prices, learning monsters, and going back to the shop. That loop does not require a gun tier list. A 420-minute review could not beat the first boss and still recommended the game. If that is you, the gun is not the missing class. The extract is the missing habit.',
+          'Fifty-six achievements. ACH001_NAME at 98.1 percent is the early pop. ACH056_NAME at 1.9 percent is not a gun mastery trophy this page can identify from the global names. Open the in-game list if you care. Do not grind a sidearm for a pop the store page did not describe. Digital Sun and 11 bit studios shipped a shop game with four melee specials and a gun beside them. Play it in that order. A best-gun query and a best-armor query are two searches and two pages. The gun stays beside the class. The armor stays in town. The bag still has to be sold before either one is a plan. October 20's 3,459 positive reviews are about that loop, not about a fifth weapon class the launch post forgot to name. Short Swords, Large Swords, Spears, Gauntlets, then the gun. Armor after the sale. Extract before the next elite. That is the whole gear page the best-gun search was trying to skip.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/weapons/', title: 'Weapon index', description: 'Starters, Ultimates, and Endless aspects' },
+      { href: '/moonlighter-2-which-dx-after-hotfix/', title: 'DirectX', description: 'Retest distant shots on a stable API' },
     ],
     sources: [],
   },
