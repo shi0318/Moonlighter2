@@ -129,6 +129,9 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-reviews-october-25/', title: 'Reviews on October 25', description: 'US page: $29.99, Mostly Positive recent, Very Positive all-time English, 79% of 198 in 30 days.', priority: 'New', image: 'hotShop' },
+  { href: '/moonlighter-2-price-october-25/', title: 'Price on October 25', description: 'The US Steam page listed $29.99 with no discount. A friendly month did not create a sale.', priority: 'Price', image: 'header' },
+  { href: '/moonlighter-2-last-30-days/', title: 'Last 30 Days', description: '79% of 198 English reviews in 30 days. A small month still says extract before the next elite.', priority: 'Reviews', image: 'hotDesert' },
   { href: '/moonlighter-2-best-armor/', title: 'Best Armor', description: 'Armor is a town purchase, not a dungeon gamble. Buy it after the bag is sold.', priority: 'Gear', image: 'hotShop' },
   { href: '/moonlighter-2-endless-vault-rewards/', title: 'Endless Vault Rewards', description: 'What version 1.0 names as Vault rewards, and which gold targets were never printed.', priority: 'Postgame', image: 'hotPlaza' },
   { href: '/moonlighter-2-gun-is-not-a-class/', title: 'The Gun Is Not a Fifth Class', description: 'Four melee classes, plus a gun that rides with them. Do not tier the gun as a weapon class.', priority: 'Gear', image: 'hotCombat' },
@@ -2590,6 +2593,130 @@ const INLINE_PAGES: Record<string, PageData> = {
     ],
     relatedPages: [
       { href: '/prices/', title: 'Prices', description: 'What to write down after the sale' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-reviews-october-25': {
+    slug: 'moonlighter-2-reviews-october-25',
+    title: 'Moonlighter 2 Reviews on October 25',
+    description: 'On October 25 the US Steam page listed Moonlighter 2 at $29.99. Recent English reviews were Mostly Positive; all-time were Very Positive.',
+    kicker: 'Reviews',
+    status: 'Launch-day update',
+    intro: 'Checked October 25, 2026: the US Steam page listed Moonlighter 2: The Endless Vault at $29.99 with no discount. Recent English reviews were Mostly Positive, 79% of 198 in the last 30 days. The all-time English line on the same page was Very Positive, 1,767 reviews.',
+    sections: [
+      {
+        heading: 'Two labels, one page',
+        paragraphs: [
+          'The recent slice and the all-time slice are not arguing. Mostly Positive on 198 reviews in 30 days, and Very Positive on 1,767 English reviews overall, means the month cooled a little and the longer record did not. Do not average them into a third score. Do not say the game fell from an older all-language total to 1,767. That 1,767 is the English count the page printed today.',
+          'One hundred and ninety-eight reviews is a real month and a small one. Seventy-nine percent positive can move if a bug week lands in it. The useful fact is the price beside it. $29.99, no discount shown. Version 1.0 left Early Access on September 2. Hotfix 1 followed on September 10. A late-October review can be about either build. Check yours before you treat 79% as a verdict on DirectX.',
+        ],
+      },
+      {
+        heading: 'What the month does not change',
+        paragraphs: [
+          'A death still taxes the backpack. Easy, Normal, and Hard halve relic quality. Expert deletes the relics. Hardcore can end the save. Town purchases stay. Sell the bag in Tresna before the next elite. The review label will not extract for you.',
+          'Armor is still not a published tier list. The gun is still not a fifth melee class. The Endless Vault gold targets are still a rule the September 2 post described and did not print as a table. A Mostly Positive month does not fill those blanks. It says most of the 198 English reviewers still recommended the loop: dungeon, shop, town.',
+          'Hotfix 1 added a DirectX 11 and 12 switch because crashes were tied to that choice. If the last 30 days include a crash review, switch the API before you refund. A crash is not a difficulty. Scarabastion invincibility in boss fights was marked fixed in that hotfix. Do not call that piece the best armor because an old review felt unkillable.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-bag-before-the-door/">Empty the bag first</a>',
+          '<a href="/moonlighter-2-which-dx-after-hotfix/">Pick the API that finishes a run</a>',
+          '<a href="/moonlighter-2-price-october-25/">The button was still $29.99</a>',
+        ],
+      },
+      {
+        heading: 'Who should buy it on this page',
+        paragraphs: [
+          'Buy it if the shop-and-dungeon loop is what you want and $29.99 is a price you will pay without a coupon. Very Positive on 1,767 English reviews is the longer yes. Mostly Positive on the recent 198 is not a no. It is a smaller, cooler yes.',
+          'Wait if you need a sale. The October 25 page did not show one. Wait if you need the first game\'s exact feel. Long reviews have been saying the sequel is not that, and today\'s count does not erase them.',
+          'Do not wait for a fifth weapon class or a printed armor ranking. Four melee classes and a gun beside them is the launch list. Play that. Fifty-six achievements are on the store record. The rare pops are not a reason to carry a full bag into a door you have not cleared. October 25 is the check date for this sticker and this English count. Do not blend 1,767 with an older all-language export. Do not treat 79% of 198 as a patch note. Update, switch DirectX if you crash, sell the bag, and leave the label alone. A sale that is not on the button is not a plan. The shop inside the game opens after you pay or after you already own it. Refreshing Mostly Positive will not open Tresna. October 25, 2026 is the day this sticker and this English count were read on the US Steam page. Do not blend that page with an older all-language export, a first-week snapshot, or a 30-day percentage the page did not show. A discount that is not printed on the button is not the price. A patch date is not a coupon. If you own the game, update and play the loop the label is about: the extract, the warm return, or the covered tile. If you do not own it, buy at the number on the button or wait until the button changes. Refreshing the label will not open the shop, heat the walk, or take the shot. Cite the filter you mean, once, then close the store page and play. Pendant out, sleep if you are sloppy, put relics on the displays, take the sale, then buy the potion from Eris or a piece of armor that stays when you die. A weapon meter you have not learned is a worse first spend. The October 25 page will still be $29.99 after that sale. The bag will not.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-last-30-days/', title: 'The 30-day slice', description: '79% of 198, and what to do with a small month' },
+      { href: '/prices/', title: 'Shop prices', description: 'Write the sale down' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-price-october-25': {
+    slug: 'moonlighter-2-price-october-25',
+    title: 'Moonlighter 2 Price on October 25',
+    description: 'Moonlighter 2 was $29.99 on the US Steam page on October 25, 2026. No discount was shown next to Mostly Positive recent reviews.',
+    kicker: 'Price',
+    status: 'Launch-day update',
+    intro: 'The US Steam button on October 25, 2026 was $29.99. No discount percentage was on that price. Recent English reviews were Mostly Positive, 79% of 198 in 30 days. All-time English reviews were Very Positive, 1,767. A friendly page did not create a sale.',
+    sections: [
+      {
+        heading: 'What the button is',
+        paragraphs: [
+          '$29.99 is the base Windows price on that page. It is not a coupon because the all-time line says Very Positive. It is not a warning tax because the recent line says Mostly Positive. It is the number next to both. Version 1.0 has been out since September 2. Late October is not a launch-week price glitch.',
+          'If you already own it, stop refreshing. The bag rule is the expensive part. A death on Expert deletes relics you did not sell. A death on Hardcore can end the save. Armor and potions bought in Tresna stay. The $29.99 question is over. The extract is not.',
+          'If you do not own it, $29.99 next to a Very Positive English record is the ordinary buy. Wait only if a sale is the requirement. The page can change. On October 25 it had not.',
+        ],
+      },
+      {
+        heading: 'What not to bundle into the price',
+        paragraphs: [
+          'Do not add an invented armor tier list to justify the purchase. Steam names armor as a category. It does not rank it. Do not add a best-gun ranking. The gun rides with four melee classes. Do not add unpublished Vault gold targets. The September 2 post named the reset rule and the cosmetics. Copy gold numbers from your own run after you own the game.',
+          'Hotfix 1 is free on top of the price. The DirectX switch is free. Neither one is a discount. Install them if you buy, or if you already bought and still crash. A crash before you can sell the bag is how $29.99 feels wasted. Switch the API. Then sell.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-reviews-october-25/">How to read the two labels</a>',
+          '<a href="/how-to-buy-a-potion/">Spend the coins in town</a>',
+          '<a href="/moonlighter-2-best-armor/">Buy armor after the sale, not before</a>',
+        ],
+      },
+      {
+        heading: 'A one-minute check',
+        paragraphs: [
+          'Look at $29.99. Look at Mostly Positive on 198 recent English reviews and Very Positive on 1,767. If that is a yes, buy it and update. If you need a lower number, close the page. Refreshing will not print a discount the store has not posted. The shop inside the game will not open until you do. This is the US page on October 25, not a different region's checkout and not last week's hope. Easy, Normal, and Hard still halve the bag. Expert still deletes relics. Hardcore still can end the save. The price does not extract. You do. Sell, spend, then open the next door on the API that stays open. Scarabastion's old invincibility was a hotfix, not a reason to call that armor best. The four Endless aspects are weapons, not a discount. Shop Level 5 is a slot, not a price cut. $29.99 buys the loop. The loop still starts with an empty enough bag. October 25, 2026 is the day this sticker and this English count were read on the US Steam page. Do not blend that page with an older all-language export, a first-week snapshot, or a 30-day percentage the page did not show. A discount that is not printed on the button is not the price. A patch date is not a coupon. If you own the game, update and play the loop the label is about: the extract, the warm return, or the covered tile. If you do not own it, buy at the number on the button or wait until the button changes. Refreshing the label will not open the shop, heat the walk, or take the shot. Cite the filter you mean, once, then close the store page and play.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-last-30-days/', title: 'Last 30 days', description: 'A small month, still a bag game' },
+      { href: '/shop-guide/', title: 'Shop', description: 'Where the $29.99 turns into a loop' },
+    ],
+    sources: [],
+  },
+  'moonlighter-2-last-30-days': {
+    slug: 'moonlighter-2-last-30-days',
+    title: 'Moonlighter 2 Last 30 Days',
+    description: 'Moonlighter 2\'s last 30 days on October 25: 79% of 198 English reviews. Mostly Positive, and the bag rule did not soften.',
+    kicker: 'Reviews',
+    status: 'Launch-day update',
+    intro: 'On October 25, 2026, the US Steam page said 79% of 198 English reviews in the last 30 days were positive. The recent label was Mostly Positive. The all-time English label was still Very Positive, on 1,767 reviews. The price was $29.99 with no discount shown.',
+    sections: [
+      {
+        heading: 'A small month',
+        paragraphs: [
+          'One hundred and ninety-eight reviews can move. Seventy-nine percent is not a collapse and not a parade. It is Mostly Positive on a sample that a rough week could nudge. The longer English line, 1,767 and Very Positive, is the stabler yes. Use the month as a mood. Use the all-time line as the record. Do not blend them with an older all-language export and call the difference a patch.',
+          'The month sits well after version 1.0 on September 2 and Hotfix 1 on September 10. Reviewers in it may have the DirectX switch. They may not. If your crash matches a first-week note, install the hotfix and try both APIs before you add your own 198th complaint. Kalina\'s out-of-map hole and Scarabastion\'s boss invincibility were on that fix list. Retest the one you actually hit.',
+        ],
+      },
+      {
+        heading: 'The loop the month is still about',
+        paragraphs: [
+          'Dungeon, sell, town, repeat. A 30-day label does not halve your relics for you, and it does not stop the game from doing it. Easy, Normal, and Hard still cut backpack quality in half on a death. Expert still deletes those relics. Hardcore still can end the save. Pendant out when the bag is the prize. Buy the potion or the armor after the sale. A weapon meter you have not learned is a worse spend than a heal you will use.',
+          'The gun is not a fifth class. Armor is not a published S-tier. The Vault is a gold ladder whose targets were not printed in the launch post. The last 30 days did not secretly publish them. Write your own extract. Leave the blank cell blank until you do.',
+        ],
+        bullets: [
+          '<a href="/moonlighter-2-bag-before-the-door/">Sell before the next door</a>',
+          '<a href="/moonlighter-2-gun-is-not-a-class/">Four classes, then the gun</a>',
+          '<a href="/moonlighter-2-reviews-october-25/">The two labels on one page</a>',
+        ],
+      },
+      {
+        heading: 'What to do with 79%',
+        paragraphs: [
+          'If you want the loop, $29.99 is the button. Mostly Positive on a small recent sample is not a reason to wait for the game to become the first Moonlighter. If you need a sale, 79% will not create one. If you already own it, the month is a reminder to be on Hotfix 1 and to extract. Fifty-six achievements will not move because the recent label is a step below the all-time label. Playing the shop will. One hundred and ninety-eight reviews can wobble. 1,767 Very Positive is the longer English line on the same October 25 page. Cite the one you mean. Do not average them with an older export. Then put the relics on the displays. The month will not price them for you. Write the number that sold and the number that offended, in the game's words. Steam did not print that table on October 25 either. Your notebook is the price guide. The $29.99 button is only the entry. October 25, 2026 is the day this sticker and this English count were read on the US Steam page. Do not blend that page with an older all-language export, a first-week snapshot, or a 30-day percentage the page did not show. A discount that is not printed on the button is not the price. A patch date is not a coupon. If you own the game, update and play the loop the label is about: the extract, the warm return, or the covered tile. If you do not own it, buy at the number on the button or wait until the button changes. Refreshing the label will not open the shop, heat the walk, or take the shot. Cite the filter you mean, once, then close the store page and play.',
+        ],
+      },
+    ],
+    relatedPages: [
+      { href: '/moonlighter-2-price-october-25/', title: 'Price', description: '$29.99, no discount on the page' },
+      { href: '/prices/', title: 'Prices', description: 'The number you set is the one to log' },
     ],
     sources: [],
   },

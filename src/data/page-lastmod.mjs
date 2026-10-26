@@ -57,6 +57,9 @@ const PAGE_LASTMOD = {
   '/moonlighter-2-october-review-count/': '2026-10-23',
   '/moonlighter-2-bag-before-the-door/': '2026-10-23',
   '/moonlighter-2-which-dx-after-hotfix/': '2026-10-23',
+  '/moonlighter-2-reviews-october-25/': '2026-10-25',
+  '/moonlighter-2-price-october-25/': '2026-10-25',
+  '/moonlighter-2-last-30-days/': '2026-10-25',
 };
 
 export function pageLastmod(pathname) {
