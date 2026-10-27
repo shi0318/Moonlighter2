@@ -2602,16 +2602,16 @@ const INLINE_PAGES: Record<string, PageData> = {
   'moonlighter-2-sell-then-sleep': {
     slug: 'moonlighter-2-sell-then-sleep',
     title: 'Sell the Bag, Then Sleep in Tresna',
-    description: 'Moonlighter 2 deaths tax relics still in the backpack. Sell in Tresna and sleep before the next elite. The October 25 price was $29.99.',
+    description: 'Moonlighter 2 deaths tax relics still in the backpack. Sell in Tresna and sleep before the next elite. The October 26 price was $29.99.',
     kicker: 'Shop loop',
     status: 'Launch-day update',
-    intro: 'On October 25, 2026 the US Steam page listed Moonlighter 2 at $29.99. Recent English reviews were Mostly Positive, 79% of 188 in 30 days. All-time English reviews were Very Positive, 1,768. None of those numbers extract your bag. A death on Easy, Normal, or Hard still halves relic quality. Expert still deletes the relics. Hardcore can still end the save.',
+    intro: 'On October 26, 2026 the US Steam page listed Moonlighter 2 at $29.99. Recent English reviews were Mostly Positive, 79% of 188 in 30 days. All-time English reviews were Very Positive, 1,768. None of those numbers extract your bag. A death on Easy, Normal, or Hard still halves relic quality. Expert still deletes the relics. Hardcore can still end the save.',
     sections: [
       { heading: 'The order', paragraphs: [
         'Pendant out when the relics are the prize. Sleep in Tresna if the run left you sloppy. Put the relics on the displays. Take the sale. Then buy the potion from Eris, or a piece of armor that stays when you die. A weapon meter you have not learned is a worse spend than a heal you will use on the next elite.',
         'Nothing bought in town is lost on those deaths. Relics still on your back are. Do not walk back into Kalina with the coins unspent and the bag full. Hotfix 1 did not remove that penalty. It fixed a Kalina hole, a Scarabastion invincibility bug, and input loss. Be on the hotfix. Then sell. The bag is not safe because the API stopped crashing.',
       ]},
-      { heading: 'What October 25 is for', paragraphs: [
+      { heading: 'What October 26 is for', paragraphs: [
         '$29.99 with no discount is the entry. 79% of 188 is a small month. 1,768 Very Positive is the longer English line. Cite the one you mean. Do not blend them with an older all-language export. After you cite them once, close the store page and sell. Refreshing Mostly Positive will not price a relic.',
         'Write the number that sold and the number that offended. Steam did not print that table. A player stuck on the first boss still recommended the game in a shorter file. They would have had a calmer door if the bag had been empty. Sleep is part of the loop, not a waste of a Very Positive evening.',
       ], bullets: [
@@ -2632,7 +2632,7 @@ const INLINE_PAGES: Record<string, PageData> = {
   'moonlighter-2-hardcore-is-not-dx': {
     slug: 'moonlighter-2-hardcore-is-not-dx',
     title: 'Do Not Test DirectX on a Hardcore File',
-    description: 'Moonlighter 2 Hardcore can end the save. Switch DirectX 11 and 12 on a file you can afford to crash. October 25 price was $29.99.',
+    description: 'Moonlighter 2 Hardcore can end the save. Switch DirectX 11 and 12 on a file you can afford to crash. October 26 price was $29.99.',
     kicker: 'Stability',
     status: 'Launch-day update',
     intro: 'Hotfix 1 added a switch between DirectX 11 and DirectX 12 because crashes were tied to that choice. Hardcore, added in version 1.0, can end the save. Test the API on a file you can lose an evening on, not on the file you cannot lose at all.',
@@ -2643,7 +2643,7 @@ const INLINE_PAGES: Record<string, PageData> = {
       ]},
       { heading: 'Retest after the API holds', paragraphs: [
         'Walk the Kalina out-of-map spot once. Talk to Hazy Jane if input used to die. Unequip Scarabastion and fight a boss before you call that armor best. Retest a distant shot on Sergeant Roberto if the gun felt blank. Do not enable Hardcore to see if the gun is serious.',
-        'On October 25, 2026 the US page was $29.99, 79% of 188 recent English reviews Mostly Positive, 1,768 Very Positive all-time. A crash before you sell wastes that purchase. Switch the API. Then sell. The label will not keep the process open.',
+        'On October 26, 2026 the US page was $29.99, 79% of 188 recent English reviews Mostly Positive, 1,768 Very Positive all-time. A crash before you sell wastes that purchase. Switch the API. Then sell. The label will not keep the process open.',
       ], bullets: [
         '<a href="/moonlighter-2-which-dx-after-hotfix/">The API test</a>',
         '<a href="/moonlighter-2-sell-then-sleep/">Sell on the safe file</a>',
@@ -2670,7 +2670,7 @@ const INLINE_PAGES: Record<string, PageData> = {
         'One more Bloblet. One more place to put a cosmetic. The post confirmed the slots. It did not print a damage table for the decoration. Armor is a separate town purchase. The gun rides beside four melee classes. The Endless aspects are Short Sword, Great Sword, Spear, and Gauntlets. None of those is a floor tile.',
         'Buy the slot after you can survive a death with an empty enough bag. Sell first. Town purchases stay. Backpack relics may not. A cosmetic funded by carrying relics back into Kalina is a cosmetic you may not get to place.',
       ]},
-      { heading: 'October 25 does not upgrade the slot', paragraphs: [
+      { heading: 'October 26 does not upgrade the slot', paragraphs: [
         'The US page was $29.99, no discount, 79% of 188 recent English reviews, 1,768 Very Positive all-time. A friendly price does not add a fifth weapon class. The loop still starts with an extract. Hardcore does not make the slot stronger. It makes a failed experiment more expensive. Place cosmetics on the file that keeps progress.',
       ], bullets: [
         '<a href="/moonlighter-2-shop-level-5/">The two additions, named</a>',
