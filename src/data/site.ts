@@ -4,6 +4,7 @@ import { WEAPON_PAGES } from './pages/weapons';
 import { BOSS_PAGES, MINIBOSS_PAGES } from './pages/bosses';
 import { CHARACTER_PAGES } from './pages/characters';
 import { DUNGEON_PAGES } from './pages/dungeons';
+import { RECENT_PAGES } from './recent-guides';
 
 export interface PageSection {
   heading: string;
@@ -129,6 +130,8 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+  { href: '/moonlighter-2-hotfix-1-retest-guide/', title: 'Hotfix 1 Retest Guide', description: 'Retest the DirectX selector, tutorial loading, Weapon Mastery marker, Senda poison, and dungeon recovery after the 1.0 hotfix.', priority: 'Patch', image: 'hotCombat' },
+  { href: '/moonlighter-2-directx-stutter-test/', title: 'DirectX 11 vs 12 Stutter Test', description: 'A controlled PC comparison for crashes, stutter, loading, graphics settings, and the Hotfix 1 API selector.', priority: 'PC', image: 'hotCombat' },
   { href: '/moonlighter-2-sell-then-sleep/', title: 'Sell, Then Sleep', description: 'Pendant out, sell the bag in Tresna, then sleep. A full pack is what a death is written to tax.', priority: 'Shop', image: 'hotShop' },
   { href: '/moonlighter-2-hardcore-is-not-dx/', title: 'Hardcore Is Not a DirectX Test', description: 'Hardcore can end the save. Switch DX11 and DX12 on a file you can afford to crash.', priority: 'Stability', image: 'hotCombat' },
   { href: '/moonlighter-2-shop-level-5-slot/', title: 'Shop Level 5 Is a Slot', description: 'Shop Level 5 adds a Bloblet slot and a cosmetic slot. It is not armor and not a gun class.', priority: 'Shop', image: 'shot5' },
@@ -3162,6 +3165,7 @@ const INLINE_PAGES: Record<string, PageData> = {
 
 
 export const PAGE_DATA: Record<string, PageData> = {
+  ...RECENT_PAGES,
   ...INLINE_PAGES,
   ...WEAPON_PAGES,
   ...CHARACTER_PAGES,

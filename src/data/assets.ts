@@ -127,6 +127,8 @@ export const ASSETS = {
 export type AssetKey = keyof typeof ASSETS;
 
 export const PAGE_ASSETS: Record<string, AssetKey> = {
+  'moonlighter-2-hotfix-1-retest-guide': 'hotCombat',
+  'moonlighter-2-directx-stutter-test': 'hotCombat',
   guides: 'hero',
   'moonlighter-2-switch-2': 'header',
   'gameplay-preview': 'hero',
