@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = process.cwd();
@@ -49,19 +49,14 @@ if (existsSync(distIndex)) {
   assert(!html.includes('>Early Access</dd>'), 'Homepage still presents Early Access as the current Steam state.');
   assert(html.includes('Left Early Access Sep 2, 2026'), 'Homepage no longer records the version 1.0 release state.');
 
-  const homeCardImages = {
-    '/moonlighter-2-very-positive/': '/images/m2-hot-0.webp',
-    '/moonlighter-2-aeolia-bugs/': '/images/m2-hot-6.webp',
-    '/moonlighter-2-hotfix-1/': '/images/m2-hot-6.webp',
-    '/characters/': '/images/moonlighter-2-shot-5.jpg',
-    '/moonlighter-2-best-weapon/': '/images/moonlighter-2-shot-4.jpg',
-    '/moonlighter-2-infinite-endless-vault-guide/': '/images/moonlighter-2-shot-1.jpg',
-    '/moonlighter-2-hardcore-mode/': '/images/moonlighter-2-shot-2.jpg',
-    '/moonlighter-2-shop-level-5/': '/images/moonlighter-2-shot-5.jpg',
-  };
-  for (const [href, image] of Object.entries(homeCardImages)) {
-    const cardPattern = new RegExp(`<a href="${href}"[^>]*>\\s*<img[^>]*src="${image}"`, 'i');
-    assert(cardPattern.test(html), `Homepage card ${href} is missing its mapped Steam image.`);
+  // The homepage is a rolling latest queue; validate the cards actually displayed.
+  const homeCards = [...html.matchAll(/<a href="(\/[^\"]+)"[^>]*>\s*(<img[^>]+>)/gi)];
+  assert(homeCards.length >= 12, 'Homepage must display twelve illustrated guide cards.');
+  for (const [, href, tag] of homeCards) {
+    const image = tag.match(/src="(\/images\/[^\"]+)"/)?.[1];
+    assert(Boolean(image) && existsSync(join(root, 'public', image)), `Homepage card ${href} has no valid local image.`);
+    assert(/alt="[^\"]+"/.test(tag), `Homepage card ${href} has no image alt text.`);
+    assert(existsSync(join(root, 'dist', href, 'index.html')), `Homepage card ${href} links to a missing page.`);
   }
 }
 
@@ -96,15 +91,17 @@ if (existsSync(saveTransferPath)) {
 const guidesPath = join(root, 'dist', 'guides', 'index.html');
 const guidesPage2 = join(root, 'dist', 'guides', 'page', '2', 'index.html');
 if (existsSync(guidesPath)) {
-  const guidesText = readFileSync(guidesPath, 'utf8');
-  for (const href of ['/moonlighter-2-very-positive/', '/moonlighter-2-aeolia-bugs/', '/moonlighter-2-hotfix-1/']) {
-    assert(guidesText.includes(`href="${href}"`), `Guide directory must list ${href}.`);
+  const pageRoot = join(root, 'dist', 'guides', 'page');
+  const allPages = [guidesPath, ...readdirSync(pageRoot).map((page) => join(pageRoot, page, 'index.html'))];
+  const guidesText = allPages.map((file) => readFileSync(file, 'utf8')).join('\n');
+  for (const href of ['/moonlighter-2-very-positive/', '/moonlighter-2-aeolia-bugs/', '/moonlighter-2-hotfix-1/', '/save-transfer-progress-guide/', '/version-1-0-update/', '/infinite-vault-threshold-budget-route/', '/senda-poison-scarabastion-fair-build/']) {
+    assert(guidesText.includes(`href="${href}"`), `Paginated guide directory must list ${href}.`);
   }
 }
 if (existsSync(guidesPage2)) {
   const page2 = readFileSync(guidesPage2, 'utf8');
-  assert(page2.includes('href="/save-transfer-progress-guide/"'), 'Guide directory page 2 must list the save-transfer page.');
-  assert(page2.includes('href="/version-1-0-update/"'), 'Guide directory page 2 must list the version 1.0 update page.');
+  assert(page2.includes('href="/guides/"'), 'Guide directory page 2 must link back to page 1.');
+  assert(page2.includes('href="/guides/page/3/"'), 'Guide directory page 2 must link forward to page 3.');
 }
 
 const homeHeader = existsSync(distIndex) ? readFileSync(distIndex, 'utf8').match(/<header[\s\S]*?<\/header>/i)?.[0] ?? '' : '';

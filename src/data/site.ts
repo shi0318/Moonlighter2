@@ -130,6 +130,8 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+{"href": "/senda-poison-scarabastion-fair-build/", "title": "Moonlighter 2: Senda Poison and Scarabastion Build Checks", "description": "Retest Senda poison, Scarabastion defense and weapon behavior before investing in a boss build, with a practical practice sequence.", "priority": "New · Nov 1", "image": "hero"},
+{"href": "/infinite-vault-threshold-budget-route/", "title": "Moonlighter 2: Build a Safer Infinite Vault Threshold Run", "description": "Plan your next Infinite Endless Vault threshold around its gold target, equipment and extraction decisions instead of chasing every room.", "priority": "New · Nov 1", "image": "hero"},
   { href: '/moonlighter-2-hotfix-1-retest-guide/', title: 'Hotfix 1 Retest Guide', description: 'Retest the DirectX selector, tutorial loading, Weapon Mastery marker, Senda poison, and dungeon recovery after the 1.0 hotfix.', priority: 'Patch', image: 'hotCombat' },
   { href: '/moonlighter-2-directx-stutter-test/', title: 'DirectX 11 vs 12 Stutter Test', description: 'A controlled PC comparison for crashes, stutter, loading, graphics settings, and the Hotfix 1 API selector.', priority: 'PC', image: 'hotCombat' },
   { href: '/moonlighter-2-sell-then-sleep/', title: 'Sell, Then Sleep', description: 'Pendant out, sell the bag in Tresna, then sleep. A full pack is what a death is written to tax.', priority: 'Shop', image: 'hotShop' },

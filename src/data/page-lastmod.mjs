@@ -1,5 +1,7 @@
 // Add a path only after that page has had a material, verifiable update.
 const PAGE_LASTMOD = {
+"/senda-poison-scarabastion-fair-build/": "2026-11-01",
+"/infinite-vault-threshold-budget-route/": "2026-11-01",
   '/': '2026-09-07',
   '/beginner-guide/': '2026-09-07',
   '/version-1-0-update/': '2026-09-03',
