@@ -1,5 +1,7 @@
 // Add a path only after that page has had a material, verifiable update.
 const PAGE_LASTMOD = {
+"/moonlighter-2-stuck-enemies-softlock-guide/": "2026-11-04",
+"/moonlighter-2-bloblets-guide/": "2026-11-04",
 "/senda-poison-scarabastion-fair-build/": "2026-11-01",
 "/infinite-vault-threshold-budget-route/": "2026-11-01",
   '/': '2026-09-07',

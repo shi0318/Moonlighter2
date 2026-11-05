@@ -122,11 +122,29 @@ export const ASSETS = {
     credit: 'Moonlighter 2 gameplay screenshot',
     sourceUrl: steamUrl,
   },
+  hotBloblet: {
+    src: '/images/m2-hot-8.webp',
+    alt: 'Will next to the shop companion Sir Edwin in Moonlighter 2, with a Pet (Hold) prompt and its display-case effect tooltip.',
+    width: 1400,
+    height: 788,
+    credit: 'Moonlighter 2 Steam store screenshot',
+    sourceUrl: steamUrl,
+  },
+  hotMap: {
+    src: '/images/m2-hot-9.webp',
+    alt: 'The Moonlighter 2 dungeon map for Aeolia Zephyr Fields, with a legend for chests, elites, minibosses, bosses and perk rooms.',
+    width: 1400,
+    height: 788,
+    credit: 'Moonlighter 2 Steam store screenshot',
+    sourceUrl: steamUrl,
+  },
 } satisfies Record<string, SiteAsset>;
 
 export type AssetKey = keyof typeof ASSETS;
 
 export const PAGE_ASSETS: Record<string, AssetKey> = {
+  'moonlighter-2-bloblets-guide': 'hotBloblet',
+  'moonlighter-2-stuck-enemies-softlock-guide': 'hotMap',
   'infinite-vault-threshold-budget-route': 'hero',
   'senda-poison-scarabastion-fair-build': 'shot5',
   'moonlighter-2-hotfix-1-retest-guide': 'hotCombat',

@@ -130,6 +130,8 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+{"href": "/moonlighter-2-stuck-enemies-softlock-guide/", "title": "Moonlighter 2 Stuck Enemies and Softlocks: How to Protect a Run", "description": "Flying enemies that never land, rooms that will not open, zipline lockups: what players report in November 2026 and how to protect your backpack.", "priority": "New · Nov 4", "image": "hotMap"},
+{"href": "/moonlighter-2-bloblets-guide/", "title": "Moonlighter 2 Bloblets: How to Rescue, Adopt and Activate Them", "description": "Earn the currency in Bloblet rooms, adopt at the pet seller, then hold Pet in the shop to trigger the effect.", "priority": "New · Nov 4", "image": "hotBloblet"},
 {"href": "/senda-poison-scarabastion-fair-build/", "title": "Moonlighter 2: Senda Poison and Scarabastion Build Checks", "description": "Retest Senda poison, Scarabastion defense and weapon behavior before investing in a boss build, with a practical practice sequence.", "priority": "New · Nov 1", "image": "hero"},
 {"href": "/infinite-vault-threshold-budget-route/", "title": "Moonlighter 2: Build a Safer Infinite Vault Threshold Run", "description": "Plan your next Infinite Endless Vault threshold around its gold target, equipment and extraction decisions instead of chasing every room.", "priority": "New · Nov 1", "image": "hero"},
   { href: '/moonlighter-2-hotfix-1-retest-guide/', title: 'Hotfix 1 Retest Guide', description: 'Retest the DirectX selector, tutorial loading, Weapon Mastery marker, Senda poison, and dungeon recovery after the 1.0 hotfix.', priority: 'Patch', image: 'hotCombat' },

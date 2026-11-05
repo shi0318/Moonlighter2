@@ -94,7 +94,7 @@ if (existsSync(guidesPath)) {
   const pageRoot = join(root, 'dist', 'guides', 'page');
   const allPages = [guidesPath, ...readdirSync(pageRoot).map((page) => join(pageRoot, page, 'index.html'))];
   const guidesText = allPages.map((file) => readFileSync(file, 'utf8')).join('\n');
-  for (const href of ['/moonlighter-2-very-positive/', '/moonlighter-2-aeolia-bugs/', '/moonlighter-2-hotfix-1/', '/save-transfer-progress-guide/', '/version-1-0-update/', '/infinite-vault-threshold-budget-route/', '/senda-poison-scarabastion-fair-build/']) {
+  for (const href of ['/moonlighter-2-very-positive/', '/moonlighter-2-aeolia-bugs/', '/moonlighter-2-hotfix-1/', '/save-transfer-progress-guide/', '/version-1-0-update/', '/infinite-vault-threshold-budget-route/', '/senda-poison-scarabastion-fair-build/', '/moonlighter-2-bloblets-guide/', '/moonlighter-2-stuck-enemies-softlock-guide/']) {
     assert(guidesText.includes(`href="${href}"`), `Paginated guide directory must list ${href}.`);
   }
 }
