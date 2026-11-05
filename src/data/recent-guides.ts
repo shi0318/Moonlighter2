@@ -97,7 +97,7 @@ export const RECENT_PAGES: Record<string, PageData> = {
     relatedPages: [
       { href: '/moonlighter-2-hotfix-1/', title: 'Hotfix 1 Patch Notes', description: 'Quest, combat, dungeon, weapon, and stability changes.' },
       { href: '/moonlighter-2-hardcore-is-not-dx/', title: 'Hardcore Is Not a DirectX Test', description: 'Test graphics options on a save where a crash will not end your campaign.' },
-      { href: '/moonlighter-2-pc-system-requirements/', title: 'PC System Requirements', description: 'Compare your system with the current storefront requirements.' },
+      { href: '/moonlighter-2-windows-only/', title: 'Windows-only Steam listing', description: 'What the PC storefront listing does and does not cover.' },
     ],
     sources: [],
   },
