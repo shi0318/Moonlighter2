@@ -1,5 +1,6 @@
 // Add a path only after that page has had a material, verifiable update.
 const PAGE_LASTMOD = {
+"/keeper-storage-quick-stash-materials/": "2026-11-10",
 "/moonlighter-2-stuck-enemies-softlock-guide/": "2026-11-04",
 "/moonlighter-2-bloblets-guide/": "2026-11-04",
 "/senda-poison-scarabastion-fair-build/": "2026-11-01",

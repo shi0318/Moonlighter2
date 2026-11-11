@@ -130,6 +130,7 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+{"href": "/keeper-storage-quick-stash-materials/", "title": "Moonlighter 2: Keeper Storage and Quick-Stash Checks", "description": "Organize a town storage transfer, protect upgrade materials from accidental selling, and verify what a stash command actually moved.", "priority": "New · Nov 10", "image": "hero"},
 {"href": "/moonlighter-2-stuck-enemies-softlock-guide/", "title": "Moonlighter 2 Stuck Enemies and Softlocks: How to Protect a Run", "description": "Flying enemies that never land, rooms that will not open, zipline lockups: what players report in November 2026 and how to protect your backpack.", "priority": "New · Nov 4", "image": "hotMap"},
 {"href": "/moonlighter-2-bloblets-guide/", "title": "Moonlighter 2 Bloblets: How to Rescue, Adopt and Activate Them", "description": "Earn the currency in Bloblet rooms, adopt at the pet seller, then hold Pet in the shop to trigger the effect.", "priority": "New · Nov 4", "image": "hotBloblet"},
 {"href": "/senda-poison-scarabastion-fair-build/", "title": "Moonlighter 2: Senda Poison and Scarabastion Build Checks", "description": "Retest Senda poison, Scarabastion defense and weapon behavior before investing in a boss build, with a practical practice sequence.", "priority": "New · Nov 1", "image": "hero"},

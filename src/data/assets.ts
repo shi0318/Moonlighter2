@@ -143,6 +143,7 @@ export const ASSETS = {
 export type AssetKey = keyof typeof ASSETS;
 
 export const PAGE_ASSETS: Record<string, AssetKey> = {
+  'keeper-storage-quick-stash-materials': 'shot3',
   'moonlighter-2-bloblets-guide': 'hotBloblet',
   'moonlighter-2-stuck-enemies-softlock-guide': 'hotMap',
   'infinite-vault-threshold-budget-route': 'hero',
