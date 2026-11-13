@@ -130,6 +130,7 @@ export const OFFICIAL_FACTS = [
 ] as const;
 
 export const REQUIRED_GUIDES = [
+{"href": "/gauntlets-hold-attack-crowd-spacing/", "title": "Moonlighter 2: Gauntlet Controls and Safer Crowd Spacing", "description": "Try held attacks instead of repeated presses, manage close-range positioning and compare a gauntlet switch without wasting an expedition.", "priority": "New · Nov 12", "image": "hero"},
 {"href": "/keeper-storage-quick-stash-materials/", "title": "Moonlighter 2: Keeper Storage and Quick-Stash Checks", "description": "Organize a town storage transfer, protect upgrade materials from accidental selling, and verify what a stash command actually moved.", "priority": "New · Nov 10", "image": "hero"},
 {"href": "/moonlighter-2-stuck-enemies-softlock-guide/", "title": "Moonlighter 2 Stuck Enemies and Softlocks: How to Protect a Run", "description": "Flying enemies that never land, rooms that will not open, zipline lockups: what players report in November 2026 and how to protect your backpack.", "priority": "New · Nov 4", "image": "hotMap"},
 {"href": "/moonlighter-2-bloblets-guide/", "title": "Moonlighter 2 Bloblets: How to Rescue, Adopt and Activate Them", "description": "Earn the currency in Bloblet rooms, adopt at the pet seller, then hold Pet in the shop to trigger the effect.", "priority": "New · Nov 4", "image": "hotBloblet"},
