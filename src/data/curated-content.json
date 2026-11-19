@@ -4270,7 +4270,7 @@
   "prices": {
     "slug": "prices",
     "title": "Moonlighter 2 Prices and Inventory: A Practical Selling Worksheet",
-    "description": "A Moonlighter 2 price tracker for observed shop values, customer reactions, and versioned hands-on updates.",
+    "description": "Plan Moonlighter 2 shop prices with a selling worksheet for your own asking prices, customer reactions and item outcomes.",
     "kicker": "Core tool",
     "status": "Launch-day update",
     "intro": "Use a repeatable selling routine in Moonlighter 2: sort the haul, set an asking price, read customer responses, then reinvest in the next run. This page combines the price worksheet with the inventory decisions that make a sale possible. It does not provide a universal item-price database.",
@@ -4405,7 +4405,26 @@
         "title": "Moonlighter 2 Shop Guide: Stock, Selling and Reinvestment",
         "description": "A source-tracked Moonlighter 2 shop guide covering player-set prices, customers, decorations, perks, and village investment."
       }
-    ]
+    ],
+    "table": {
+      "heading": "Blank selling worksheet: record your own run, not a published price database",
+      "headers": [
+        "Relic",
+        "Build",
+        "Asking price",
+        "Customer reaction",
+        "Outcome"
+      ],
+      "rows": [
+        [
+          "Your item",
+          "Your installed build",
+          "Record in-game value",
+          "Record response",
+          "Sold, kept or lost"
+        ]
+      ]
+    }
   },
   "beginner-guide": {
     "slug": "beginner-guide",
