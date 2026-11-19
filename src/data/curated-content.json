@@ -2064,7 +2064,7 @@
       {
         "heading": "Record a sale before changing the setup",
         "paragraphs": [
-          "Write the number that sold and the number that offended. Steam did not print that table. A player stuck on the first boss still recommended the game in a shorter file. They would have had a calmer door if the bag had been empty. Sleep is part of the loop, not a waste of a Very Positive evening."
+          "Write the number that sold and the number that offended. Steam did not print that table. A player stuck on the first boss still recommended the game in a shorter file. They would have had a calmer door if the bag had been empty. Sleep is part of the loop, a useful part of the shop loop."
         ],
         "bullets": [
           "<a href=\"/shop-guide/\">Eris, after the sale</a>",
@@ -3771,10 +3771,10 @@
       {
         "heading": "Short Swords",
         "bullets": [
-          "<a href=\"/short-sword-guide/#merchant-s-sword-short-sword-guide\">Merchant’s Sword</a> — bonus damage for 3s after a Special Finisher; the beginner pick.",
-          "<a href=\"/short-sword-guide/#everlasting-fury-short-sword-guide\">Everlasting Fury</a> — +50%/60%/75% damage to Elites, Minibosses and Bosses.",
-          "<a href=\"/short-sword-guide/#ray-axe-short-sword-guide\">Ray Axe</a> — chain the Special Finisher straight after the Attack Finisher for +20%.",
-          "<a href=\"/short-sword-guide/#ultimate-short-sword-short-sword-guide\">Ultimate Short Sword</a> — +20% Special Finisher; a kill grants 3s of infinite ammo.",
+          "<a href=\"/short-sword-guide/#merchant-s-sword-short-sword-guide\">Merchant’s Sword</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
+          "<a href=\"/short-sword-guide/#everlasting-fury-short-sword-guide\">Everlasting Fury</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
+          "<a href=\"/short-sword-guide/#ray-axe-short-sword-guide\">Ray Axe</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
+          "<a href=\"/short-sword-guide/#ultimate-short-sword-short-sword-guide\">Ultimate Short Sword</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
           "<a href=\"/short-sword-guide/#starsign-horn-short-sword-guide\">Starsign Horn</a> — Blob-Life aspect, reward for Lita’s Kalina Boss Rush.",
           "<a href=\"/short-sword-guide/#endless-short-sword-guide\">Endless Short Sword</a> — Version 1.0: multi-hit piercing Special that scales with combo."
         ],
@@ -3784,8 +3784,8 @@
         "heading": "Large Swords",
         "bullets": [
           "<a href=\"/large-sword-guide/#merchant-s-large-sword-large-sword-guide\">Merchant’s Large Sword</a> — more damage while Sharpness is above a threshold.",
-          "<a href=\"/large-sword-guide/#the-vow-large-sword-guide\">The Vow</a> — attacks stop consuming Sharpness, but 2% drains per second.",
-          "<a href=\"/large-sword-guide/#aetherium-heart-large-sword-guide\">Aetherium Heart</a> — Special deals +40% per Sharpness level; a top-rated weapon.",
+          "<a href=\"/large-sword-guide/#the-vow-large-sword-guide\">The Vow</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
+          "<a href=\"/large-sword-guide/#aetherium-heart-large-sword-guide\">Aetherium Heart</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
           "<a href=\"/large-sword-guide/#ultimate-large-sword-large-sword-guide\">Ultimate Large Sword</a> — one less max Sharpness, but Sharpness boosts ailments.",
           "<a href=\"/large-sword-guide/#protocol-breaker-large-sword-guide\">Protocol Breaker</a> — Blob-Life aspect, reward for Babyl’s Gallery Boss Rush.",
           "<a href=\"/large-sword-guide/#endless-great-sword-guide\">Endless Great Sword</a> — Version 1.0 Golden Guild block-and-counter stance."
@@ -3797,8 +3797,8 @@
         "bullets": [
           "<a href=\"/spear-guide/#broom-spear-spear-guide\">Broom Spear</a> — the no-Special starting weapon; boss kills earn Humble Hero.",
           "<a href=\"/spear-guide/#merchant-s-spear-spear-guide\">Merchant’s Spear</a> — spearheads deal bonus damage.",
-          "<a href=\"/spear-guide/#combat-rod-spear-guide\">Combat Rod</a> — slow recall dealing 200% continuous damage.",
-          "<a href=\"/spear-guide/#the-rectifier-spear-guide\">The Rectifier</a> — returned spearheads orbit you for 5s at +70%/85%/100%.",
+          "<a href=\"/spear-guide/#combat-rod-spear-guide\">Combat Rod</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
+          "<a href=\"/spear-guide/#the-rectifier-spear-guide\">The Rectifier</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
           "<a href=\"/spear-guide/#ultimate-spear-spear-guide\">Ultimate Spear</a> — homing recall; a top-rated weapon.",
           "<a href=\"/spear-guide/#dreampiercer-spear-guide\">Dreampiercer</a> — Blob-Life aspect, reward for Julien’s Aeolia Boss Rush.",
           "<a href=\"/spear-guide/#endless-spear-guide\">Endless Spear</a> — Version 1.0: spends spearheads to empower basic attacks."
@@ -3809,8 +3809,8 @@
         "heading": "Gauntlets",
         "bullets": [
           "<a href=\"/gauntlets-guide/#merchant-s-gauntlets-gauntlet-guide\">Merchant’s Gauntlets</a> — extends Berserk duration.",
-          "<a href=\"/gauntlets-guide/#sun-and-moon-ballad-gauntlet-guide\">Sun and Moon Ballad</a> — double hits for 3s/4s after Berserk ends.",
-          "<a href=\"/gauntlets-guide/#heartbeat-hunter-gauntlet-guide\">Heartbeat Hunter</a> — +40% damage in Berserk, but you take double damage.",
+          "<a href=\"/gauntlets-guide/#sun-and-moon-ballad-gauntlet-guide\">Sun and Moon Ballad</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
+          "<a href=\"/gauntlets-guide/#heartbeat-hunter-gauntlet-guide\">Heartbeat Hunter</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
           "<a href=\"/gauntlets-guide/#ultimate-gauntlets-gauntlet-guide\">Ultimate Gauntlets</a> — bank charges for extra Special hits.",
           "<a href=\"/gauntlets-guide/#single-strike-gauntlet-guide\">Single Strike</a> — Blob-Life aspect, reward for the Interdimensional Boss Rush.",
           "<a href=\"/gauntlets-guide/#endless-gauntlets-guide\">Endless Gauntlets</a> — Version 1.0: much stronger attacks while Berserk is active."
@@ -3832,7 +3832,7 @@
       {
         "heading": "Armor sets",
         "bullets": [
-          "<a href=\"/moonlighter-2-best-armor/\">Nimbus Regalia</a> — a dungeon-start Shield that grants +20% damage on break (Greed & Glory).",
+          "<a href=\"/moonlighter-2-best-armor/\">Nimbus Regalia</a> — compare its current trigger and resource use in the linked family guide before buying an upgrade. Match the effect to a safe opening in your route rather than relying on an older tier modifier.",
           "<a href=\"/moonlighter-2-best-armor/\">Endless Void Armour</a> — Version 1.0 crit set that scales with Spark perks."
         ],
         "paragraphs": []
@@ -4216,41 +4216,35 @@
     "table": {
       "heading": "Confirmed boss kills by global unlock rate",
       "headers": [
-        "Boss",
-        "Achievement",
-        "Owners who have beaten it",
-        "Position"
+        "Encounter",
+        "Achievement label",
+        "How to use this entry"
       ],
       "rows": [
         [
           "The Curator",
           "Forced Shutdown",
-          "43.6%",
-          "First of the four"
+          "Track completion in your save; this table does not establish fight order or difficulty."
         ],
         [
           "Senda",
           "Wind Slumber",
-          "38.7%",
-          "Second"
+          "Track completion in your save; this table does not establish fight order or difficulty."
         ],
         [
           "Tyke",
           "Dismissal Letter",
-          "26.1%",
-          "Third"
+          "Track completion in your save; this table does not establish fight order or difficulty."
         ],
         [
           "Monte",
           "Sweet Petrichor",
-          "21.2%",
-          "Fourth and rarest"
+          "Track completion in your save; this table does not establish fight order or difficulty."
         ],
         [
           "Any boss, using the broom",
           "Humble Hero",
-          "23.3%",
-          "Not a progression step"
+          "Track completion in your save; this table does not establish fight order or difficulty."
         ]
       ]
     },
