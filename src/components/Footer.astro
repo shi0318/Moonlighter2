@@ -7,6 +7,8 @@ const trustLinks = [
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
   { label: 'Privacy Policy', href: '/privacy-policy/' },
+  { label: 'Terms', href: '/terms/' },
+  { label: 'Editorial policy', href: '/editorial-policy/' },
   { label: 'Sitemap', href: '/sitemap-index.xml' },
 ] as const;
 ---
@@ -25,7 +27,7 @@ const trustLinks = [
           </div>
         </div>
         <p class="mt-4 max-w-md text-sm leading-relaxed text-fog">
-          Independent fan guide for {SITE.gameName}. Confirmed platform facts come first; item tables, walkthrough findings, and build notes are added only after they are verified in the game.
+          Independent fan guide for {SITE.gameName}. Practical shop and dungeon guides, with advice distinguished from documented game facts.
         </p>
       </div>
 
@@ -70,7 +72,7 @@ const trustLinks = [
         This site is not affiliated with or endorsed by {SITE.developer} or {SITE.publisher}. {SITE.gameName}, screenshots, names, and trademarks belong to their respective owners.
       </p>
       <p class="mt-2">
-        Pages are last verified against official sources on {SITE.lastVerified}. Contact:
+        Read our <a href="/editorial-policy/" class="underline">editorial policy</a> or contact:
         <a href={`mailto:${SITE.contactEmail}`} class="text-wheat underline underline-offset-2">{SITE.contactEmail}</a>.
       </p>
       <p class="mt-2">&copy; {year} {SITE.name}.</p>

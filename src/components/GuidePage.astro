@@ -11,37 +11,40 @@ interface Props {
 }
 
 const { page } = Astro.props;
+const isPolicy = ['about', 'contact', 'privacy-policy', 'terms', 'editorial-policy'].includes(page.slug);
 const pageAsset = getPageAsset(page.slug);
 const sourceList: readonly SourceRef[] = page.sources ?? CORE_SOURCES;
+const headingCounts = new Map<string, number>();
+const sectionIds = page.sections.map(section => {
+  const base = section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const count = (headingCounts.get(base) ?? 0) + 1;
+  headingCounts.set(base, count);
+  return count === 1 ? base : `${base}-${count}`;
+});
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: page.title, url: '/' + page.slug + '/' },
 ];
-const statusClass = page.status === 'Verified'
-  ? 'border-sage/40 bg-sage/10 text-sage'
-  : page.status === 'Launch-day update'
-    ? 'border-accent/40 bg-accent/10 text-accent'
-    : 'border-white/20 bg-white/5 text-fog';
 ---
 
-<Layout title={page.title + ' | ' + SITE.name} description={page.description} pageType="article" image={pageAsset.src} breadcrumbs={breadcrumbs}>
+<Layout title={page.title.includes('Moonlighter 2') ? page.title + ' | M2 Guide' : page.title + ' | ' + SITE.name} description={page.description} pageType="article" image={pageAsset.src} breadcrumbs={breadcrumbs}>
   <article class="mx-auto max-w-4xl">
     <div class="flex flex-wrap items-center gap-3">
       <p class="section-kicker">{page.kicker}</p>
-      <span class:list={['rounded-full border px-3 py-1 text-xs font-black uppercase', statusClass]}>{page.status}</span>
+
     </div>
     <h1 class="mt-3 text-4xl font-black leading-tight text-bone md:text-5xl">{page.title}</h1>
     <p class="mt-5 max-w-3xl text-lg leading-relaxed text-fog">{page.intro}</p>
 
-    <div class="mt-8 overflow-hidden rounded-md border border-white/10">
+    {!isPolicy && <div class="mt-8 overflow-hidden rounded-md border border-white/10">
       <img src={pageAsset.src} alt={pageAsset.alt} width={pageAsset.width} height={pageAsset.height} class="h-56 w-full object-cover md:h-72" loading="eager" />
       {page.showImageCredit !== false && <p class="border-t border-white/10 bg-soil px-4 py-3 text-xs text-fog">{pageAsset.credit}. This image is used for identification and editorial context.</p>}
-    </div>
+    </div>}
 
     <div class="prose-page mt-10">
-      {page.sections.map((section) => (
+      {page.sections.map((section, sectionIndex) => (
         <section class="border-t border-white/10 pt-8">
-          <h2>{section.heading}</h2>
+          <h2 id={sectionIds[sectionIndex]}>{section.heading}</h2>
           {section.paragraphs?.map((paragraph) => <p set:html={paragraph} />)}
           {section.bullets && (
             <ul>

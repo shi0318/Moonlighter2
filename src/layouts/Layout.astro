@@ -75,7 +75,7 @@ if (pageType === 'home') {
   });
 } else {
   graph.push({
-    '@type': pageType === 'collection' ? 'CollectionPage' : 'Article',
+    '@type': path === '/about/' ? 'AboutPage' : path === '/contact/' ? 'ContactPage' : ['/privacy-policy/', '/terms/', '/editorial-policy/'].includes(path) ? 'WebPage' : pageType === 'collection' ? 'CollectionPage' : 'Article',
     '@id': `${canonicalUrl}#${pageType}`,
     name: title,
     headline: title,
@@ -112,15 +112,8 @@ const schema = {
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDB1KS81M1"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GDB1KS81M1');
-    </script>
+    <!-- Advertising and GA are paused pending verified consent configuration. -->
+    <meta name="google-adsense-account" content="ca-pub-5369417947376183" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
@@ -144,12 +137,8 @@ const schema = {
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="application-name" content={SITE.name} />
     <meta name="theme-color" content={SITE.themeColor} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+
+
     <script type="application/ld+json" set:html={JSON.stringify(schema)} is:inline />
   </head>
   <body class="flex min-h-screen flex-col">
@@ -159,6 +148,7 @@ const schema = {
     </a>
     <Header />
     <main id="main" class:list={['flex-1', fullWidth ? '' : 'container py-10']}>
+      {dateModified && <p class="mx-auto mb-6 max-w-4xl text-sm text-fog">Updated <time datetime={dateModified}>{dateModified}</time></p>}
       <slot />
     </main>
     <Footer />

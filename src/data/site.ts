@@ -1,3 +1,5 @@
+import curatedContent from './curated-content.json';
+import { TRUST_PAGES } from './trust-pages';
 import { SOURCES } from './sources';
 import type { SourceRef } from './sources';
 import { WEAPON_PAGES } from './pages/weapons';
@@ -54,13 +56,10 @@ export const SITE = {
 
 export const NAV = [
   { label: 'Guides', href: '/guides/' },
-  { label: 'Beginner', href: '/beginner-guide/' },
-  { label: 'Items', href: '/items/' },
   { label: 'Prices', href: '/prices/' },
   { label: 'Shop', href: '/shop-guide/' },
   { label: 'Dungeons', href: '/dungeon-guide/' },
   { label: 'Bosses', href: '/bosses/' },
-  { label: 'Minibosses', href: '/minibosses/' },
   { label: 'Characters', href: '/characters/' },
   { label: 'Weapons', href: '/weapons/' },
   { label: 'Release', href: '/release-date/' },
@@ -129,7 +128,7 @@ export const OFFICIAL_FACTS = [
   { label: 'Endless Vault', value: 'The Endless Vault is described as an ancient artifact with trials that test merchants and reward town upgrades.', source: SOURCES.steam },
 ] as const;
 
-export const REQUIRED_GUIDES = [
+const LEGACY_REQUIRED_GUIDES = [
 {"href": "/gauntlets-hold-attack-crowd-spacing/", "title": "Moonlighter 2: Gauntlet Controls and Safer Crowd Spacing", "description": "Try held attacks instead of repeated presses, manage close-range positioning and compare a gauntlet switch without wasting an expedition.", "priority": "New · Nov 12", "image": "hero"},
 {"href": "/keeper-storage-quick-stash-materials/", "title": "Moonlighter 2: Keeper Storage and Quick-Stash Checks", "description": "Organize a town storage transfer, protect upgrade materials from accidental selling, and verify what a stash command actually moved.", "priority": "New · Nov 10", "image": "hero"},
 {"href": "/moonlighter-2-stuck-enemies-softlock-guide/", "title": "Moonlighter 2 Stuck Enemies and Softlocks: How to Protect a Run", "description": "Flying enemies that never land, rooms that will not open, zipline lockups: what players report in November 2026 and how to protect your backpack.", "priority": "New · Nov 4", "image": "hotMap"},
@@ -3170,12 +3169,6 @@ const INLINE_PAGES: Record<string, PageData> = {
 
 
 
-export const PAGE_DATA: Record<string, PageData> = {
-  ...RECENT_PAGES,
-  ...INLINE_PAGES,
-  ...WEAPON_PAGES,
-  ...CHARACTER_PAGES,
-  ...DUNGEON_PAGES,
-  ...MINIBOSS_PAGES,
-  ...BOSS_PAGES,
-};
+export const PAGE_DATA: Record<string, PageData> = { ...curatedContent as Record<string, PageData>, ...TRUST_PAGES };
+
+export const REQUIRED_GUIDES = Object.values(PAGE_DATA).filter(p => !["about","contact","privacy-policy","terms","editorial-policy"].includes(p.slug)).map(p => ({href: "/"+p.slug+"/",title:p.title,description:p.description,priority:"Guide",image:"hero"}));
