@@ -831,7 +831,7 @@
         "heading": "Why there is no honest S-tier yet",
         "paragraphs": [
           "Version 1.0, out of Early Access on September 2, 2026, names four Endless Weapon Aspects and describes their specials. It does not do the same for armor. The store page says village investment unlocks better weapons, armor, and upgrades. That is a category, not a ranking. A page that labels an unnamed chestplate S-tier is inventing the number the launch post refused to print.",
-          "Hotfix 1 on September 10 did name one armor bug. Players could become invincible in boss fights after equipping the Scarabastion. That line is a fix, not a recommendation. If a boss felt free while Scarabastion was on, you were on the bug. Update, unequip it, and fight the boss again before you call that piece the best armor in the game. Invincibility that a patch removed is not a build."
+          "Hotfix 1 on September 10 did name one armor bug. Players could become invincible in boss fights after equipping the Scarabastion. That line is a fix, not a recommendation. An unusually easy encounter alone does not establish that your save triggered the reported bug. Update, unequip it, and fight the boss again before you call that piece the best armor in the game. Invincibility that a patch removed is not a build."
         ]
       },
       {
@@ -857,14 +857,14 @@
       {
         "heading": "A purchase you can defend",
         "paragraphs": [
-          "Update to Hotfix 1. Switch DirectX if the last run crashed before you could sell. Confirm Scarabastion is not granting a boss-fight invincibility the patch said it removed. Sell the bag. Buy the armor you died wishing you had. Leave the unnamed S-tier to a later patch that actually prints defense numbers.",
+          "Update to Hotfix 1. For repeated PC crashes, use the controlled graphics-API comparison in the troubleshooting guide. Confirm Scarabastion is not granting a boss-fight invincibility the patch said it removed. Sell the bag. Buy the armor you died wishing you had. Leave the unnamed S-tier to a later patch that actually prints defense numbers.",
           "Before buying an upgrade, compare its price with your available balance and the next activity you intend to attempt. Keep the old setup identifiable so you can compare it with the replacement. On a short familiar route, note the same enemy, the armor effect as displayed, whether its trigger occurred and whether you could use the resulting opening. One successful encounter is a reason to keep testing, rather than proof of a universal best item. If a benefit depends on Spark perks, evaluate it with the perks actually equipped instead of judging the item from its name."
         ]
       },
       {
         "heading": "Moonlighter 2 Nimbus Regalia — Armor Set Guide",
         "paragraphs": [
-          "Nimbus Regalia is a armor set in Moonlighter 2: The Endless Vault, added in Greed & Glory (Mar 2026). Grants one Shield at the start of each dungeon; when the Shield breaks, damage increases by 20% for 2 seconds."
+          "Nimbus Regalia is a armor set in Moonlighter 2: The Endless Vault, added in Greed & Glory (Mar 2026). The set combines an initial shield with an offensive opportunity after the shield breaks. Use the current description for its amount and duration; an unfamiliar attack is a poor way to test whether the follow-up is useful."
         ]
       },
       {
@@ -1040,7 +1040,7 @@
       {
         "heading": "A door you can open",
         "paragraphs": [
-          "Update to Hotfix 1 or newer. Switch DirectX if the last run crashed before you could extract. Confirm the Kalina hole is not the spot you are about to step on. Then look at the bag. If losing half its quality would annoy you, leave. If you are on Expert and losing the relics outright would end the evening, leave. If you are on Hardcore, treat the door as a separate campaign and do not practice the route on the save you care about.",
+          "Update to Hotfix 1 or newer. For repeated PC crashes, use a short, controlled API comparison before risking another valuable run. Then look at the bag. If losing half its quality would annoy you, leave. If you are on Expert and losing the relics outright would end the evening, leave. If you are on Hardcore, treat the door as a separate campaign and do not practice the route on the save you care about.",
           "After the next return, compare the plan with the outcome. Which items reached town, which were used, and which were carried without contributing to the objective? Use those answers to prepare the following trip. If the bag repeatedly fills with resources you do not need, change the collection priority rather than buying equipment to solve a storage problem. If you return with the intended materials but cannot afford the purchase, examine the selling decision and the remaining cost. If ordinary fights consume the resources you reserved for the objective, choose a shorter practice route first. Keep these observations attached to the relevant region and difficulty. The aim is a departure inventory whose purpose is clear enough that you can make a replacement or return decision quickly, before another door adds pressure."
         ]
       }
@@ -4541,13 +4541,13 @@
       {
         "heading": "Merchant's Sword — Short Sword Guide",
         "paragraphs": [
-          "Merchant's Sword is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. After a Special Finisher, deal bonus damage for 3 seconds (0% at base, growing with upgrades)."
+          "Merchant's Sword is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. The effect is tied to a Special Finisher. Inspect the current description for the bonus and duration, then compare whether the encounter gives you time to use the follow-up safely."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "After a Special Finisher, deal bonus damage for 3 seconds (0% at base, growing with upgrades)."
+          "The effect is tied to a Special Finisher. Inspect the current description for the bonus and duration, then compare whether the encounter gives you time to use the follow-up safely."
         ],
         "bullets": [
           "Class: Short Sword.",
@@ -4570,13 +4570,13 @@
       {
         "heading": "Everlasting Fury — Short Sword Guide",
         "paragraphs": [
-          "Everlasting Fury is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. Attack Finisher and Special Finisher deal +50% damage to Elites, Minibosses and Bosses (+60% / +75% at higher tiers)."
+          "Everlasting Fury is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. Its role is a finisher-focused option for tougher encounters. Compare the current effect text and your ability to complete the sequence before choosing it over a more comfortable basic attack pattern."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Attack Finisher and Special Finisher deal +50% damage to Elites, Minibosses and Bosses (+60% / +75% at higher tiers)."
+          "Its role is a finisher-focused option for tougher encounters. Compare the current effect text and your ability to complete the sequence before choosing it over a more comfortable basic attack pattern."
         ],
         "bullets": [
           "Class: Short Sword.",
@@ -4599,13 +4599,13 @@
       {
         "heading": "Ray Axe — Short Sword Guide",
         "paragraphs": [
-          "Ray Axe is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. The Special Finisher can be performed right after the Attack Finisher, dealing +20% damage."
+          "Ray Axe is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. The described sequence links the Attack Finisher to the Special Finisher. Practice that transition while preserving enough room to recover; use the current description for the damage modifier."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "The Special Finisher can be performed right after the Attack Finisher, dealing +20% damage."
+          "The described sequence links the Attack Finisher to the Special Finisher. Practice that transition while preserving enough room to recover; use the current description for the damage modifier."
         ],
         "bullets": [
           "Class: Short Sword.",
@@ -4628,13 +4628,13 @@
       {
         "heading": "Ultimate Short Sword — Short Sword Guide",
         "paragraphs": [
-          "Ultimate Short Sword is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. Special Finisher damage +20%; defeating an enemy with it grants 3 seconds of infinite ammo."
+          "Ultimate Short Sword is a short sword in Moonlighter 2: The Endless Vault, added in Early Access. The effect links a Special Finisher kill to an ammunition opportunity. Check its current trigger and duration, then plan a target that can be finished safely rather than committing the sequence at the wrong time."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Special Finisher damage +20%; defeating an enemy with it grants 3 seconds of infinite ammo."
+          "The effect links a Special Finisher kill to an ammunition opportunity. Check its current trigger and duration, then plan a target that can be finished safely rather than committing the sequence at the wrong time."
         ],
         "bullets": [
           "Class: Short Sword.",
@@ -4741,13 +4741,13 @@
       {
         "heading": "Merchant's Large Sword — Large Sword Guide",
         "paragraphs": [
-          "Merchant's Large Sword is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. While Sharpness is at or above a threshold, increase damage (0% at base, growing with upgrades)."
+          "Merchant's Large Sword is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. The effect depends on maintaining Sharpness. Compare the current trigger with your usual attack sequence and watch whether normal movement between openings lets you preserve the benefit."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "While Sharpness is at or above a threshold, increase damage (0% at base, growing with upgrades)."
+          "The effect depends on maintaining Sharpness. Compare the current trigger with your usual attack sequence and watch whether normal movement between openings lets you preserve the benefit."
         ],
         "bullets": [
           "Class: Large Sword.",
@@ -4770,13 +4770,13 @@
       {
         "heading": "The Vow — Large Sword Guide",
         "paragraphs": [
-          "The Vow is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. Attacks no longer consume Sharpness, but 2% drains every second."
+          "The Vow is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. The described tradeoff changes Sharpness consumption toward a time-based drain. Inspect the current behavior and consider whether a fight allows frequent contact or repeatedly forces you to wait."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Attacks no longer consume Sharpness, but 2% drains every second."
+          "The described tradeoff changes Sharpness consumption toward a time-based drain. Inspect the current behavior and consider whether a fight allows frequent contact or repeatedly forces you to wait."
         ],
         "bullets": [
           "Class: Large Sword.",
@@ -4799,13 +4799,13 @@
       {
         "heading": "Aetherium Heart — Large Sword Guide",
         "paragraphs": [
-          "Aetherium Heart is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. Attacks refill Sharpness and the Special consumes it; the Special deals +40% damage per Sharpness level."
+          "Aetherium Heart is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. The described loop builds Sharpness with attacks and spends it through the Special. Compare a short reliable buildup with a longer risky commitment rather than assuming maximum buildup is always the best choice."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Attacks refill Sharpness and the Special consumes it; the Special deals +40% damage per Sharpness level."
+          "The described loop builds Sharpness with attacks and spends it through the Special. Compare a short reliable buildup with a longer risky commitment rather than assuming maximum buildup is always the best choice."
         ],
         "bullets": [
           "Class: Large Sword.",
@@ -4828,13 +4828,13 @@
       {
         "heading": "Ultimate Large Sword — Large Sword Guide",
         "paragraphs": [
-          "Ultimate Large Sword is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. Maximum Sharpness level is reduced by 1, and Sharpness also affects the ailments you apply, at 10% potency."
+          "Ultimate Large Sword is a large sword in Moonlighter 2: The Endless Vault, added in Early Access. The effect trades part of the Sharpness capacity for an interaction with ailments. Read the current description before choosing a perk pairing, then check whether the relevant ailment is actually applied in your route."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Maximum Sharpness level is reduced by 1, and Sharpness also affects the ailments you apply, at 10% potency."
+          "The effect trades part of the Sharpness capacity for an interaction with ailments. Read the current description before choosing a perk pairing, then check whether the relevant ailment is actually applied in your route."
         ],
         "bullets": [
           "Class: Large Sword.",
@@ -4963,13 +4963,13 @@
       {
         "heading": "Merchant's Spear — Spear Guide",
         "paragraphs": [
-          "Merchant's Spear is a spear in Moonlighter 2: The Endless Vault, added in Early Access. Spearheads deal bonus damage (0% at base, growing with upgrades)."
+          "Merchant's Spear is a spear in Moonlighter 2: The Endless Vault, added in Early Access. The effect emphasizes spearhead damage. Compare how reliably the projectile reaches a target and returns under the current build before choosing an upgrade from the damage label alone."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Spearheads deal bonus damage (0% at base, growing with upgrades)."
+          "The effect emphasizes spearhead damage. Compare how reliably the projectile reaches a target and returns under the current build before choosing an upgrade from the damage label alone."
         ],
         "bullets": [
           "Class: Spear.",
@@ -4992,13 +4992,13 @@
       {
         "heading": "Combat Rod — Spear Guide",
         "paragraphs": [
-          "Combat Rod is a spear in Moonlighter 2: The Endless Vault, added in Early Access. Spearheads return slowly, dealing 200% continuous damage on the way back."
+          "Combat Rod is a spear in Moonlighter 2: The Endless Vault, added in Early Access. The spearhead return is the relevant part of this effect. Observe its route and timing, then use positioning to keep the intended target in that path without assuming an old damage percentage remains current."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Spearheads return slowly, dealing 200% continuous damage on the way back."
+          "The spearhead return is the relevant part of this effect. Observe its route and timing, then use positioning to keep the intended target in that path without assuming an old damage percentage remains current."
         ],
         "bullets": [
           "Class: Spear.",
@@ -5015,13 +5015,13 @@
       {
         "heading": "The Rectifier — Spear Guide",
         "paragraphs": [
-          "The Rectifier is a spear in Moonlighter 2: The Endless Vault, added in Early Access. After spearheads return they rotate around you for 5 seconds, dealing +70% damage (+85% / +100% at higher tiers)."
+          "The Rectifier is a spear in Moonlighter 2: The Endless Vault, added in Early Access. The described effect keeps returning spearheads close to the character. Evaluate how it interacts with the space you need for movement and the proximity of enemies; read the current duration and modifier in the equipment screen."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "After spearheads return they rotate around you for 5 seconds, dealing +70% damage (+85% / +100% at higher tiers)."
+          "The described effect keeps returning spearheads close to the character. Evaluate how it interacts with the space you need for movement and the proximity of enemies; read the current duration and modifier in the equipment screen."
         ],
         "bullets": [
           "Class: Spear.",
@@ -5044,13 +5044,13 @@
       {
         "heading": "Ultimate Spear — Spear Guide",
         "paragraphs": [
-          "Ultimate Spear is a spear in Moonlighter 2: The Endless Vault, added in Early Access. Spearheads home in on enemies when returning, dealing 30% damage."
+          "Ultimate Spear is a spear in Moonlighter 2: The Endless Vault, added in Early Access. The described effect changes the returning spearhead’s targeting. Compare it against a moving enemy and check the current effect text before treating a return hit as a guaranteed part of every attack."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Spearheads home in on enemies when returning, dealing 30% damage."
+          "The described effect changes the returning spearhead’s targeting. Compare it against a moving enemy and check the current effect text before treating a return hit as a guaranteed part of every attack."
         ],
         "bullets": [
           "Class: Spear.",
@@ -5145,13 +5145,13 @@
       {
         "heading": "Merchant's Gauntlets — Gauntlet Guide",
         "paragraphs": [
-          "Merchant's Gauntlets is a gauntlet in Moonlighter 2: The Endless Vault, added in Early Access. Berserk duration is extended (0 seconds at base, growing with upgrades)."
+          "Merchant's Gauntlets is a gauntlet in Moonlighter 2: The Endless Vault, added in Early Access. The effect concerns Berserk duration. Inspect the current equipment text and compare whether a longer active window helps the route you actually play, particularly when enemies force a pause between attacks."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Berserk duration is extended (0 seconds at base, growing with upgrades)."
+          "The effect concerns Berserk duration. Inspect the current equipment text and compare whether a longer active window helps the route you actually play, particularly when enemies force a pause between attacks."
         ],
         "bullets": [
           "Class: Gauntlet.",
@@ -5174,13 +5174,13 @@
       {
         "heading": "Sun and Moon Ballad — Gauntlet Guide",
         "paragraphs": [
-          "Sun and Moon Ballad is a gauntlet in Moonlighter 2: The Endless Vault, added in Early Access. When Berserk ends, attacks hit twice for 3 seconds, the second hit dealing 20% damage (4 seconds / 40% at Rare)."
+          "Compare the current effect description with the attack pattern you can use safely. Check its trigger, duration and resource requirement before relying on a tier-specific modifier. Keep the route and other equipment familiar during the first comparison so that you can tell whether the effect actually helps."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "When Berserk ends, attacks hit twice for 3 seconds, the second hit dealing 20% damage (4 seconds / 40% at Rare)."
+          "Compare the current effect description with the attack pattern you can use safely. Check its trigger, duration and resource requirement before relying on a tier-specific modifier. Keep the route and other equipment familiar during the first comparison so that you can tell whether the effect actually helps."
         ],
         "bullets": [
           "Class: Gauntlet.",
@@ -5203,13 +5203,13 @@
       {
         "heading": "Heartbeat Hunter — Gauntlet Guide",
         "paragraphs": [
-          "Heartbeat Hunter is a gauntlet in Moonlighter 2: The Endless Vault, added in Early Access. While in Berserk you take double damage but deal +40% damage."
+          "Compare the current effect description with the attack pattern you can use safely. Check its trigger, duration and resource requirement before relying on a tier-specific modifier. Keep the route and other equipment familiar during the first comparison so that you can tell whether the effect actually helps."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "While in Berserk you take double damage but deal +40% damage."
+          "Compare the current effect description with the attack pattern you can use safely. Check its trigger, duration and resource requirement before relying on a tier-specific modifier. Keep the route and other equipment familiar during the first comparison so that you can tell whether the effect actually helps."
         ],
         "bullets": [
           "Class: Gauntlet.",
@@ -5226,19 +5226,19 @@
       {
         "heading": "Best use",
         "paragraphs": [
-          "A high-risk, high-reward gauntlet for confident players. The +40% damage only pays off if you can avoid hits while taking double damage."
+          "Compare the current effect description with the attack pattern you can use safely. Check its trigger, duration and resource requirement before relying on a tier-specific modifier. Keep the route and other equipment familiar during the first comparison so that you can tell whether the effect actually helps."
         ]
       },
       {
         "heading": "Ultimate Gauntlets — Gauntlet Guide",
         "paragraphs": [
-          "Ultimate Gauntlets is a gauntlet in Moonlighter 2: The Endless Vault, added in Early Access. Every 12 attacks gain a charge (max 3); the Special hits one extra time per charge (every 10 / 9 attacks at higher tiers)."
+          "Ultimate Gauntlets is a gauntlet in Moonlighter 2: The Endless Vault, added in Early Access. The effect connects repeated attacks with charges used by the Special. Check the current charge requirement and limit, then practice releasing the Special at a safe opening instead of holding it indefinitely for the largest demonstration."
         ]
       },
       {
         "heading": "Special effect",
         "paragraphs": [
-          "Every 12 attacks gain a charge (max 3); the Special hits one extra time per charge (every 10 / 9 attacks at higher tiers)."
+          "The effect connects repeated attacks with charges used by the Special. Check the current charge requirement and limit, then practice releasing the Special at a safe opening instead of holding it indefinitely for the largest demonstration."
         ],
         "bullets": [
           "Class: Gauntlet.",
